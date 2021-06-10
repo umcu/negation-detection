@@ -1,4 +1,6 @@
-code/biLSTM-MetaCAT/data/
+# Custom
+biLSTM-MetaCAT/data/
+biLSTM-MetaCAT/output/
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
