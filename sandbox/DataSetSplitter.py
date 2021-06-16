@@ -11,6 +11,8 @@ import random
 from collections import defaultdict
 from itertools import combinations
 import argparse
+import json
+import re
 
 def get_ids_dataframe(corpus_path: str)-> pd.DataFrame:
     '''
@@ -28,7 +30,7 @@ def get_ids_dataframe(corpus_path: str)-> pd.DataFrame:
                     if Path(os.path.join(subdir,file)).stat().st_size!=0:
                         ids.append({
                                 "id": file.split(".")[0],
-                                "group": subdir.split("\\")[-1]
+                                "group": re.split(r"[\\\/]", subdir)[-1]
                             }
                         )
     return pd.DataFrame(ids).set_index('id')
@@ -87,8 +89,14 @@ def get_inter_group_splits(ids_df: pd.DataFrame,
                           }
     return group_splits
 
-def write_folds(intra: dict, inter: dict):
-    # pickle...
+def write_folds(intra: dict, inter: dict, output: str):
+    os.makedirs(output, exist_ok=True)
+    with open(os.path.join(output, "intra_folds.json"), "w") as fp:
+        json.dump(intra, fp)
+
+    with open(os.path.join(output, "inter_folds.json"), "w") as fp:
+        json.dump(inter, fp)
+    
 
 
 if __name__=="__main__":
@@ -103,19 +111,24 @@ if __name__=="__main__":
                         help='fraction of training used, for inter-group', default=1.0)
     parser.add_argument('--num_groups', dest='num_groups', type=int,
                         help='number of groups for training, for inter-group', default=3)
-    parser.add_argument('--output', dest='out', type=str, help="output folder of pickles", default="./output")
+    parser.add_argument('--output', dest='output_location', type=str, help="output folder of pickles", default="./output")
     args = parser.parse_args()
 
-    ids_df = get_ids_dataframe(corpus_path=args['corpus_loc'])
+    ids_df = get_ids_dataframe(corpus_path=args.corpus_loc)
+
+    print("Generating intra-group folds...")
     intra_folds = get_intra_group_folds(ids_df=ids_df,
-                                        num_reps=args['num_reps'],
-                                        num_folds=args['num_folds']
+                                        num_reps=args.num_reps,
+                                        num_folds=args.num_folds
                                          )
+    print("Generating inter-group folds...")
     inter_folds = get_inter_group_splits(ids_df=ids_df,
-                                         p=args['num_groups'],
-                                         train_frac=args['train_fraction']
+                                         p=args.num_groups,
+                                         train_frac=args.train_fraction
                                          )
-    write_folds(intra=intra_folds, inter=inter_folds,  output=args['out'])
+
+    print("Writing to disk...")
+    write_folds(intra=intra_folds, inter=inter_folds,  output=args.output_location)
 
 
 
