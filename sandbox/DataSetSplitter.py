@@ -13,6 +13,48 @@ import json
 import re
 
 
+unreadable_files = [
+    # txt files
+    'GP1585',
+    'GP1761',
+    'GP1823',
+    'GP1832',
+    'GP1836',
+    'GP1902',
+    'GP1962',
+    'GP1971',
+    'GP2007',
+    'GP2175',
+    'GP2252',
+    'GP2282',
+    'GP2426',
+    'GP2452',
+    'GP2476',
+    'GP2570',
+    'GP2941',
+
+    # ann files
+    'GP1122',
+    'GP1260',
+    'GP1448',
+    'GP1625',
+    'GP1757',
+    'GP1882',
+    'GP1918',
+    'GP2072',
+    'GP2188',
+    'GP2351',
+    'GP2392',
+    'GP2435',
+    'GP2556',
+    'GP2586',
+    'GP2588',
+    'GP2687',
+    'GP2729',
+    'GP3035',
+    'GP3084']
+
+
 def get_ids_dataframe(corpus_path: str) -> pd.DataFrame:
     '''
         in: 
@@ -25,13 +67,14 @@ def get_ids_dataframe(corpus_path: str) -> pd.DataFrame:
     for subdir, folders, files in os.walk(corpus_path):
         if subdir != corpus_path:
             for file in tqdm(os.listdir(path=subdir)):
-                if ".ann" in file:
-                    if Path(os.path.join(subdir, file)).stat().st_size != 0:
-                        ids.append({
-                            "id": file.split(".")[0],
-                            "group": re.split(r"[\\\/]", subdir)[-1]
-                        }
-                        )
+                if file not in unreadable_files:
+                    if ".ann" in file:
+                        if Path(os.path.join(subdir, file)).stat().st_size != 0:
+                            ids.append({
+                                "id": file.split(".")[0],
+                                "group": re.split(r"[\\\/]", subdir)[-1]
+                            }
+                            )
     return pd.DataFrame(ids).set_index('id')
 
 
