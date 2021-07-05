@@ -4,41 +4,84 @@
 from sklearn.model_selection import RepeatedKFold
 import os
 import pandas as pd
-import glob
 from pathlib import Path
 from tqdm import tqdm
-import random
 from collections import defaultdict
 from itertools import combinations
 import argparse
 import json
 import re
 
-def get_ids_dataframe(corpus_path: str)-> pd.DataFrame:
+
+unreadable_files = [
+    # txt files
+    'GP1585',
+    'GP1761',
+    'GP1823',
+    'GP1832',
+    'GP1836',
+    'GP1902',
+    'GP1962',
+    'GP1971',
+    'GP2007',
+    'GP2175',
+    'GP2252',
+    'GP2282',
+    'GP2426',
+    'GP2452',
+    'GP2476',
+    'GP2570',
+    'GP2941',
+
+    # ann files
+    'GP1122',
+    'GP1260',
+    'GP1448',
+    'GP1625',
+    'GP1757',
+    'GP1882',
+    'GP1918',
+    'GP2072',
+    'GP2188',
+    'GP2351',
+    'GP2392',
+    'GP2435',
+    'GP2556',
+    'GP2586',
+    'GP2588',
+    'GP2687',
+    'GP2729',
+    'GP3035',
+    'GP3084']
+
+
+def get_ids_dataframe(corpus_path: str) -> pd.DataFrame:
     '''
         in: 
             corpus_path: contains the path with the sub-folders named after the 
                          document types
         out: pandas.DataFrame: [id, group]
     '''
-        
+
     ids = []
     for subdir, folders, files in os.walk(corpus_path):
-        if subdir!=corpus_path:
+        if subdir != corpus_path:
             for file in tqdm(os.listdir(path=subdir)):
-                if ".ann" in file:           
-                    if Path(os.path.join(subdir,file)).stat().st_size!=0:
-                        ids.append({
+                if file not in unreadable_files:
+                    if ".ann" in file:
+                        if Path(os.path.join(subdir, file)).stat().st_size != 0:
+                            ids.append({
                                 "id": file.split(".")[0],
                                 "group": re.split(r"[\\\/]", subdir)[-1]
                             }
-                        )
+                            )
     return pd.DataFrame(ids).set_index('id')
 
+
 def get_intra_group_folds(ids_df: pd.DataFrame,
-                          rnd_state: int=1524513,
-                          num_reps: int=100,
-                          num_folds: int=10)-> dict:
+                          rnd_state: int = 1524513,
+                          num_reps: int = 100,
+                          num_folds: int = 10) -> dict:
     '''
         in: 
             ids_df: pandas.DataFrame[id, group] 
@@ -47,22 +90,22 @@ def get_intra_group_folds(ids_df: pd.DataFrame,
         out: dict {letterype: [(fold_train_0, fold_test_0), (fold_train_1, fold_test1), (..)]}
         
     '''
-        
+
     intra_group_folds = defaultdict(list)
     groups = ids_df['group'].unique()
     for document_type in groups:
         repeated_k_folder = RepeatedKFold(n_repeats=num_reps, n_splits=num_folds, random_state=rnd_state)
-        df = ids_df[ids_df['group']==document_type]
+        df = ids_df[ids_df['group'] == document_type]
         for train_indcs, test_indcs in tqdm(repeated_k_folder.split(df)):
-            intra_group_folds[document_type].append((list(ids_df.iloc[train_indcs].index), 
+            intra_group_folds[document_type].append((list(ids_df.iloc[train_indcs].index),
                                                      list(ids_df.iloc[test_indcs].index)))
     return intra_group_folds
 
 
 def get_inter_group_splits(ids_df: pd.DataFrame,
-                     p: int, 
-                     rnd_state: int=1524513,
-                     train_frac: int=1) -> dict:
+                           p: int,
+                           rnd_state: int = 1524513,
+                           train_frac: int = 1) -> dict:
     '''
         in: 
             ids_df: pandas.DataFrame[id, group]
@@ -77,17 +120,18 @@ def get_inter_group_splits(ids_df: pd.DataFrame,
     group_splits = dict()
     unique_groups = ids_df.group.unique()
     groups_train = [tuple(map(str, comb)) for comb in combinations(unique_groups, p)]
-    groups_test = [tuple(set(unique_groups)-set(gt)) for gt in groups_train]
-        
+    groups_test = [tuple(set(unique_groups) - set(gt)) for gt in groups_train]
+
     for idx, gtrain in enumerate(groups_train):
         gtest = groups_test[idx]
-        group_splits[idx] = {'groups_train': gtrain, 
+        group_splits[idx] = {'groups_train': gtrain,
                              'groups_test': gtest,
-                             'train_fold': ids_df.loc[ids_df.group.isin(gtrain)]\
-                                            .sample(frac=train_frac, random_state=rnd_state).index.tolist(), 
+                             'train_fold': ids_df.loc[ids_df.group.isin(gtrain)] \
+                                 .sample(frac=train_frac, random_state=rnd_state).index.tolist(),
                              'test_fold': ids_df.loc[ids_df.group.isin(gtest)].index.tolist()
-                          }
+                             }
     return group_splits
+
 
 def write_folds(intra: dict, inter: dict, output: str):
     os.makedirs(output, exist_ok=True)
@@ -96,10 +140,9 @@ def write_folds(intra: dict, inter: dict, output: str):
 
     with open(os.path.join(output, "inter_folds.json"), "w") as fp:
         json.dump(inter, fp)
-    
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process arguments')
     parser.add_argument('--corpus_loc', dest='corpus_loc', type=str,
                         help='location of corpus')
@@ -111,7 +154,8 @@ if __name__=="__main__":
                         help='fraction of training used, for inter-group', default=1.0)
     parser.add_argument('--num_groups', dest='num_groups', type=int,
                         help='number of groups for training, for inter-group', default=3)
-    parser.add_argument('--output', dest='output_location', type=str, help="output folder of pickles", default="./output")
+    parser.add_argument('--output', dest='output_location', type=str, help="output folder of pickles",
+                        default="./output")
     args = parser.parse_args()
 
     ids_df = get_ids_dataframe(corpus_path=args.corpus_loc)
@@ -120,7 +164,7 @@ if __name__=="__main__":
     intra_folds = get_intra_group_folds(ids_df=ids_df,
                                         num_reps=args.num_reps,
                                         num_folds=args.num_folds
-                                         )
+                                        )
     print("Generating inter-group folds...")
     inter_folds = get_inter_group_splits(ids_df=ids_df,
                                          p=args.num_groups,
@@ -128,9 +172,4 @@ if __name__=="__main__":
                                          )
 
     print("Writing to disk...")
-    write_folds(intra=intra_folds, inter=inter_folds,  output=args.output_location)
-
-
-
-
-
+    write_folds(intra=intra_folds, inter=inter_folds, output=args.output_location)
