@@ -1,6 +1,6 @@
 # Custom
 data/
-output/
+models/
 .DS_Store
 .idea
 
