@@ -23,17 +23,17 @@ def predict_negations(annotations, method, model):
                 print(f'{method}-method not implemented')
 
             result.append([f'{document_name}_{start}_{end}', negation, prediction])
-    return pd.DataFrame(result, columns=['entity_id', 'annotation', 'prediction'])
+    return pd.DataFrame(result, columns=['entity_id', 'annotation', method])
 
 
-def print_statistics(result_df):
+def print_statistics(result_df, method):
     """
     Calculate statistics
     """
-    tp = result_df[(result_df.annotation == 'negated') & (result_df.prediction == 'negated')].shape[0]
-    tn = result_df[(result_df.annotation == 'not negated') & (result_df.prediction == 'not negated')].shape[0]
-    fp = result_df[(result_df.annotation == 'not negated') & (result_df.prediction == 'negated')].shape[0]
-    fn = result_df[(result_df.annotation == 'negated') & (result_df.prediction == 'not negated')].shape[0]
+    tp = result_df[(result_df.annotation == 'negated') & (result_df[method] == 'negated')].shape[0]
+    tn = result_df[(result_df.annotation == 'not negated') & (result_df[method] == 'not negated')].shape[0]
+    fp = result_df[(result_df.annotation == 'not negated') & (result_df[method] == 'negated')].shape[0]
+    fn = result_df[(result_df.annotation == 'negated') & (result_df[method] == 'not negated')].shape[0]
     recall = round(tp / (tp + fn), 2)
     precision = round(tp / (tp + fp), 2)
     specificity = round(tn / (tn + fp), 2)
