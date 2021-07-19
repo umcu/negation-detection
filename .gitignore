@@ -1,6 +1,6 @@
 # Custom
 data/
-biLSTM-MetaCAT/output/
+models/
 .DS_Store
 .idea
 
