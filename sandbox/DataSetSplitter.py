@@ -12,11 +12,13 @@ import argparse
 import json
 import re
 
+DEFAULT_DCC_DIR = Path.cwd().parents[0] / 'data' / 'EMCDutchClinicalCorpus'
+DEFAULT_OUTPUT_DIR = Path.cwd().parents[0] / 'data' / 'splits'
 
 # Some files should be skipped because their data is corrupted
 with open('DCC_files_to_exclude.json') as json_file:
     problem_files = json.load(json_file)
-SKIP_FILES = [f['name'] for f in problem_files['corrupted']]
+SKIP_FILES = [f['name'] for k, v in problem_files.items() for f in v]
 
 
 def get_ids_dataframe(corpus_path: str) -> pd.DataFrame:
@@ -109,7 +111,7 @@ def write_folds(intra: dict, inter: dict, output: str):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process arguments')
     parser.add_argument('--corpus_loc', dest='corpus_loc', type=str,
-                        help='location of corpus')
+                        help='location of corpus', default=DEFAULT_DCC_DIR)
     parser.add_argument('--num_folds', dest='num_folds', type=int,
                         help='number of folds, for intra-group', default=10)
     parser.add_argument('--num_reps', dest='num_reps', type=int,
@@ -119,7 +121,7 @@ if __name__ == "__main__":
     parser.add_argument('--num_groups', dest='num_groups', type=int,
                         help='number of groups for training, for inter-group', default=3)
     parser.add_argument('--output', dest='output_location', type=str, help="output folder of pickles",
-                        default="./output")
+                        default=DEFAULT_OUTPUT_DIR)
     args = parser.parse_args()
 
     ids_df = get_ids_dataframe(corpus_path=args.corpus_loc)
