@@ -96,7 +96,8 @@ class TextDataset(Dataset):
         return self.data[idx], self.y[idx]
 
 
-def create_batch(sentences, labels, tag2id, device, tokenizer, model_type, max_len, word_dropout=0.):
+def create_batch(sentences, labels, tag2id, device, 
+                    tokenizer, model_type, max_len, word_dropout=0.):
     """
     Converts a list of sentences to a padded batch of word ids. Returns
     an input batch, output tags, a sequence mask over the input batch,
@@ -245,7 +246,8 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     else:
         return f
                 
-def train_model(model, tokenizer, train_dataset, eval_dataset, tag2id, device, args, max_grad_norm = 1.0):
+def train_model(model, tokenizer, train_dataset, eval_dataset, tag2id, 
+                        device, args, max_grad_norm = 1.0):
      dl = DataLoader(train_dataset, batch_size = args.batch_size, shuffle = True)
      best_model = args.output_dir + "best_model.pt" if args.output_dir.endswith("/") else args.output_dir + "/best_model.pt"
      print(model.config)
