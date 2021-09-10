@@ -51,9 +51,9 @@ def print_statistics(result_df, method):
     print(f'f1: {f1}')
 
 
-def print_document_text(entity_id, dcc_dir):
+def get_document_text(entity_id, dcc_dir, predictions=None, print_text=True):
     """
-    Print a document from the DCC dataset based on entity ID
+    Print and return a document from the DCC dataset based on entity ID
     """
     entity_id_split = entity_id.split('_')
     document_name = entity_id_split[0]
@@ -61,8 +61,17 @@ def print_document_text(entity_id, dcc_dir):
     end = int(entity_id_split[2])
     document_type = document_name[0:2]
 
+    # Print text
     text_path = dcc_dir / document_type / f'{document_name}.txt'
     with open(text_path, 'r') as text_file:
         text = text_file.read()
-    print(text)
-    print(f'Entity: {text[start: end]} ({start}-{end})')
+        
+    if print_text:
+        print(text)
+        print(f'Entity: {text[start: end]} ({start}-{end})\n')
+        # Print result 
+        if predictions is not None:
+            print(predictions[predictions.entity_id == entity_id])
+        
+    # Also return text, start and stop for downstream analysis
+    return text, start, end
