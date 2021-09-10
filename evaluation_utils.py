@@ -1,17 +1,38 @@
 import pandas as pd
+import medspacy
 
 
 def predict_negations(annotations, method, model):
     """
     Based on MedCAT trainer JSON format, predict negations.
     """
+    nlp = medspacy.load(disable=['medspacy_target_matcher', 'medspacy_context'])
+    print('ja')
     result = []
     for document in annotations['projects'][0]['documents']:
         document_name = document['name']
-        text = document['text']
+        full_text = document['text']
+
+        # Create sentence list to iterate independently from annotations
+        sent_list = []
+        doc = nlp(full_text)
+        for sent in doc.sents:
+            sent_list.append((sent.text, sent.start_char, sent.end_char))
+
+        # First sentence
+        sentence_iterator = 0
+        text, sent_start_char, sent_end_char = sent_list[sentence_iterator]
+
         for annotation in document['annotations']:
-            start = annotation['start']
-            end = annotation['end']
+            # Next sentence
+            while  annotation['start'] >= sent_end_char:
+                sentence_iterator += 1
+                text, sent_start_char, sent_end_char = sent_list[sentence_iterator]
+
+            # Correct start and end for sentence splitting
+            start = annotation['start'] - sent_start_char
+            end = annotation['end'] - sent_start_char
+
             negation = annotation['meta_anns']['Negation']['value']
             if method == 'bilstm':
                 prediction = model.predict_one(text, start, end)
@@ -69,7 +90,7 @@ def get_document_text(entity_id, dcc_dir, predictions=None, print_text=True):
     if print_text:
         print(text)
         print(f'Entity: {text[start: end]} ({start}-{end})\n')
-        # Print result 
+        # Print result
         if predictions is not None:
             print(predictions[predictions.entity_id == entity_id])
         
