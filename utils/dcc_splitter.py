@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-from sklearn.model_selection import ShuffleSplit
+from sklearn.model_selection import KFold
 from pathlib import Path
 import argparse
 import json
@@ -11,7 +11,6 @@ DEFAULT_DCC_DIR = Path('../data/EMCDutchClinicalCorpus')
 DEFAULT_OUTPUT_DIR = Path('../data')
 DEFAULT_SKIP_FILE = Path('DCC_files_to_exclude.json')
 DEFAULT_N_SPLITS = 10
-DEFAULT_TRAIN_SIZE = 0.9
 DEFAULT_RANDOM_STATE = 1524513
 
 
@@ -34,15 +33,14 @@ def get_dcc_names(dcc_dir: Path = DEFAULT_DCC_DIR,
 
 def shuffle_split_files(dcc_names: list,
                         n_splits: int = DEFAULT_N_SPLITS,
-                        train_size: float = DEFAULT_TRAIN_SIZE,
                         random_state: int = DEFAULT_RANDOM_STATE):
 
     # Shuffle & split files in train and test
     dcc_names = np.array(dcc_names)
-    rs = ShuffleSplit(n_splits=n_splits, train_size=train_size, random_state=random_state)
+    kf = KFold(n_splits=n_splits, shuffle=True, random_state=random_state)
     split_id = 0
     split_list = []
-    for train, test in rs.split(dcc_names):
+    for train, test in kf.split(dcc_names):
         split_list.append({'split_id': split_id,
                            'train': dcc_names[train].tolist(),
                            'test': dcc_names[test].tolist()})
@@ -63,9 +61,9 @@ def write_splits(split_list: list,
         json.dump(split_list, fp)
 
 
-def main(dcc_dir, output_dir, skip_file, n_splits, train_size, random_state):
+def main(dcc_dir, output_dir, skip_file, n_splits, random_state):
     dcc_names = get_dcc_names(dcc_dir, skip_file)
-    split_list = shuffle_split_files(dcc_names, n_splits, train_size, random_state)
+    split_list = shuffle_split_files(dcc_names, n_splits, random_state)
     write_splits(split_list, output_dir)
 
 
@@ -75,7 +73,6 @@ if __name__ == "__main__":
     parser.add_argument('--output_dir', type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument('--skip_file', type=Path, default=DEFAULT_SKIP_FILE)
     parser.add_argument('--n_splits', type=int, default=DEFAULT_N_SPLITS)
-    parser.add_argument('--train_size', type=float, default=DEFAULT_TRAIN_SIZE)
     parser.add_argument('--random_state', type=int, default=DEFAULT_RANDOM_STATE)
     args = parser.parse_args()
-    main(args.dcc_dir, args.output_dir, args.skip_file, args.n_splits, args.train_size, args.random_state)
+    main(args.dcc_dir, args.output_dir, args.skip_file, args.n_splits, args.random_state)
