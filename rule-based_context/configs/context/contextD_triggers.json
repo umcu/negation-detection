@@ -479,7 +479,6 @@
     {"category": "HYPOTHETICAL", "literal": "als toevalsbevinding", "pattern": null, "direction": "PSEUDO"},
     {"category": "HISTORICAL", "literal": "eerder al", "pattern": null, "direction": "FORWARD"},
     {"category": "NEGATED_EXISTENCE", "literal": "geen aanwijzingen voor", "pattern": null, "direction": "FORWARD"},
-    {"category": "NEGATED_EXISTENCE", "literal": "geen aanwijzingen voor een", "pattern": null, "direction": "FORWARD"},
     {"category": "NEGATED_EXISTENCE", "literal": "\\(negatief\\)", "pattern": null, "direction": "BACKWARD"},
     {"category": "NEGATED_EXISTENCE", "literal": "zonder tekenen van", "pattern": null, "direction": "FORWARD"},
     {"category": "NEGATED_EXISTENCE", "literal": "zijn er niet", "pattern": null, "direction": "BACKWARD"},
@@ -494,6 +493,6 @@
     {"category": "NEGATED_EXISTENCE", "literal": "niet typisch", "pattern": null, "direction": "PSEUDO"},
     {"category": "NEGATED_EXISTENCE", "literal": "niet aanwezig", "pattern": null, "direction": "BACKWARD"},
     {"category": "NEGATED_EXISTENCE", "literal": "niet kunnen aantonen", "pattern": null, "direction": "BACKWARD"},
-    {"category": "NEGATED_EXISTENCE", "literal": "niet bekend met", "pattern": null, "direction": "FORWARD"}                  
+    {"category": "NEGATED_EXISTENCE", "literal": "niet bekend met", "pattern": null, "direction": "FORWARD"}                   
   ]
 }
