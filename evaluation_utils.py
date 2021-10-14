@@ -1,4 +1,5 @@
 import pandas as pd
+from IPython.core.display import display, HTML
 
 
 def predict_negations(annotations, method, model):
@@ -50,8 +51,7 @@ def print_statistics(result_df, method):
     print(f'accuracy: {accuracy}')
     print(f'f1: {f1}')
 
-
-def get_document_text(entity_id, dcc_dir, predictions=None, print_text=True):
+def get_document_text(entity_id, dcc_dir, predictions=None, print_text=True, print_html=True):
     """
     Print and return a document from the DCC dataset based on entity ID
     """
@@ -66,8 +66,24 @@ def get_document_text(entity_id, dcc_dir, predictions=None, print_text=True):
     with open(text_path, 'r') as text_file:
         text = text_file.read()
         
+    def pretty_print(txt, start, end):
+        """
+        Print a string in html, with part of it highlighted
+        """
+        snippet = txt[start:end]
+    
+        def highlight(snippet):
+            blob = f"<text>{snippet}</text>"
+            blob = f"<mark style='background-color: #fff59d'>{blob}</mark>"
+            return blob
+    
+        display(HTML((''.join((txt[:start], highlight(snippet), txt[end:], '<br>')))))
+
     if print_text:
-        print(text)
+        if print_html:
+            pretty_print(text, start, end)
+        else:
+            print(text)
         print(f'Entity: {text[start: end]} ({start}-{end})\n')
         # Print result 
         if predictions is not None:
