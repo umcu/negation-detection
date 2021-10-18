@@ -2,39 +2,14 @@ import pandas as pd
 from IPython.core.display import display, HTML
 
 
-def predict_negations(annotations, method, model):
-    """
-    Based on MedCAT trainer JSON format, predict negations.
-    """
-    result = []
-    for document in annotations['projects'][0]['documents']:
-        document_name = document['name']
-        text = document['text']
-        for annotation in document['annotations']:
-            start = annotation['start']
-            end = annotation['end']
-            negation = annotation['meta_anns']['Negation']['value']
-            if method == 'bilstm':
-                prediction = model.predict_one(text, start, end)
-            elif method == 'rule_based':
-                print(f'{method}-method not implemented')
-            elif method == 'roberta':
-                print(f'{method}-method not implemented')
-            else:
-                print(f'{method}-method not implemented')
-
-            result.append([f'{document_name}_{start}_{end}', negation, prediction])
-    return pd.DataFrame(result, columns=['entity_id', 'annotation', method])
-
-
-def print_statistics(result_df, method):
+def print_statistics(results, method):
     """
     Calculate statistics
     """
-    tp = result_df[(result_df.annotation == 'negated') & (result_df[method] == 'negated')].shape[0]
-    tn = result_df[(result_df.annotation == 'not negated') & (result_df[method] == 'not negated')].shape[0]
-    fp = result_df[(result_df.annotation == 'not negated') & (result_df[method] == 'negated')].shape[0]
-    fn = result_df[(result_df.annotation == 'negated') & (result_df[method] == 'not negated')].shape[0]
+    tp = results[(results.label == 'negated') & (results[method] == 'negated')].shape[0]
+    tn = results[(results.label == 'not negated') & (results[method] == 'not negated')].shape[0]
+    fp = results[(results.label == 'not negated') & (results[method] == 'negated')].shape[0]
+    fn = results[(results.label == 'negated') & (results[method] == 'not negated')].shape[0]
     recall = round(tp / (tp + fn), 2)
     precision = round(tp / (tp + fp), 2)
     specificity = round(tn / (tn + fp), 2)
