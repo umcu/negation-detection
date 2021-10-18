@@ -1,5 +1,6 @@
 jupyterlab==3.0.16
 medspacy==0.1.0.2
+spacy==2.3.5
 https://github.com/explosion/spacy-models/releases/download/nl_core_news_sm-2.3.0/nl_core_news_sm-2.3.0.tar.gz#egg=nl_core_news_sm
 seaborn==0.11.2
 scikit-learn==0.24.2
