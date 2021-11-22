@@ -376,6 +376,8 @@ def train_model(model, tokenizer, train_dataset, eval_dataset, tag2id,
 
      if args.do_eval:
         return model, loss_eval_history
+     else:
+        return model, None
                 
      
 
