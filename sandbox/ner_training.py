@@ -295,7 +295,7 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     
     
     if return_pred:
-        return f, preds_list, out_label_list
+        return f, precision, recall, preds_list, out_label_list
     else:
         return f, precision, recall
                 
