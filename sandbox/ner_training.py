@@ -229,7 +229,7 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     Computes loss and f1 score given dataset
     """
     
-    dl = DataLoader(eval_dataset, batch_size = args.batch_size)
+    dl = DataLoader(eval_dataset, batch_size = args.batch_size, shuffle=False)
     model.eval()
     pad_token_label_id = CrossEntropyLoss().ignore_index
     preds, out_label_ids = None, None
