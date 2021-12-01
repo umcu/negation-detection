@@ -2,7 +2,7 @@
 """
 Created on Thu May  6 09:14:50 2021
 
-@author: Bas.Arends
+@author: Bas.Arends, Bram van Es
 """
 
 import os
@@ -35,7 +35,7 @@ def get_dataset(textfiles, labelfiles, nrs):
         neg = [0] * len(text)
         tem = [0] * len(text)
         exp = [0] * len(text)
-        labels = labels.split('\n')
+        labels = labels.('\n')
         
         for line in labels:
             if line == '': continue
