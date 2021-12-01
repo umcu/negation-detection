@@ -114,7 +114,7 @@ class TextDatasetFromDataFrame(Dataset):
                 labels = [row[2]+'-'+row[4] if row[2] != 'O' else 'O' for row in lines]
             elif args.task=='temporality':
                 labels = [row[2]+'-'+row[5] if row[2] != 'O' else 'O' for row in lines]
-            
+
             if len(sentence) > 0:
                 if len(tokenizer.tokenize(' '.join(sentence))) <= args.block_size - 2:
                     self.data.append(' '.join(sentence))
@@ -139,6 +139,8 @@ class TextDatasetFromDataFrame(Dataset):
                             length = 0
                             sub_sentence, sub_labels = [], []
                             break
+                
+                
 
     def __len__(self):
         return len(self.data)
