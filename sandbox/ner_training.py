@@ -104,6 +104,7 @@ class TextDatasetFromDataFrame(Dataset):
     def __init__(self, df, tokenizer, args):
         self.data = []
         self.y  = []
+        self.ids = []
         
         for id in df.Id.unique():
             lines = df[df.Id == id].values
@@ -114,11 +115,13 @@ class TextDatasetFromDataFrame(Dataset):
                 labels = [row[2]+'-'+row[4] if row[2] != 'O' else 'O' for row in lines]
             elif args.task=='temporality':
                 labels = [row[2]+'-'+row[5] if row[2] != 'O' else 'O' for row in lines]
+            _ids = [row[0]+'_'+row[6]+'_'+row[7] if row[2] != 'O' else 'O' for row in lines]
 
             if len(sentence) > 0:
                 if len(tokenizer.tokenize(' '.join(sentence))) <= args.block_size - 2:
                     self.data.append(' '.join(sentence))
                     self.y.append(' '.join(labels))
+                    self.ids.append(' '.join(_ids))
                 else:
                     length = 0
                     sub_sentence, sub_labels = [], []
@@ -136,9 +139,12 @@ class TextDatasetFromDataFrame(Dataset):
                         else:
                             self.data.append(' '.join(sub_sentence))
                             self.y.append(' '.join(sub_labels))
+                            self.ids.append(' '.join(sub_labels))
                             length = 0
                             sub_sentence, sub_labels = [], []
                             break
+                
+                
                 
                 
 
