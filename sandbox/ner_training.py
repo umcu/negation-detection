@@ -139,7 +139,7 @@ class TextDatasetFromDataFrame(Dataset):
                         else:
                             self.data.append(' '.join(sub_sentence))
                             self.y.append(' '.join(sub_labels))
-                            self.ids.append(' '.join(sub_labels))
+                            self.ids.append(' '.join(_ids))
                             length = 0
                             sub_sentence, sub_labels = [], []
                             break
@@ -152,7 +152,7 @@ class TextDatasetFromDataFrame(Dataset):
         return len(self.data)
 
     def __getitem__(self, idx):
-        return self.data[idx], self.y[idx]
+        return self.data[idx], self.y[idx], self.ids[idx]
 
 def create_batch(sentences, labels, tag2id, device, 
                     tokenizer, model_type, max_len, word_dropout=0.):
@@ -244,9 +244,10 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     id2tag = {v: k for k, v in tag2id.items()}
     
     with torch.no_grad():
-        for sents, labs in dl:
+        for sents, labs, ids in dl:
             
-            x_in, y, seq_mask = create_batch(sents, labs, tag2id, device, tokenizer, args.model_type, args.block_size)
+            x_in, y, seq_mask = create_batch(sents, labs, tag2id, device, tokenizer, 
+                                             args.model_type, args.block_size)
             scores = model(x_in, attention_mask = seq_mask, labels = y)[1]
             scores = scores.detach().cpu().numpy()
             #label_ids = y.to('cpu').numpy()
@@ -261,12 +262,14 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     preds = np.argmax(preds, axis = 2)
     out_label_list = [[] for _ in range(out_label_ids.shape[0])]
     preds_list = [[] for _ in range(out_label_ids.shape[0])]
+    id_list = [[] for _ range(ids)]
     
     for i in range(out_label_ids.shape[0]):
         for j in range(out_label_ids.shape[1]):
             if out_label_ids[i,j] != pad_token_label_id:
                 out_label_list[i].append(id2tag[out_label_ids[i][j]])
                 preds_list[i].append(id2tag[preds[i][j]])
+                ids[i].append(ids[i][j])
     
     f = f1_score(out_label_list, preds_list)
     precision = precision_score(out_label_list, preds_list)
@@ -303,7 +306,7 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     
     
     if return_pred:
-        return f, precision, recall, preds_list, out_label_list
+        return f, precision, recall, preds_list, out_label_list, ids
     else:
         return f, precision, recall
                 
@@ -336,7 +339,7 @@ def train_model(model, tokenizer, train_dataset, eval_dataset, tag2id,
          tr_loss = 0
          epoch_examples, epoch_steps = 0, 0
          
-         for sents, labs in tqdm(dl, desc="Epoch %i" % epoch_num, position=0, leave=True):
+         for sents, labs, _ in tqdm(dl, desc="Epoch %i" % epoch_num, position=0, leave=True):
              # set model in training mode and create batch
              model.train()
              x_in, y, seq_mask = create_batch(sents, labs, tag2id, device, tokenizer, args.model_type, args.block_size)
