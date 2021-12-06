@@ -11,6 +11,7 @@ import torch
 import codecs
 import argparse
 import numpy as np
+from torch._C import JITException
 
 from torch.nn import CrossEntropyLoss
 from torch.utils.data import Dataset, DataLoader
@@ -139,7 +140,7 @@ class TextDatasetFromDataFrame(Dataset):
                         else:
                             self.data.append(' '.join(sub_sentence))
                             self.y.append(' '.join(sub_labels))
-                            self.ids.append(' '.join(_ids))
+                            self.ids.append(' '.join(_ids[:i]))
                             length = 0
                             sub_sentence, sub_labels = [], []
                             break
@@ -154,7 +155,7 @@ class TextDatasetFromDataFrame(Dataset):
     def __getitem__(self, idx):
         return self.data[idx], self.y[idx], self.ids[idx]
 
-def create_batch(sentences, labels, tag2id, device, 
+def create_train_batch(sentences, labels, tag2id, device, 
                     tokenizer, model_type, max_len, word_dropout=0.):
     """
     Converts a list of sentences to a padded batch of word ids. Returns
@@ -163,7 +164,8 @@ def create_batch(sentences, labels, tag2id, device,
 
     :param sentences: a list of sentences, each a list of token ids
     :param labels: a list of outputs
-    :param tag2id: ids for the tags
+    :param tag2id: ids for the tags (e.g. 'O', 'B-PER', 'I-PER')
+    :param ids: ids for the labels (e.g. 'O', 'DL1323_31_40', 'DL1323_50_60')
     :param device:
     :param tokenizer:
     :param model_type:
@@ -182,13 +184,13 @@ def create_batch(sentences, labels, tag2id, device,
     
     # Get pad id's
     pad_id = tokenizer.convert_tokens_to_ids([tokenizer.pad_token])[0]    
+    # What the flying fuckaroo is going on here?
     pad_token_label_id = CrossEntropyLoss().ignore_index
 
     # Get label id's based on tags
     label_ids = []
     for labs, s  in zip(tags_, sentences):
         sent_labels = []
-        
         words = s.split()
         for i in range(len(labs)):
             # roberta tokenizes the first token differently than others
@@ -198,14 +200,13 @@ def create_batch(sentences, labels, tag2id, device,
             else:
                 tokens = tokenizer.tokenize(words[i])
 
-            
             try:
                 label_id = tag2id[labs[i]]
             except KeyError:
                 label_id = pad_token_label_id
 
             sent_labels.extend([label_id] + [pad_token_label_id] * (len(tokens) - 1))
-        
+
         label_ids.append([pad_token_label_id] + sent_labels + [pad_token_label_id])
 
     # Pad input and labels, create attention masks
@@ -232,6 +233,101 @@ def create_batch(sentences, labels, tag2id, device,
 
     return batch_input, batch_output, seq_mask
 
+
+def create_eval_batch(sentences, labels, ids, tag2id, device, 
+                    tokenizer, model_type, max_len, word_dropout=0.):
+    """
+    Converts a list of sentences to a padded batch of word ids. Returns
+    an input batch, output tags, a sequence mask over the input batch,
+    and a tensor containing the sequence length of each batch element.
+
+    :param sentences: a list of sentences, each a list of token ids
+    :param labels: a list of outputs
+    :param tag2id: ids for the tags (e.g. 'O', 'B-PER', 'I-PER')
+    :param ids: ids for the labels (e.g. 'O', 'DL1323_31_40', 'DL1323_50_60')
+    :param device:
+    :param tokenizer:
+    :param model_type:
+    :param max_len:
+    :param word_dropout: rate at which we omit words from the context (input)
+
+    :returns: a batch of padded inputs, a batch of outputs, mask, lengths
+    """
+
+    # Tokenize input sentences
+    tok = [[tokenizer.bos_token] + tokenizer.tokenize(sen) + [tokenizer.eos_token]  for sen in sentences]
+    input_ids = [tokenizer.convert_tokens_to_ids(x) for x in tok]
+
+    # Split tags    
+    tags_ = [l.split() for l in labels]
+    ids = [l.split() for l in ids]
+    
+    # Get pad id's
+    pad_id = tokenizer.convert_tokens_to_ids([tokenizer.pad_token])[0]    
+    # What the flying fuckaroo is going on here?
+    pad_token_label_id = CrossEntropyLoss().ignore_index
+
+    # Get label id's based on tags
+    label_ids = []
+    true_ids = []
+    for labs, s, _ids  in zip(tags_, sentences, ids):
+        sent_labels = []
+        lab_ids = [] 
+        words = s.split()
+        for i in range(len(labs)):
+            # roberta tokenizes the first token differently than others
+            if i != 0 and model_type == 'roberta':
+                # add arbitrary token that will be not be split into multiple tokens and ignore it
+                tokens = tokenizer.tokenize(". " + words[i])[1:]
+            else:
+                tokens = tokenizer.tokenize(words[i])
+
+            try:
+                label_id = tag2id[labs[i]]
+            except KeyError:
+                label_id = pad_token_label_id
+
+            sent_labels.extend([label_id] + [pad_token_label_id] * (len(tokens) - 1))
+            lab_ids.extend([_ids[i]] + [pad_token_label_id] * (len(tokens) - 1))
+
+        label_ids.append([pad_token_label_id] + sent_labels + [pad_token_label_id])
+        true_ids.append([pad_token_label_id] + lab_ids + [pad_token_label_id])
+
+
+    # Pad input and labels, create attention masks
+    attention_masks = []
+    for i in range(len(input_ids)):
+        assert len(input_ids[i]) == len(label_ids[i]), f"Length of inputs and labels differs. \
+                                                        Inputs:{input_ids[i]}, Labels: {label_ids[i]}"
+        assert len(input_ids[i]) <= max_len, len(input_ids[i])
+        attention_mask = [1] * len(input_ids[i])
+        while len(input_ids[i]) < max_len:
+            input_ids[i].append(pad_id)
+            label_ids[i].append(pad_token_label_id)
+            true_ids[i].append(pad_token_label_id)
+            attention_mask.append(0)
+        attention_masks.append(attention_mask)
+
+    try:
+        assert len(input_ids) == len(label_ids) == len(true_ids)
+    except AssertionError:
+        print(f"input len: {len(input_ids)}, label len: {len(label_ids)}, true ids len: {len(true_ids)}")
+        raise
+    
+    # Convert everything to PyTorch tensors.
+    batch_input = torch.tensor(input_ids)
+    batch_output = torch.tensor(label_ids)
+    seq_mask = torch.tensor(attention_masks)
+    #batch_ids = torch.tensor(true_ids)
+
+    # Move all tensors to the given device.
+    batch_input = batch_input.to(device)
+    batch_output = batch_output.to(device)
+    seq_mask = seq_mask.to(device)
+    #batch_ids = batch_ids.to(device)
+
+    return batch_input, batch_output, seq_mask, true_ids
+
 def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred = False):
     """
     Computes loss and f1 score given dataset
@@ -242,11 +338,12 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     pad_token_label_id = CrossEntropyLoss().ignore_index
     preds, out_label_ids = None, None
     id2tag = {v: k for k, v in tag2id.items()}
-    
+    ids = []
+
     with torch.no_grad():
-        for sents, labs, ids in dl:
+        for sents, labs, _ids in dl:
             
-            x_in, y, seq_mask = create_batch(sents, labs, tag2id, device, tokenizer, 
+            x_in, y, seq_mask, batch_ids = create_eval_batch(sents, labs, _ids, tag2id, device, tokenizer, 
                                              args.model_type, args.block_size)
             scores = model(x_in, attention_mask = seq_mask, labels = y)[1]
             scores = scores.detach().cpu().numpy()
@@ -255,22 +352,35 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
             if preds is None:
                 preds = scores
                 out_label_ids = y.detach().cpu().numpy()
+                ids.extend(batch_ids)
             else:
                 preds = np.append(preds, scores, axis = 0)
                 out_label_ids = np.append(out_label_ids, y.detach().cpu().numpy(), axis = 0)
-                
+                ids.extend(batch_ids)    
+
     preds = np.argmax(preds, axis = 2)
     out_label_list = [[] for _ in range(out_label_ids.shape[0])]
     preds_list = [[] for _ in range(out_label_ids.shape[0])]
-    id_list = [[] for _ range(ids)]
+    id_list = [[] for _ in range(len(ids))]
     
+    try:
+        assert len(preds) == len(out_label_ids) == len(ids)
+    except AssertionError:
+        print(f"preds len: {len(preds)}, out_label_ids len: {len(out_label_ids)}, ids len: {len(ids)}")
+
     for i in range(out_label_ids.shape[0]):
         for j in range(out_label_ids.shape[1]):
             if out_label_ids[i,j] != pad_token_label_id:
                 out_label_list[i].append(id2tag[out_label_ids[i][j]])
                 preds_list[i].append(id2tag[preds[i][j]])
-                ids[i].append(ids[i][j])
-    
+                try:
+                    id_list[i].append(ids[i][j])
+                except IndexError:
+                    print("IndexError:", i, j, len(ids[i]), len(preds[i]))
+                    print("-"*50)
+                    print(ids[i])
+                    print(preds[i])
+                    raise
     f = f1_score(out_label_list, preds_list)
     precision = precision_score(out_label_list, preds_list)
     recall = recall_score(out_label_list, preds_list)
@@ -306,7 +416,7 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     
     
     if return_pred:
-        return f, precision, recall, preds_list, out_label_list, ids
+        return f, precision, recall, preds_list, out_label_list, id_list
     else:
         return f, precision, recall
                 
@@ -342,7 +452,7 @@ def train_model(model, tokenizer, train_dataset, eval_dataset, tag2id,
          for sents, labs, _ in tqdm(dl, desc="Epoch %i" % epoch_num, position=0, leave=True):
              # set model in training mode and create batch
              model.train()
-             x_in, y, seq_mask = create_batch(sents, labs, tag2id, device, tokenizer, args.model_type, args.block_size)
+             x_in, y, seq_mask = create_train_batch(sents, labs, tag2id, device, tokenizer, args.model_type, args.block_size)
              
              # forward and backward pass
              loss = model(x_in, attention_mask = seq_mask, labels = y)[0]
