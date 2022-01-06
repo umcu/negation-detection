@@ -8,7 +8,7 @@ negation-detection
 └───data               : input data (not git tracked)
 └───models             : model output files (not git tracked)
 └───results            : result files (used for comparing between different methods)
-└───RoBERTa            : RoBERTa code
+└───robbert            : robbert code
 └───rule-based_context : rule based code
 └───sandbox            : test notebooks
 └───utils              : code for general (pre-)processing
