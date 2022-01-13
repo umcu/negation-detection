@@ -116,22 +116,33 @@ class TextDatasetFromDataFrame(Dataset):
                 labels = [row[2]+'-'+row[4] if row[2] != 'O' else 'O' for row in lines]
             elif args.task=='temporality':
                 labels = [row[2]+'-'+row[5] if row[2] != 'O' else 'O' for row in lines]
+
             _ids = [row[0]+'_'+row[6]+'_'+row[7] if row[2] != 'O' else 'O' for row in lines]
 
             if len(sentence) > 0:
-                if len(tokenizer.tokenize(' '.join(sentence))) <= args.block_size - 2:
+                if len(tokenizer.tokenize(' '.join(sentence))) <= (args.block_size - 2):
                     self.data.append(' '.join(sentence))
                     self.y.append(' '.join(labels))
+
                     self.ids.append(' '.join(_ids))
                 else:
+                    '''
+                        sentence is longer than block size, we now append until the blocksize is reached
+                    '''
                     length = 0
                     sub_sentence, sub_labels = [], []
+                    j = 0
+                    i_old=0
+                    # list( zip( *[sentences[i::args.block_size-buffer] for i in range(args.block_size)]))
                     for i in range(len(sentence)):
-                        if i != 0 and args.model_type == 'roberta':
+                        if j != 0 and args.model_type == 'roberta':
                             # add arbitrary token that will be not be split into multiple tokens and ignore it
+                            # for the love  of god and all that is good and merry, WTF is going on here??
                             tokens = tokenizer.tokenize(". " + sentence[i])[1:]
                         else:
                             tokens = tokenizer.tokenize(sentence[i])
+
+                        j = j + 1
                         
                         if length + len(tokens) <= (args.block_size - 2) and i != len(sentence):
                             sub_sentence.append(sentence[i])
@@ -140,13 +151,16 @@ class TextDatasetFromDataFrame(Dataset):
                         else:
                             self.data.append(' '.join(sub_sentence))
                             self.y.append(' '.join(sub_labels))
-                            self.ids.append(' '.join(_ids[:i]))
+                            self.ids.append(' '.join(_ids[i_old:i]))
+
+                            j = 0
+                            # reset back several iterations, use iterator
+                            i_old=i
                             length = 0
                             sub_sentence, sub_labels = [], []
-                            break
-                
-                
-                
+                            #break
+
+                            
                 
 
     def __len__(self):
@@ -198,7 +212,7 @@ def create_train_batch(sentences, labels, tag2id, device,
                 # add arbitrary token that will be not be split into multiple tokens and ignore it
                 tokens = tokenizer.tokenize(". " + words[i])[1:]
             else:
-                tokens = tokenizer.tokenize(words[i])
+                tokens = tokenizer.tokenize(words[i])            
 
             try:
                 label_id = tag2id[labs[i]]
@@ -219,6 +233,7 @@ def create_train_batch(sentences, labels, tag2id, device,
             input_ids[i].append(pad_id)
             label_ids[i].append(pad_token_label_id)
             attention_mask.append(0)
+        
         attention_masks.append(attention_mask)
     
     # Convert everything to PyTorch tensors.
@@ -332,7 +347,7 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
     """
     Computes loss and f1 score given dataset
     """
-    
+
     dl = DataLoader(eval_dataset, batch_size = args.batch_size, shuffle=False)
     model.eval()
     pad_token_label_id = CrossEntropyLoss().ignore_index
@@ -352,6 +367,7 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
             if preds is None:
                 preds = scores
                 out_label_ids = y.detach().cpu().numpy()
+
                 ids.extend(batch_ids)
             else:
                 preds = np.append(preds, scores, axis = 0)
@@ -373,6 +389,7 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
             if out_label_ids[i,j] != pad_token_label_id:
                 out_label_list[i].append(id2tag[out_label_ids[i][j]])
                 preds_list[i].append(id2tag[preds[i][j]])
+
                 try:
                     id_list[i].append(ids[i][j])
                 except IndexError:
@@ -449,6 +466,7 @@ def train_model(model, tokenizer, train_dataset, eval_dataset, tag2id,
          tr_loss = 0
          epoch_examples, epoch_steps = 0, 0
          
+
          for sents, labs, _ in tqdm(dl, desc="Epoch %i" % epoch_num, position=0, leave=True):
              # set model in training mode and create batch
              model.train()
