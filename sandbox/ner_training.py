@@ -120,20 +120,29 @@ class TextDatasetFromDataFrame(Dataset):
             _ids = [row[0]+'_'+row[6]+'_'+row[7] if row[2] != 'O' else 'O' for row in lines]
 
             if len(sentence) > 0:
-                if len(tokenizer.tokenize(' '.join(sentence))) <= args.block_size - 2:
+                if len(tokenizer.tokenize(' '.join(sentence))) <= (args.block_size - 2):
                     self.data.append(' '.join(sentence))
                     self.y.append(' '.join(labels))
 
                     self.ids.append(' '.join(_ids))
                 else:
+                    '''
+                        sentence is longer than block size, we now append until the blocksize is reached
+                    '''
                     length = 0
                     sub_sentence, sub_labels = [], []
+                    j = 0
+                    i_old=0
+                    # list( zip( *[sentences[i::args.block_size-buffer] for i in range(args.block_size)]))
                     for i in range(len(sentence)):
-                        if i != 0 and args.model_type == 'roberta':
+                        if j != 0 and args.model_type == 'roberta':
                             # add arbitrary token that will be not be split into multiple tokens and ignore it
+                            # for the love  of god and all that is good and merry, WTF is going on here??
                             tokens = tokenizer.tokenize(". " + sentence[i])[1:]
                         else:
                             tokens = tokenizer.tokenize(sentence[i])
+
+                        j = j + 1
                         
                         if length + len(tokens) <= (args.block_size - 2) and i != len(sentence):
                             sub_sentence.append(sentence[i])
@@ -142,11 +151,16 @@ class TextDatasetFromDataFrame(Dataset):
                         else:
                             self.data.append(' '.join(sub_sentence))
                             self.y.append(' '.join(sub_labels))
+                            self.ids.append(' '.join(_ids[i_old:i]))
 
-                            self.ids.append(' '.join(_ids[:i]))
+                            j = 0
+                            # reset back several iterations, use iterator
+                            i_old=i
                             length = 0
                             sub_sentence, sub_labels = [], []
-                            break
+                            #break
+
+                            
                 
 
     def __len__(self):
@@ -219,6 +233,7 @@ def create_train_batch(sentences, labels, tag2id, device,
             input_ids[i].append(pad_id)
             label_ids[i].append(pad_token_label_id)
             attention_mask.append(0)
+        
         attention_masks.append(attention_mask)
     
     # Convert everything to PyTorch tensors.
