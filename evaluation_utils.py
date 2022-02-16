@@ -26,7 +26,7 @@ def print_statistics(results, method):
     print(f'accuracy: {accuracy}')
     print(f'f1: {f1}')
 
-def get_document_text(entity_id, dcc_dir, predictions=None, print_text=True, print_html=True):
+def get_document_text(entity_id, dcc_dir, predictions=None, print_text=True, print_html=True, obfuscate_entity=False):
     """
     Print and return a document from the DCC dataset based on entity ID
     """
@@ -63,6 +63,10 @@ def get_document_text(entity_id, dcc_dir, predictions=None, print_text=True, pri
         # Print result 
         if predictions is not None:
             print(predictions[predictions.entity_id == entity_id])
+            
+    if obfuscate_entity:
+        # replace the entity with '[ENT]'
+        text = text[:start] + '[ENT]' + text[end:]
         
     # Also return text, start and stop for downstream analysis
     return text, start, end
