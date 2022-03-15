@@ -5,22 +5,22 @@ Geen aanwijzingen voor shin splints.
 In rust na inspanning was de druk binnen 1 minuut weer normaal, hetgeen pleit tegen een chronisch [ENT].
 Conclusie: Geen aanwijzingen voor compartimentsyndroom.
 "
-DL1250_22_35,annotation_error,"Familie-anamnese voor [ENT] is negatief.
+DL1250_22_35,ambiguous,"Familie-anamnese voor [ENT] is negatief.
 Bevalling geschiedde in stuitligging.
 Nu blijkt bij controle toch een heupdysplasie rechts te zijn.
 Revisie van de rontgenfoto's uit #City# toont op 02-10-1995 goed gecentreerde heupen en op 15-11-1995 een scheef liggend bekken, met een milde heupdysplasie rechts.
 Advies: Ik heb de heupdysplasie behandeld met een #City#-abductie spalk.
 "
-DL1472_317_323,uncertainty,"Anamnese: #Name# was ons bekend met een heupdysplasie in het verre verleden.
+DL1472_317_323,speculation,"Anamnese: #Name# was ons bekend met een heupdysplasie in het verre verleden.
 Zij heeft af en toe wat rugpijn tussen de schouderbladen en vooral bij lichamelijke aktiviteit.
 De rug is recht, toont geen scoliose, maar heeft wel wat ronding in de thoracale wervelkolom.
 Rontgenonderzoek: Geen afwijkingen passend bij de [ENT] van #Name#.
 "
-DL1587_58_68,uncertainty,"Patient heeft geen duidelijke klachten van tranenvloed of [ENT].
+DL1587_58_68,speculation,"Patient heeft geen duidelijke klachten van tranenvloed of [ENT].
 scleral show met oedeem van onder- en bovenoogleden.
 Er is geen duidelijk ectropion aanwezig.
 "
-DL1615_76_84,uncertainty,"Op 26-11-1995 liep patient tijdens het voetballen een knieletsel rechts op.
+DL1615_76_84,speculation,"Op 26-11-1995 liep patient tijdens het voetballen een knieletsel rechts op.
 [ENT] zou niet zijn opgetreden, maar gedurende enkele weken was de knie niet goed te strekken.
 Bij onderzoek toont de rechter knie een geringe hydrops en is er een geringe strekbeperking.
 De MRI toont een midsubstance voorste kruisbandruptuur en een ruptuur in de ahcterhoorn van de mediale meniscus.
@@ -31,13 +31,13 @@ Er is een zeer discrete scoliose convex naar links thoracolumbaal.
 X-thoracolumbale wervelkolom d.d. 17.01.1996: geen scoliose van betekenis.
 Conclusie: Geen scoliose van betekenis.
 "
-DL1642_192_201,uncertainty,"Anamnese: #Name# is via het consultatiebureau en huisarts ingestuurd onder verdenking van een klompvoet.
+DL1642_192_201,speculation,"Anamnese: #Name# is via het consultatiebureau en huisarts ingestuurd onder verdenking van een klompvoet.
 Er zijn meer dan 3 huidplooien zichtbaar t.h.v. de achillespees, wat niet past bij een [ENT].
 Bij inspectie is er tevens een geringe, soepele, metatarsus adductus en een metatarsus primus varus.
 Conclusie: Soepele metatarsus adductus in combinatie met metatarsus primus varus.
 Geen aanwijzingen voor een klompvoet.
 "
-DL1802_76_90,uncertainty,"De ellebogen vertonen geen opvallende zwelling.
+DL1802_76_90,speculation,"De ellebogen vertonen geen opvallende zwelling.
 De provocatietesten voor de [ENT] zijn negatief.
 Naast de linker radiuskop mogelijk een klein corpus liberum.
 Diagnose: Arthrose ellebogen bdz.
@@ -85,7 +85,7 @@ li oor een loopoor, pus in gehoorgang, oorlel licht schilferend, keel spoortje r
 dyspnoe- ziek- helder en alert.
 gezien lange duur loopoor koorts en rode keel nu een kuur, oor vet houden, als geen verbetering binnen 48 uur retour, eerder als zieker.
 "
-GP1489_43_48,annotation_error,"oorontsteking.vriend na 1,5 jaar weg.witte [ENT] niet geweest
+GP1489_43_48,ambiguous,"oorontsteking.vriend na 1,5 jaar weg.witte [ENT] niet geweest
 "
 GP1542_45_51,minus,"Nog steeds wat groen sputum opgeven.Benauwd-.[ENT]-.Eten/drinken ok.
 Beleid:cozaar naar 100 mg.Onder dig 3 nagel een wat dik randje.O/lijkt een oude blaar te zijn.
@@ -116,7 +116,7 @@ Crohn aften in keel
 "
 GP2480_53_59,annotation_error,"NB Mw. heeft nooit een klacht gehad die paste bij de [ENT].
 "
-GP2567_126_137,annotation_error,"moe hangerig soms misselijk en hoofdpijn KNO gb; longen en hart gb Lever en milt np PEF 210 maar niet goed geblazen ; klieren [ENT] exp
+GP2567_126_137,ambiguous,"moe hangerig soms misselijk en hoofdpijn KNO gb; longen en hart gb Lever en milt np PEF 210 maar niet goed geblazen ; klieren [ENT] exp
 "
 GP2595_16_23,minus,"neusverkouden-, [ENT]-, spugen sinds vannacht, diarree-.
 "
@@ -128,7 +128,7 @@ GP2636_91_101,minus,"oren gb, nystagmus-, RR 140/80 sedert 2 weken licht gevoel 
 "
 GP2639_25_32,uncommon_negation,"uricult negatief uricult [ENT], tel #LongNumber#
 "
-GP2693_45_54,uncertainty,"VT:gda  zou vleesboom hebben,geen duidelijke [ENT] palpabel
+GP2693_45_54,speculation,"VT:gda  zou vleesboom hebben,geen duidelijke [ENT] palpabel
 "
 GP2759_61_71,minus,"IMIPRAMINI HCL 25MG DRAGEE 1 vesp doorgaan voelt zich beter, [ENT]-, vrolijker; co 1mnd
 "
@@ -154,7 +154,7 @@ GP2833_24_30,minus,"voelt zich niet lekker, [ENT]-, moe> vraagt of ze vanmiddag 
 "
 GP2854_29_35,minus,"OMA links MK; loopoor links, [ENT]-, wel jengelig, oorpijn gehad, lijkt nu mee te vallen AS bruinige pus in gehoorgang, TV bdz niet a vue
 "
-GP3020_71_77,uncertainty,"Alzheimer, ziek, pijn liezen, plassen gaat moeilijk, incontinent, wit, [ENT] niet bekend, agressief,Volgens echtgenote en patient gaat het niet lekker.
+GP3020_71_77,speculation,"Alzheimer, ziek, pijn liezen, plassen gaat moeilijk, incontinent, wit, [ENT] niet bekend, agressief,Volgens echtgenote en patient gaat het niet lekker.
 Bil:roodheid irritatie, nu nog geen wond.
 "
 GP3051_29_40,other,"Boc; bij bevolkingsonderzoek [ENT] zijn geen afw gevonden
@@ -183,11 +183,11 @@ Conclusie: Genezen [ENT].
 "
 RD1553_16_23,other,"CONCLUSIE: GEen [ENT] of plaquevorming.
 "
-RD1590_267_277,uncertainty,"Vreemd gevoel rechter lichaamshelft.
+RD1590_267_277,speculation,"Vreemd gevoel rechter lichaamshelft.
 Intracerebraal worden geen afwijkingen gezien, geen aanwijzingen voor metastasen, Wel wordt een aantal subcutane laesies gezien in het vetweefsel zowel rechts hoog parieto-occipitaal, links parieto-occipitaal en links occipitaal.
 [ENT] lijken minder waarschijnlijk.
 "
-RD1591_60_74,uncertainty,"Moeheid e.c.i.
+RD1591_60_74,speculation,"Moeheid e.c.i.
 Longmetastasen bekend.
 085002 Thorax: Zekere [ENT] worden niet gezien.
 Het CT-onderzoek waarop de longmetastasen echter zouden zijn aangetoond, is een gevoeliger methode.
@@ -198,15 +198,15 @@ Nergens wandverdikking van de tractus digestivus, slechts hier en daar een klein
 "
 RD1606_37_48,other,"Het toentertijd bilateraal aanwezige [ENT] is nu verdwenen.
 "
-RD1608_79_88,uncertainty,"STATUSNUMMER : 0597669   Vraagstelling : tumor linker tonsil, geopereerd.
+RD1608_79_88,ambiguous,"STATUSNUMMER : 0597669   Vraagstelling : tumor linker tonsil, geopereerd.
 Voor [ENT] verdachte veranderingen worden niet gezien m.n.
 "
-RD1619_111_122,uncertainty,"Nog hooguit minimaal afronding van de rechts laterale sinus, verder geen aanwijzing meer voor pleuravocht.
+RD1619_111_122,speculation,"Nog hooguit minimaal afronding van de rechts laterale sinus, verder geen aanwijzing meer voor pleuravocht.
 Het [ENT] rechts lijkt geheel verdwenen.
 Geen ileus.
 Geen tekenen van ileus.
 "
-RD1629_180_194,uncertainty,"KLINISCHE INFORMATIE Ureterletsel in '95 links bij gynaecologische operatie.
+RD1629_180_194,speculation,"KLINISCHE INFORMATIE Ureterletsel in '95 links bij gynaecologische operatie.
 B.BUIK    387070 Depots van kleine partikels in de galblaas; eigenlijk te klein voor de echte diagnose [ENT].
 "
 RD1673_11_24,uncommon_negation,"Niet apert [ENT].
@@ -222,7 +222,7 @@ Het beeld past niet primair bij een [ENT].
 "
 RD1888_19_24,uncommon_negation,"Geen voor recidief [ENT] verdachte laesies t.p.v. het operatie litteken.
 "
-RD1951_365_372,uncertainty,"VRAAGSTELLING Meniscusdegeneratie of scheur?
+RD1951_365_372,speculation,"VRAAGSTELLING Meniscusdegeneratie of scheur?
 ~@@~ ECHO KNIE L. 389470L Geen aanwijzingen voor #Name# cyste of ganglion.
 Geen parameningeale cyste aanwijsbaar.
 Geen evidente aanwijzingen voor meniscusruptuur in de periferie, echter is echografie van de knie onvoldoende betrouwbaar om meniscus rupturen uit te sluiten.
@@ -251,10 +251,10 @@ VRAAGSTELLING Controle ileus?
 1R 387001 In vergelijk met opnamen van 15-01-1997 is er een ongewijzigd beeld van een afwezigheid van [ENT].
 CONCLUSIE Geen tekenen van ileus.
 "
-RD2245_197_206,uncertainty,"Beeld kan passen bij chronische subluxatie; arthritis kan niet worden uitgesloten.
+RD2245_197_206,speculation,"Beeld kan passen bij chronische subluxatie; arthritis kan niet worden uitgesloten.
 De botstructuur van het acromion is ietwat onregelmatig, doch meer sclerotisch dan lytisch zodat voor een actieve [ENT] op dit moment geen sprake lijkt.
 "
-RD2259_108_116,annotation_error,"Hoog thoracaal is een corpus vertebrale wat wolkerig verdicht doch dit rechtvaardigt nog niet zondermeer de [ENT] botmetastasen van een mammaca.
+RD2259_108_116,speculation,"Hoog thoracaal is een corpus vertebrale wat wolkerig verdicht doch dit rechtvaardigt nog niet zondermeer de [ENT] botmetastasen van een mammaca.
 "
 RD2560_200_233,scope,"KLINISCHE INFORMATIE: Pijn in de bovenbuik en misselijkheid.
 VRAAGSTELLING: Cholelithiasis?
@@ -312,7 +312,7 @@ Hij is bekend met diabetes mellitus en als medicatie wordt Metformine, Atacand, 
 Conclusie Psoriasis vulgaris.
 Daarnaast bestaat er een kleine kans op een Methotrexaat pneumonitis.
 "
-SP1364_13_24,annotation_error,"vrdacht voor [ENT] gevonden.
+SP1364_13_24,speculation,"vrdacht voor [ENT] gevonden.
 "
 SP1375_11_19,uncommon_negation,"Hospital#, [ENT] SEROLOGIE HIV as 0.2 (negatief) <0.9 ratio
 "
@@ -337,7 +337,7 @@ SP1486_95_104,other,"serologie Klinische gegevens hoest > 4 weken INFECTIE SEROL
 "
 SP1486_147_156,uncommon_negation,"serologie Klinische gegevens hoest > 4 weken INFECTIE SEROLOGIE Materiaal serumpaar 1e serum B.pertussis (kinkhoest) IgG as 7 (negatief) <9 U/ml B.[ENT] (kinkhoest) IgA as 3 (negatief) <9 U/ml Autorisatie- Geen aanwijzingen voor een recente infectie met Bordetella ( kinkhoest ).
 "
-SP1517_663_676,annotation_error,"Verwiizer en reden verwijzing: U verwees pati�nte voor diagnostiek en behandeling in verband met depressieve klachten en vermagering.
+SP1517_663_676,scope,"Verwiizer en reden verwijzing: U verwees pati�nte voor diagnostiek en behandeling in verband met depressieve klachten en vermagering.
 behoefte te hebben aan praktische ondersteuning in haar moederrol en eventueel di�tiste voor voedingsadvies t.b.v. gewichtstoename; meer dan aan gespreksen/of medicamenteuze behandeling.
 DSM IV classificatie (voorlopig) As I  dysthyme stoornis, code 300.4
 As II  geen diagnose, code V71.09 As III lichamelijk klachten e.c.i.
@@ -392,7 +392,7 @@ Deze was negatief voor de groei van [ENT].
 "
 SP1784_114_122,other,"Betreft: Neu [O]#Name#:Vermoeidheidsklachten zonder aanwyzin gen voor een myopathie of een #Name# Eaton Myastheen [ENT] by aanvullend onderzoek.
 "
-SP1786_131_136,uncertainty,"Internist, Diagnosen behandelend specialist bij ontslag: Buikpijn en rectaal bloedverlies.
+SP1786_131_136,speculation,"Internist, Diagnosen behandelend specialist bij ontslag: Buikpijn en rectaal bloedverlies.
 Coloscopie: IBD beeld, niet evident een [ENT] of Colitis Ulcerosa, biopten genomen.
 Differentiaal diagnostisch kan nog gedacht worden aan ischemie van de darmen.
 De patiente is op de hoogte van de diagnose.

@@ -3,14 +3,14 @@ DL1147_255_262,annotation_error,"Een zusje van #Name# is elders operatief behand
 Bij onderzoek van de knie geen hydrops of atrofie.
 Conclusie: Neiging tot subluxatie van patella beiderzijds naar lateraal, zonder dat er ooit werkelijk een [ENT] heeft plaatsgevonden.
 "
-DL1391_27_33,annotation_error,"Een omschreven voorafgaand [ENT] kan niet worden aangegeven.
+DL1391_27_33,speculation,"Een omschreven voorafgaand [ENT] kan niet worden aangegeven.
 Aan het rechter bovenbeen 2 cm atrofie.
 Staand lijkt er een genu valgum van circa 15` te bestaan, deels is dit schijnbaar door voornoemde flexiecontractuur.
 Beeldvormende diagnostiek: X-rechter knie + arthrogram d.d. 09-10-1995: laterale meniscuslaesie.
 Conclusie en beleid: Laterale meniscuslaesie rechter knie, tevens genu valgum.
 Patient is op de opnamelijst geplaatst voor arthroscopisch/chirurgische ingreep in dagbehandeling.
 "
-DL1401_304_312,annotation_error,"Anamnese: Medio 1995 kreeg patiente wat last van beide heupen en zij merkte ook een zwelling aan de achterzijde van de heupen op.
+DL1401_304_312,speculation,"Anamnese: Medio 1995 kreeg patiente wat last van beide heupen en zij merkte ook een zwelling aan de achterzijde van de heupen op.
 Onderzoek: Er bestond beiderzijds, rechts meer dan links, een zwelling in het gebied van de gluteus en trochanter, over een lengte van rechts 12 cm en links 7 cm.
 Een zekere [ENT] kon niet gesteld worden.
 "
@@ -29,7 +29,7 @@ De consultatie van de internist, waarvan u een schrijven ontving, liet geen ande
 Patient vertelt nu toch van de gynaecomastie af  te willen, omdat er geen verandering zichtbaar is.
 Bij lichamelijk onderzoek zien wij een duidelijke gynaecomastie, links erger dan rechts, welke goed afgrensbaar is van de borstspier.
 "
-DL1608_72_85,uncertainty,"Tijdens arthroscopie bleek er sprake van een synovitis.
+DL1608_72_85,speculation,"Tijdens arthroscopie bleek er sprake van een synovitis.
 Geen opvallende [ENT].
 Deze toonden een aspecifieke ontstekingsreactie.
 "
@@ -42,12 +42,12 @@ Revisie rontgenonderzoek: De elders vervaardigde rontgenopnamen tonen een eviden
 Dit is niet typisch voor een osteoid [ENT].
 Patient werd geadviseerd om de quadriceps te oefenen, af te vallen en met een kruk te gaan lopen.
 "
-DL1773_579_594,annotation_error,"De diagnose werd gesteld op een instabiele wervelfractuur van L1, waarvoor bedrust resp.
+DL1773_579_594,ambiguous,"De diagnose werd gesteld op een instabiele wervelfractuur van L1, waarvoor bedrust resp.
 In 1986 en 1987 werd patient enkele malen op onze polikliniek gezien, in verband met rugklachten bij een posttraumatische angulaire kyfose na een wervelfractuur L1 (waarvoor hij ook in het #Hospital# lag).
 d.d. 02-01-1996, 06-01-1996 en CT 02-01-1996 (#Hospital#): beeld van oude fractuur van L1 met locale kyfose van ruim 30`, zonder aanwijzingen voor bijkomende letsels van een recentere datum.
 Conclusie en advies: Het rugletsel van januari 1996 heeft geen aanleiding gegeven tot nieuwe [ENT].
 "
-DL1775_454_461,uncertainty,"Vanaf oktober 1994 heb ik de behandeling van dit crushletsel van de rechter hand met luxaties op carpometacarpaal niveau en een fractuur van de basisphalanx van de wijsvinger en van metacarpale III overgenomen.
+DL1775_454_461,speculation,"Vanaf oktober 1994 heb ik de behandeling van dit crushletsel van de rechter hand met luxaties op carpometacarpaal niveau en een fractuur van de basisphalanx van de wijsvinger en van metacarpale III overgenomen.
 Hij werd op 25 juli 1995 opnieuw geopereerd, waarbij de loop via het oude litteken werd opgelicht en van het surplus subcutaan vet werd ontdaan.
 Tenslotte werd ter hoogte van de aangegeven neuroomklachten geexploreerd, waarbij geen duidelijke [ENT] aangetroffen werd.
 Er blijkt een ruptuur te zijn ontstaan van de extensor van de vijfde straal, zodat reexploratie noodzakelijk is op 29 juli 1995.
@@ -66,7 +66,7 @@ Ook bij doorlichting kon er geen duidelijke luxatie worden opgewekt.
 Conclusie: er is bij patiente sprake van een carpaal tunnel syndroom links, mogelijk reactief.
 Een duidelijke diagnose wat er nu precies aan de hand is met de linker duim hebben we nog niet.
 "
-DL1868_1750_1758,annotation_error,"Zoals bij u bekend heeft patiente een status na arthrodese van MCP I links, tenolyse van de extensor pollicis longus over het IP-gewricht en een Eaton Littler stabilisatie plastiek m.b.v. een deel van de flexor carpi radialis i.v.m. een luxatie van het CMC I-gewricht.
+DL1868_1750_1758,scope,"Zoals bij u bekend heeft patiente een status na arthrodese van MCP I links, tenolyse van de extensor pollicis longus over het IP-gewricht en een Eaton Littler stabilisatie plastiek m.b.v. een deel van de flexor carpi radialis i.v.m. een luxatie van het CMC I-gewricht.
 Patiente had hierna een goed resultaat verkregen, echter in de ochtend van 8 januari, tijdens het wegzetten van de stofzuigerslang, voelde zij een plotselinge knap aan de dorsale zijde over het metacarpale I, met vanaf dat moment een pijnlijke zwelling t.p.v. de basis van het metacarpale I en een onvermogen tot abductie van de linker duim.
 Er is een rode huidverkleuring over het dorsum van metacarpale I en over het CMC-gewricht.
 In de differentiaal diagnose staat een ruptuur van de abductus pollicis longus of een fractuur of fissuur van het metacarpale I of een arthritis van het CMC-gewricht.
@@ -91,7 +91,7 @@ Er zijn geen aanwijzingen voor het bestaan van een liesbreuk.
 Beeldvormende diagnostiek: Echografie: een echo-arme zwelling van de adductor longus pees insertie links.
 Diagnose: Insertietendinitis adductor longus pees links.
 "
-DL2026_83_99,uncertainty,"Opname indikatie: Burstfractuur L2 zonder neurologische uitvalsverschijn- selen en [ENT] na auto-ongeval.
+DL2026_83_99,ambiguous,"Opname indikatie: Burstfractuur L2 zonder neurologische uitvalsverschijn- selen en [ENT] na auto-ongeval.
 "
 GP1526_54_69,other,"veel hoofdpijn mn links frontaal.
 koorts soms.
@@ -172,7 +172,7 @@ Sindsdien valneiging en dysartrie.
 VRAAGSTELLING Cerebellair infarct?
 Geen oorzaak van [ENT] zichtbaar.
 "
-RD1687_97_117,annotation_error,"KLINISCHE INFORMATIE : Pre operatieve analayse bij cataract o.k.
+RD1687_97_117,speculation,"KLINISCHE INFORMATIE : Pre operatieve analayse bij cataract o.k.
 De tumormassa oogt niet als een [ENT], doch heeft meer een maligne aspekt.
 Geen overtuigende botmetastasen zichtbaar.
 "
@@ -180,17 +180,17 @@ RD1737_264_280,negation_of_different_term,"KLINISCHE INFORMATIE Stekend gevoel v
 VT geringe prolaps.
 De abdominale aorta is niet te beoordelen, er is nogal wat lucht in de buik en het blijkt niet mogelijk de druk op de bovenbuik uit te oefenen door een [ENT].
 "
-RD1850_24_32,uncertainty,"Nog geen definitieve PA-[ENT] verkregen.
+RD1850_24_32,speculation,"Nog geen definitieve PA-[ENT] verkregen.
 Zoals vorige maal een grote massa dorsaal in de linker bovenkwab met centrale holte en hier omheen enkele kleine andere haarden.
 Er is ook een aanduiding van kleine holte op image 17.
 In de grote holte is een hoeveelheid vloeistof aanwezig.
 "
-RD2001_111_121,annotation_error,"~@@~ CT SCHEDEL   081042 Plannings-CT hersenen: Aankleurende tumor binnen het voor bestraling geplande volume.
+RD2001_111_121,speculation,"~@@~ CT SCHEDEL   081042 Plannings-CT hersenen: Aankleurende tumor binnen het voor bestraling geplande volume.
 [ENT] erbuiten worden niet gezien.
 "
-RD2009_28_41,annotation_error,"Wat #Name#, doch niet apert [ENT].
+RD2009_28_41,speculation,"Wat #Name#, doch niet apert [ENT].
 "
-RD2031_132_137,uncertainty,"Kleine hoeveelheid pleuravocht bdz.
+RD2031_132_137,speculation,"Kleine hoeveelheid pleuravocht bdz.
 In de onderbuik wat onscherpe begrenzing van de vaginatop, echter geen duidelijke voor recidief [ENT] verdachte laesie.
 "
 RD2177_31_38,other,"Geen ossale pathologie behalve [ENT].
@@ -211,7 +211,7 @@ De mediale meniscus toont geen aanwijzing voor ruptuur.
 RD2200_75_85,negation_of_different_term,"KLINISCHE INFORMATIE Onregelmatige menses.
 CONCLUSIE: Geen verklaring voor [ENT].
 "
-RD2240_60_74,annotation_error,"~@@~ THORAX    2R 385002 Toch wat #Name# hart zonder aperte [ENT].
+RD2240_60_74,speculation,"~@@~ THORAX    2R 385002 Toch wat #Name# hart zonder aperte [ENT].
 "
 RD2271_590_598,negation_of_different_term,"tumor linker mamma postoperatief geduid als hematoom.
 VRAAGSTELLING : Diagnose status quo?
@@ -223,17 +223,17 @@ KONKLUSIE : Zeker geen afname van fors [ENT] terwijl caudaal in de linker mamma.
 RD2444_79_89,other,"KLINISCHE INFORMATIE: Retroperitoneale fibrose met funktionele mononier links.
 [ENT] is daarvan dus niet te begrijpen.
 "
-RD2457_249_255,uncertainty,"Lymfoedeem?
+RD2457_249_255,speculation,"Lymfoedeem?
 Er is geen oedeem.
 Op de TIRM sterk T2 gewogen serie wordt er aan de mediale zijde van het bovenbeen links tussen de spiermassa en de subcutus een smal gebied van verhoogde signaal gezien, dit past bij enig vocht maar niet duidelijk bij [ENT].
 "
-RD2513_439_444,annotation_error,"KLINISCHE INFORMATIE : M.Crohn.
+RD2513_439_444,ambiguous,"KLINISCHE INFORMATIE : M.Crohn.
 Uitgebreidheid en ernst m.Crohn?
 Het neo-terminale ileum toont een afwijkend aspekt over een gebied van ongeveer 10cm waarbij helemaal distaal op de overgang naar het colon een duidelijke stenose is met een maximale diameter van krap 1cm, gemeten op de foto, ongecorrigeerd.
 De lengte van de fistel bedraagt ongeveer 3cm, niet gecorrigeerd voor vergrotingsfaktor.
 Verder geen aanwijzingen voor activiteit m.[ENT].
 "
-RD2557_205_216,annotation_error,"KLINISCHE INFORMATIE: Bekend met blindheid door papil en macula-oedeem.
+RD2557_205_216,speculation,"KLINISCHE INFORMATIE: Bekend met blindheid door papil en macula-oedeem.
 VRAAGSTELLING: Infiltraten, pleurareactie, thymoom?
 ~@@~ THORAX    2R 385002   Ondiepe sinus frenicocostalis bilateraal zonder apert [ENT].
 "
@@ -253,7 +253,7 @@ SP1283_35_45,annotation_error,"Regionaal : Geen aanwijzingen voor [ENT].
 "
 SP1303_56_64,negation_of_different_term,"Oog [O] Mouches voulante OD, in fundo: geen afwijkingen [ENT] ODS, VOD/S: 0,6
 "
-SP1362_335_355,annotation_error,"Anamnese: Patient heeft vooral klachten van neusobstructie sinds ca. 20 jaar.
+SP1362_335_355,ambiguous,"Anamnese: Patient heeft vooral klachten van neusobstructie sinds ca. 20 jaar.
 Patient heeft geen klachten van de longen, geen klachten van hoesten.
 Hiermee is de post-nasal drip verminderd, de neusobstructie klachten echter niet.
 Flexibele scopie: wat erythemateus slijmvlies beiderzijds, geen poliepen.
@@ -302,7 +302,7 @@ Zij weten niet of ze een Down syndroom zwangerschap zouden afbreken en zullen de
 "
 SP1601_42_52,minus,"cellen aangetroffen O 9 : Niet-specifieke [ENT] gezien P 1 : Geen afwijkende plaveiselepitheelcellen A 1 : Geen andere afwijkingen C 1 : Geen afwijkingen van endocerv.
 "
-SP1753_93_99,uncertainty,"Waarneming: Hap [O] (S) Hr veel pijn in zijn nek, kan zijn hoofd niet draaien, is verkouden, [ENT] niet gemeten.
+SP1753_93_99,speculation,"Waarneming: Hap [O] (S) Hr veel pijn in zijn nek, kan zijn hoofd niet draaien, is verkouden, [ENT] niet gemeten.
 "
 SP1789_22_32,minus,"O 9 : Niet-specifieke [ENT] gezien.
 "
