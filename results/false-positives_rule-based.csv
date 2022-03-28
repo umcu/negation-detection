@@ -1,0 +1,337 @@
+entity_id;pattern;category_rule_based;category;trigger
+DL1147_255_262;Zonder dat […] ENT heeft plaatsgevonden;annotation error - actually negated;annotation error;
+DL1184_760_766;niet hetzelfde is als ENT;missing pseudo trigger;speculation;niet hetzelfde
+DL1188_212_217;niet voldoende genezend ENT;missing pseudo trigger;speculation;niet voldoende
+DL1188_222_235;niet voldoende genezend ENT;missing pseudo trigger;speculation;niet voldoende
+DL1219_127_141;geen […], wel ENT;missing termination trigger;scope;wel
+DL1235_201_214;geen […], status na ENT;scope;scope;geen
+DL1242_98_106;geen […], zeker niet omdat er ook een ENT is;scope;scope;geen
+DL1249_226_239;omdat hij niet past en omdat ENT;scope;scope;niet
+DL1265_399_412;geen klachten van […], zodat klachten van patient wel zijn te verklaren op basis van aangetoonde ENT;missing termination trigger;scope;wel
+DL1268_138_146;niet veel klachten, doch […] ENT;missing termination trigger;scope;doch
+DL1269_88_96;Patient kan zonder brace niets doen […] sprake van ENT;scope;scope;zonder
+DL1271_104_111;geen medicijnen gebruikt en ENT;scope;scope;geen
+DL1338_54_62;klaagt niet over pijn, bekend met ENT;scope;scope;niet
+DL1339_221_232;geen verbetering […], […] ENT;scope;scope;geen
+DL1364_492_500;ENT zal verminderen en de […] verdwenen zullen zijn of in ieder geval minder klachten zullen geven;wrong modality;wrong modality;verdwenen
+DL1390_280_288;alhoewel er geen pijnklachten zijn is er wel een ENT;missing termination trigger;scope;wel
+DL1410_165_171;Pijnklachten zonder dat deze in verband kunnen worden gebracht met ENT;no negation of noun;negation of different term;zonder
+DL1414_76_82;Geen zwelling meer aanwezig, niet samenhangt met ENT;no negation of noun;negation of different term;geen
+DL1426_178_185;In verleden ENT verwijderd waarbij klachten verdwenen zijn;scope;scope;verdwenen
+DL1446_114_122;geen functionele beperkingen van het ENT;negation of different term;negation of different term;geen
+DL1455_331_347;Het merkwaardige is dat ik geen patiënten ken met ENT;negation of different term;negation of different term;geen
+DL1545_21_29;ENT, die met NSAID-gebruik was verdwenen;wrong modality;wrong modality;verdwenen
+DL1604_107_115;Rookt niet en gebruikt medicijn i.v.m. ENT;wrong direction;other;niet
+DL1607_574_582;geen relatie tussen […] en ENT;negation of different term;negation of different term;geen
+DL1608_72_85;geen opvallende ENT;missing pseudo trigger;speculation;geen opvallende
+DL1635_388_402;niet geheel typisch voor een ENT;missing pseudo trigger;speculation;niet geheel typisch
+DL1667_151_160;zonder te verwachten ENT;annotation error - actually negated;annotation error;
+DL1673_355_363;zodra de ENT is verdwenen;wrong modality;wrong modality;verdwenen
+DL1759_504_512;Bij follow-up bleek dat er geen fistel ontstond en dat de ENT opgeklaard is;scope;scope;geen
+DL1765_455_462;zonder klachten, waarna klachten van ENT;missing termination trigger;scope;waarna
+DL1765_484_489;zonder klachten, waarna klachten van ENT;missing termination trigger;scope;waarna
+DL1771_172_186;geen aanwijzingen voor […], wel mogelijk een ENT ;missing termination trigger;scope;wel
+DL1773_579_594;geen aanleiding tot nieuwe ENT;negation of different term;negation of different term;geen
+DL1775_454_461;geen duidelijke ENT;missing pseudo trigger;speculation;geen duidelijke
+DL1794_422_427;niet in combinatie met de ENT;no negation of noun;negation of different term;niet
+DL1810_224_231;tot de ENT verdwenen is;wrong modality;wrong modality;verdwenen
+DL1817_87_95;geen aanwijzingen voor […], behoudens een ENT;missing termination trigger;scope;behoudens
+DL1842_298_306;Geen klachten over het gehoor en ook moeder die hetzelfde ENT heeft hoort goed;scope;scope;geen
+DL1891_189_204;geen heupdysplasie en beelden suggestief voor een ENT;scope;scope;geen
+DL2007_591_599;Dat hij het gelaat niet erg passend vind bij een ENT;speculation;speculation;niet erg passend
+DL2026_83_99;zonder neurologische uitvalsverschijnselen en ENT na auto-ongeval;scope;scope;zonder
+DL2055_417_435;geen hydrops, noch veranderingen passend bij ENT;negation of different term;negation of different term;noch
+GP1131_14_20;lukt niet ook ENT;missing termination trigger;scope;ook
+GP1132_126_132;Geen tekenen, […] ENT;scope;scope;geen
+GP1155_152_160;"geen […]; ENT";list;scope;geen
+GP1176_380_385;dit had geen effect op de ENT;negation of different term;negation of different term;geen
+GP1191_73_80;bij geen verbetering maandag terugbellen ENT;negation of different term;negation of different term;geen
+GP1211_92_98;geen vergrote lnn viraal lwi met ENT;Scope;scope;geen
+GP1212_44_51;geen pijn meer […], wel ENT;missing termination trigger;scope;wel
+GP1219_43_52;geen wonden, wel ENT;missing termination trigger;scope;wel
+GP1242_147_165;weet niet of ze snel ademt wrs ENT;no negation of noun;negation of different term;niet
+GP1264_192_203;milt niet vergroot, […], ENT;scope;scope;niet
+GP1264_204_210;milt niet vergroot, […], ENT;scope;scope;niet
+GP1264_253_263;geen buikpijn ENT op been;scope;scope;geen
+GP1284_38_45;geen uitslag, ENT;list;scope;geen
+GP1284_46_53;geen uitslag, ENT;list;scope;geen
+GP1295_121_127;geen hoesten, ENT;list;scope;geen
+GP1308_101_111;lijkt er niet echt last van te hebben, ENT;negation of different term;negation of different term;niet
+GP1308_144_154;lijkt er niet echt last van te hebben, ENT;negation of different term;negation of different term;niet
+GP1352_40_45;geen klachten, ENT;list;scope;geen
+GP1398_29_34;geen […] risico, ENT;list;scope;geen
+GP1400_86_94;augmentin voor ENT niet gebruikt;no negation of noun;negation of different term;niet
+GP1408_109_117;lukt niet […] ENT;scope;scope;niet
+GP1408_121_130;lukt niet […] ENT;scope;scope;niet
+GP1419_37_45;geen koorts, ENT;list;scope;geen
+GP1420_141_150;somber maar niet in gezelschap, zeker ook ENT;scope;scope;niet
+GP1445_101_107;geen rhonchi ENT;scope;scope;geen
+GP1445_114_125;geen […], veel ENT;scope;scope;geen
+GP1455_26_31;niet beter, ENT nog;negation of different term;negation of different term;niet
+GP1508_81_91;niet gemeten, ENT;negation of different term;negation of different term;niet
+GP1508_92_100;niet gemeten, […] ENT;negation of different term;negation of different term;niet
+GP1520_133_147;gebruikt nu geen alcohol, […], ENT;scope;scope;geen
+GP1546_125_133;geen koorts, […] ENT;list;scope;geen
+GP1549_382_390;niet misselijk […] Continue ENT;scope;scope;niet
+GP1549_406_412;niet misselijk […] Continue […] ENT;scope;scope;niet
+GP1583_63_71;geen […] ivm ENT;negation of different term;negation of different term;geen
+GP1604_71_79;niet ziek geen temp, wel […], ENT;missing termination trigger;scope;wel
+GP1610_48_55;PM X thorax indien niet over […] ENT;negation of different term;negation of different term;niet
+GP1615_225_235;geen palp eetlust goed, ENT;list;scope;geen
+GP1620_98_105;geen afwijkingen ENT;scope;scope;geen
+GP1624_105_115;moe zonder inspanningsintolerantie, […], […], ENT;list;scope;zonder
+GP1646_155_160;geen slijm, ENT;list;scope;geen
+GP1646_174_180;geen slijm, […], ENT;list;scope;geen
+GP1687_81_87;weet niet of dit ENT is;no negation of noun;negation of different term;niet
+GP1700_16_24;Enkel pijnlijk, ENT deel weg;speculation;speculation;weg
+GP1720_78_94;geen lens. […] ENT, […], zonder lens klachten over, nu niet;scope;scope;geen
+GP1720_223_231;nu niet wat opp ENT;no negation of noun;negation of different term;niet
+GP1722_68_84;geen […], nu bloeduitstorting;scope;scope;geen
+GP1727_20_25;oor loopt niet meer ENT;no negation of noun;negation of different term;niet
+GP1729_162_169;hoop dat er geen ENT gaat ontstaan;wrong modality;wrong modality;geen
+GP1755_89_101;geen pijn […], nu ENT;scope;scope;geen
+GP1778_90_98;geen keelpijn en/of slikpijn ENT;scope;scope;geen
+GP1781_76_84;Geen alarmsignalen, lijkt minder te worden, ENT, wel minder als afgelopen dinsdag;list;scope;geen
+GP1791_94_102;kan er niet door werken soms, ENT;no negation of noun;negation of different term;niet
+GP1804_100_109;die niet reageert opt […] ENT;no negation of noun;negation of different term;niet
+GP1838_24_32;geen koorts, ENT;list;scope;niet
+GP1838_36_43;geen koorts, […] ENT;list;scope;niet
+GP1840_148_156;geen luizenb te zien, […], […], […] ENT?;scope;scope;geen
+GP1845_201_210;geen abn weerst, […], ENT;scope;scope;geen
+GP1848_74_83;geen dyspnoe wel net ENT gehad;missing termination trigger;scope;wel
+GP1860_92_107;niet rood ENT;negation of different term;negation of different term;niet
+GP1870_55_65;zonder meed veel last van ENT;negation of different term;negation of different term;zonder
+GP1873_92_101;verder geen bijz, […] veel ENT;scope;scope;geen
+GP1873_115_126;verder geen bijz, […], ook ENT;scope;scope;geen
+GP1895_166_174;geen harde diagnose, […], ENT;scope;scope;geen
+GP1895_180_189;geen harde diagnose, […], […], ENT;scope;scope;geen
+GP1896_184_192;geen spasme, […], […], had ENT zonder zuur (wel gehad);missing termination trigger;scope;wel
+GP1912_114_119;pijn niet op te wekken dd/ENT;no negation of noun;negation of different term;niet
+GP1985_77_88;wil niet naar school ENT;no negation of noun;negation of different term;niet
+GP1986_114_119;is er nog niet uit gehaald, […], […], […] ENT;negation of different term;negation of different term;niet
+GP2031_96_102;Urticaria (tegen pleit geen jeuk)/ENT?;scope;scope;geen
+GP2047_117_126;Weet niet of ze een ENT heeft gehad;no negation of noun;negation of different term;niet
+GP2055_43_50;geen afwijking, belt zelf voor ENT;scope;scope;geen
+GP2057_172_177;weinig ENT, geen onderbuikspijn;no negation of noun;negation of different term;niet
+GP2066_325_331;geen ronghi […] ENT;scope;scope;geen
+GP2090_26_32;geen bijzondere klachten, ENT is idem;scope;scope;geen
+GP2124_149_156;geen intrekkingen wel ENT;missing termination trigger;scope;wel
+GP2147_88_95;komt niet los, ENT;negation of different term;negation of different term;niet
+GP2157_23_30;niet minder ENT;missing pseudo trigger;speculation;niet minder
+GP2157_59_66;niet minder ENT […], […] ook ENT;missing pseudo trigger;speculation;niet minder
+GP2157_75_86;niet minder ENT […], […] ook […] tijdens ENT;missing pseudo trigger;speculation;niet minder
+GP2158_60_71;niet gemotiveerd om iets aan bloeddruk en ENT te doen;negation of different term;negation of different term;niet
+GP2158_189_200;niet gemotiveerd om iets aan bloeddruk en ENT te doen;negation of different term;negation of different term;niet
+GP2225_34_43;temp niet gemeten , ENT;negation of different term;negation of different term;niet
+GP2228_75_84;niet ziek, […], ENT […], ENT;scope;scope;niet
+GP2257_169_178;pcmol genomen verder niet, heeft ENT;no negation of noun;negation of different term;niet
+GP2257_197_205;pcmol genomen verder niet, […], overal en beetje ENT;no negation of noun;negation of different term;niet
+GP2263_66_82;overdag geen last, ook last van ENT;scope;scope;geen
+GP2263_280_287;niet ziek, […], ENT;scope;scope;niet
+GP2268_144_153;lijkt niet […], op ENT;annotation error - actually negated;annotation error;
+GP2283_201_208;geen na school soms even naar bed ENT;annotation error - actually negated;annotation error;
+GP2286_20_28;huid verbetert niet ENT;negation of different term;negation of different term;niet
+GP2304_157_164;niet ziek, wel ENT;scope;scope;niet
+GP2321_221_229;geen HVZ in familie, ENT;scope;scope;geen
+GP2339_0_11;ENT is weg;annotation error - actually negated;annotation error;
+GP2343_123_129;ivm niet tesamen met ENT;negation of different term;negation of different term;niet
+GP2359_101_109;niet benauwd, ENT;scope;scope;niet
+GP2360_265_272;fys wil voorlopig niet behandelen, ENT;negation of different term;negation of different term;niet
+GP2378_276_294;toen geen klachten, ENT;scope;scope;geen
+GP2411_98_109;geen slagpijn paracetamol, mob ogv pijn ENT;scope;scope;geen
+GP2419_19_24;dus zonder twijfel ENT;negation of different term;negation of different term;zonder
+GP2428_60_68;geen diarree, wel ENT;missing termination trigger;scope;wel
+GP2432_167_175;portio niet a vue te krijgen door verhoogde ENT;negation of different term;negation of different term;niet
+GP2432_200_207;portio niet a vue te krijgen door […] dd ENT;scope;scope;niet
+GP2432_209_237;portio niet a vue te krijgen door […], ENT;scope;scope;niet
+GP2475_177_188;niet misselijk, wel ENT;missing termination trigger;scope;wel
+GP2484_46_53;wrat op arm weg,onder borst nog niet controle ENT;no negation of noun;negation of different term;niet
+GP2501_36_44;voelt zich sinds febr niet zo goed, ENT;scope;scope;niet
+GP2522_150_156;niet radiculair last van de neus veel ENT;negation of different term;negation of different term;niet
+GP2526_66_73;geen duidelijke verlenging benauwd, ENT vol;scope;scope;geen
+GP2549_36_43;zonder resultaat, ook af en toe wat ENT;scope;scope;zonder
+GP2555_187_197;geen p[rpobleem, begint na 1/2 jaar weer door ENT;scope;scope;geen
+GP2555_223_233;geen ind voor zyban, bij ENT;negation of different term;negation of different term;geen
+GP2597_160_171;helpt niet afdoende, […], ivm ENT mag mw niet alle pijnstilllers hebben.;negation of different term;negation of different term;niet
+GP2611_93_108;"tabl helpen niet […] ;bij ENT";negation of different term;negation of different term;niet
+GP2620_63_70;geen koorts /soms benauwd bij ENT;scope;scope;geen
+GP2643_31_37;Niet benauwd […] ENT;scope;scope;niet
+GP2656_138_146;mi niet nodig nu de ENT duidelijk is;no negation of noun;negation of different term;niet
+GP2691_79_87;niet-ziek, […], [,…], ENT rustig;scope;scope;niet
+GP2722_17_24;Weet nog niet de ENT;no negation of noun;negation of different term;niet
+GP2748_83_92;Geen spanningen/stress ga sp ENT zn diclofenac proberen;scope;scope;geen
+GP2756_15_23;geen ctr fie’s ENT met dochter;scope;scope;geen
+GP2758_33_40;geen koorts meer, wel ENT;missing termination trigger;scope;wel
+GP2771_105_113;Niet benauwd, ENT iets toegnomen;scope;scope;niet
+GP2781_50_57;de trichomonas is niet over, […], overweeg ENT;missing pseudo trigger;speculation;niet over
+GP2793_92_97;geen voedsel intoleraties , […] , half uur durende ENT;scope;scope;geen
+GP2795_38_45;Koorts sinds donderdag, niet gemeten, ENT;negation of different term;negation of different term;niet
+GP2810_370_381;ongerust, zaterdag niet lekker, ging niet goed, nu nog steeds niet, ENT;no negation of noun;negation of different term;niet
+GP2810_383_391;ongerust, zaterdag niet lekker, ging niet goed, nu nog steeds niet, […], ENT;no negation of noun;negation of different term;niet
+GP2811_216_225;bij geen succes kno vragen kijken naar afw en gebruik stembanden, dan evt ENT;negation of different term;negation of different term;geen
+GP2815_127_135;geneest niet in elleboogplooien en nek ENT;negation of different term;negation of different term;niet
+GP2815_177_185;geneest niet […] ENT;negation of different term;negation of different term;niet
+GP2867_327_335;geen souffle, liezen lastig te beoordelen vanwege ENT;scope;scope;geen
+GP2867_353_360;geen souffle, […], ENT;scope;scope;geen
+GP2884_53_62;ook zonder warm weer ENT;negation of different term;negation of different term;zonder
+GP2891_109_115;in loop van dag erger toch geen ENT?;speculation;speculation;toch geen
+GP2913_90_99;ENT, trekt af en toe weg;no negation of noun;negation of different term;weg
+GP2922_57_65;de roodheid is duidelijk verbeterd, echter nog niet over ENT;missing pseudo trigger;speculation;niet over
+GP2923_32_39;geen koorts, wel ENT;missing termination trigger;scope;wel
+GP2924_38_45;mag niet aan oren komen, ENT;no negation of noun;negation of different term;niet
+GP2924_47_53;mag niet aan oren komen, […], ENT;no negation of noun;negation of different term;niet
+GP2928_157_164;komt niet meer van bed, ENT;no negation of noun;negation of different term;niet
+GP2962_82_88;geen souffle2wk af en aan ENT;scope;scope;geen
+GP2962_100_107;geen souffle […], […], ENT;scope;scope;geen
+GP2962_119_125;geen souffle […], […], ENT;scope;scope;geen
+GP2983_139_155;geen slagpijn gesprek, […], […], ENT;scope;scope;geen
+GP3026_221_229;gaat niet over, houdt ondanks FT ENT;missing pseudo trigger;scope;niet over
+GP3049_60_68;niet pijnlijke ENT;negation of different term;negation of different term;niet
+GP3050_128_136;verder eigenlijk geen klachten, ENT 1x;scope;scope;geen
+GP3087_135_146;lichaam niet uitputten bij ENT;negation of different term;negation of different term;niet
+GP3090_76_84;geen trauma fluctuerende ENT;scope;scope;geen
+GP3100_313_322;pte zelf mag heet niet weten, wel als zodanig besproken met verzorging, dus nu ENT;no negation of noun;negation of different term;niet
+GP3109_94_102;ENT en pijn epididymis verdwenen;wrong modality;wrong modality;verdwenen
+RD1118_52_58;Geen duidelijke verklaring voor de ENT;negation of different term;negation of different term;geen
+RD1199_73_85;ENT links basaal nagenoeg verdwenen.;missing pseudo trigger;speculation;nagenoeg verdwenen
+RD1261_116_133;gedaald bewustzijn bij een patient met een ENT;scope;scope;gedaald
+RD1283_61_69;Abusievelijk werd de loodkorrel niet geplaatst op het juiste ENT;no negation of noun;negation of different term;niet
+RD1327_234_239;geen aanwijzing voor een diepe uitbreiding van de ENT;negation of different term;negation of different term;geen aanwijzing voor
+RD1338_114_126;Hopelijk is links geen ENT in ontwikkeling.;wrong modality;wrong modality;geen
+RD1361_135_147;het is niet geheel duidelijk als het een ENT betreft;missing pseudo trigger;speculation;niet geheel duidelijk
+RD1419_172_188;niet wezenlijk gewijzigd en goed passend bij ENT;scope;scope;niet
+RD1517_118_123;niet vermeld dat mevrouw ook een ENT […] heeft gehad;no negation of noun;negation of different term;niet
+RD1594_26_35;VRAAGSTELLING: Uitsluiten ENT;wrong modality;wrong modality;uitsluiten
+RD1612_320_331;niet geheel zeker te zeggen is in hoeverre deze reeel is danwel berust op ENT;missing termination trigger;scope;danwel
+RD1617_140_151;Geen […] zichtbaar, wel verdenking op spoor ENT;missing termination trigger;scope;wel
+RD1633_141_152;geen wezenlijke veranderingen, enigszins onrustige ENT;missing pseudo trigger;speculation;geen wezenlijke
+RD1645_9_17;Onbekend ENT met zeer kleine lengte;speculation;speculation;onbekend
+RD1655_366_372;geen duidelijke focus voor de ENT gevonden.;missing pseudo trigger;speculation;geen duidelijke
+RD1662_127_137;Geen oorzaak van ENT zichtbaar.;negation of different term;negation of different term;geen
+RD1687_97_117;De tumormassa oogt niet als een ENT;no negation of noun;negation of different term;niet
+RD1693_102_112;CONCLUSIE: Geen trombose, eerder ENT.;missing pseudo trigger;speculation;eerder
+RD1694_696_701;is wat te groot om zonder meer te verklaren door ENT;missing pseudo trigger;speculation;zonder meer
+RD1737_264_280;het blijkt niet mogelijk de druk op de bovenbuik uit te oefenen door een ENT;no negation of noun;negation of different term;niet
+RD1810_84_89;Niet produktieve ENT;missing pseudo trigger;speculation;niet productieve
+RD1840_497_508;Geen infiltraten, aanwijzingen voor geringe ENT ;scope;scope;geen
+RD1840_545_556;Geen infiltraten, […] ENT;scope;scope;geen
+RD1850_24_32;Nog geen definitieve ENT;missing pseudo trigger;speculation;geen definitieve
+RD1921_137_144;De klinische informatie strookt niet met de informatie in de status: […] ENT;no negation of noun;negation of different term;niet
+RD2001_111_121;ENT erbuiten worden niet gezien.;annotation error - actually negated;annotation error;
+RD2009_28_41;doch niet apert ENT;missing pseudo trigger;speculation;niet apert
+RD2015_186_208;te wazig en te vlekkig om niet zonder meer als ENT te bestempelen;missing pseudo trigger;speculation;niet zonder meer
+RD2018_91_99;Nu zonder bekend trauma pijn en ENT;scope;scope;zonder
+RD2031_132_137;geen duidelijke voor ENT verdachte laesie.;missing pseudo trigger;speculation;geen duidelijke
+RD2061_81_89;Geen congenitale wervelanomalieen ter verklaring van de ENT;negation of different term;negation of different term;geen
+RD2080_138_152;ENT worden niet gezien;annotation error - actually negated;annotation error;
+RD2094_89_95;geen afwijking ter verklaring van ENT;negation of different term;negation of different term;geen
+RD2096_184_191;Geen duidelijke tekenen van cirrhose, spoor ENT;scope;scope;geen
+RD2134_271_278;Veel darmlissen drijven in de ENT, diverticulitis of appendicitis echografisch niet vast te stellen;no negation of noun;negation of different term;niet
+RD2155_250_261;die niet ongedwongen verklaard kan worden door het ENT;no negation of noun;negation of different term;niet
+RD2170_80_91;is de hoeveelheid ENT aan de linker zijde nagenoeg verdwenen;missing pseudo trigger;speculation;nagenoeg verdwenen
+RD2181_405_410;geen uitsprak [sic] over toename van ENT te doen;negation of different term;negation of different term;geen
+RD2185_213_220;verhoogde signaalintensiteit niet te differentieren tussen ENT of restafwijking;no negation of noun;negation of different term;niet
+RD2200_75_85;Geen verklaring voor ENT;negation of different term;negation of different term;geen
+RD2217_125_130;De ENT aan de rechter zijde lateraal is verdwenen;wrong modality;wrong modality;verdwenen
+RD2240_60_74;zonder aperte ENT;missing pseudo trigger;speculation;zonder aperte
+RD2271_503_511;De laesie berust op een oud ENT, iets anders is zeer onwaarschijnlijk;wrong modality;wrong modality;onwaarschijnlijk
+RD2283_241_246;Rechts onder is een niet geheel glad begrensde echoarme schaduw zichtbaar, beeld kan berusten op een ontstoken ENT;no negation of noun;negation of different term;niet
+RD2286_143_154;geen wezenlijke veranderingen, bekende onrustige ENT;scope;scope;geen
+RD2296_300_310;restafwijkingen links basaal niet wezenlijk gewijzigd met ook aanwijzing voor ronde ENT;no negation of noun;negation of different term;niet
+RD2297_147_158;geen wezenlijke veranderingen, fibrotische ENT;scope;scope;geen
+RD2329_178_186;niet comprimeerbaar wijzend op ENT;no negation of noun;negation of different term;niet
+RD2352_236_247;Het is niet uitgesloten, dat genoemd ENT een abdominale origine heeft.;missing pseudo trigger;negation of different term;niet uitgesloten
+RD2360_344_350;geen aanwijzingen voor infiltratieve afwijkingen van longparenchym ter verklaring van ENT;negation of different term;negation of different term;geen
+RD2371_345_351;geen of hooguit minimaal ENT;missing termination trigger;scope;hooguit
+RD2381_364_370;[…] is niet uitgesloten, temeer daar er sprake is van een verstreken thoracale ENT;missing pseudo trigger;speculation;niet uitgesloten
+RD2388_68_81;niet apert vergroot ENT;no negation of noun;negation of different term;niet
+RD2412_141_150;geen afwijkingen behoudens benigne ENT;missing termination trigger;scope;behoudens
+RD2462_70_78;De diffuse ENT […] die destijds aanwezig was is thans verdwenen;wrong modality;wrong modality;verdwenen
+RD2462_581_589;Er kan geen D.D. gesteld worden tussen oud ENT en caverneus hemangioom.;scope;scope;geen
+RD2462_603_613;Er kan geen D.D. gesteld worden tussen oud hematoom en caverneus ENT.;scope;scope;geen
+RD2465_54_64;VRAAGSTELLING : Uitsluiten ENT;wrong modality;wrong modality;uitsluiten
+RD2478_242_247;nu duidelijker aanwijzing voor een niet geheel dunwandige ENT;missing pseudo trigger;speculation;niet geheel
+RD2528_211_217;[…] waarbij niet met zekerheid een ENT zichtbaar is;speculation;speculation;niet met zekerheid
+RD2544_513_523;er zijn geen duidelijke blastische haarden aanwijsbaar, de densere partijen zijn alle toe te schrijven aan ENT;scope;scope;geen
+RD2557_205_216;zonder apert ENT;missing pseudo trigger;speculation;zonder apert
+RD2565_73_82;niet in omvang toegenomen en berust mogelijk op ENT;no negation of noun;negation of different term;niet
+SP1130_257_263;valt niet flauw, wel […], ENT;missing termination trigger;scope;wel
+SP1185_87_94;Kan de nek niet meer goed draaien ivm ENT.;no negation of noun;negation of different term;niet
+SP1198_128_139;wat ik niet geheel kan uitsluiten is eenpulmonale ENT;missing pseudo trigger;speculation;niet geheel kan uitsluiten
+SP1201_156_171;geen sprake van ENT;annotation error - actually negated;annotation error;
+SP1201_345_365;trommelvliezen niet a vue i.v.m. DD/ secundaire ENT;no negation of noun;negation of different term;niet
+SP1201_369_385;trommelvliezen niet a vue i.v.m. […] ENT;no negation of noun;negation of different term;niet
+SP1201_402_417;trommelvliezen niet a vue i.v.m. […], ENT;no negation of noun;negation of different term;niet
+SP1201_419_434;trommelvliezen niet a vue i.v.m. […], […], ENT;no negation of noun;negation of different term;niet
+SP1205_139_144;kan niet zeggen of ze medicatie gebruikt wel of niet, […] ENT;no negation of noun;negation of different term;niet
+SP1222_151_157;geen podb, soms ENT;list;scope;geen
+SP1222_163_177;geen podb,[…], ook ENT, geen koorts, hoesten-;list;scope;geen
+SP1222_520_536;geen crep of ronchi(E) dd ENT;scope;scope;geen
+SP1238_22_32;Niet-specifieke ENT gezien;missing pseudo trigger;speculation;niet-specifieke
+SP1255_22_32;Niet-specifieke ENT gezien;missing pseudo trigger;speculation;niet-specifieke
+SP1265_178_184;[…] ENT zijn opgetreden […] zonder te struikelen;no negation of noun;negation of different term;zonder
+SP1283_35_45;Geen aanwijzingen voor ENT;annotation error - actually negated;annotation error;
+SP1297_686_695;eigenlijk geen afwijkingen, biopten voor ENT;scope;scope;geen
+SP1297_710_719;eigenlijk geen afwijkingen, […], ENT;scope;scope;geen
+SP1302_229_235;geen sprake van arteriele insufficientie bij dit ENT;scope;scope;geen
+SP1303_56_64;geen afwijkingen ENT;negation of different term;negation of different term;geen
+SP1318_220_226;niet al te veel ENT;missing pseudo trigger;speculation;niet al te veel
+SP1326_51_63;Onbekend: Knie B B geringe ENT;speculation;speculation;onbekend
+SP1362_335_355;Niet allergische ENT;negation of different term;negation of different term;niet
+SP1387_226_243;Ondanks het feit dat […] geen aanwijzingen bestaan voor […], pleiten de […] bevindingen wel voor een ENT;missing termination trigger;scope;wel
+SP1400_41_51;niet-verdachte ENT;missing pseudo trigger;speculation;niet-verdachte
+SP1411_206_217;zonder hechtingen met behulp van krammetjes en ENT;scope;scope;zonder
+SP1411_257_264;nog niet ENT;missing pseudo trigger;speculation;nog niet
+SP1437_154_159;na een afwezigheid van meer dan 1 jaar op onze polikliniek met een pijnlijk ENT;negation of different term;negation of different term;afwezigheid van
+SP1444_105_113;Niet helemaal duidelijk of deze ENT ook de pijnlijke plek was.;no negation of noun;negation of different term;niet
+SP1512_167_173;geen temp wel wat verhoging wil niet liggen gaat dan ENT;no negation of noun;negation of different term;niet
+SP1517_685_694;geen sprake van: […] - dan wel […] hooguit ENT;missing termination trigger;scope;hooguit
+SP1546_133_141;niet verwerkte gevoelens en emoties na het doormaken van de ENT;missing pseudo trigger;speculation;niet verwerkte
+SP1550_45_51;gegeneraliseerde/niet gespecificeerde ENT;missing pseudo trigger;speculation;niet gespecificeerde
+SP1550_62_72;gegeneraliseerde/niet gespecificeerde […], ENT;missing pseudo trigger;speculation;niet gespecificeerde
+SP1556_289_308;denkt na over wel of niet ENT;negation of different term;negation of different term;niet
+SP1556_355_363;Zij weten niet of ze een ENT;no negation of noun;negation of different term;niet
+SP1597_108_115;werkt wel afdoende voor de nek,maar niet voor de ENT.;no negation of noun;negation of different term;niet
+SP1601_42_52;Niet-specifieke ENT;missing pseudo trigger;speculation;niet-specifieke
+SP1607_321_332;Nog niet optimaal gereguleerde ENT;missing pseudo trigger;speculation;niet optimaal
+SP1618_971_978;geen RIP, ENT bevestigd;list;scope;geen
+SP1625_931_941;Een niet-zieke, forse, gespierde man met ENT;negation of different term;negation of different term;niet
+SP1649_852_858;onduidlijke klachten, geen focus voor de ENT;negation of different term;negation of different term;geen
+SP1649_860_876;geen focus […], ENT???;negation of different term;negation of different term;geen
+SP1649_956_962;onduidlijke klachten, geen focus voor de ENT;negation of different term;negation of different term;geen
+SP1649_964_980;geen focus […], ENT???;negation of different term;negation of different term;geen
+SP1697_49_59;Dit laatse is geen optie gezien zeer gemakkelijk ENT;negation of different term;negation of different term;geen
+SP1727_420_431;het idee dat de ENT […] in de weg zit;missing pseudo trigger;speculation;in de weg
+SP1742_181_187;geen huidverschijnselen behoudens wat ENT;missing termination trigger;scope;behoudens
+SP1742_331_336;geen bijgeluiden, ENT wel wat;scope;scope;geen
+SP1753_93_99;ENT niet gemeten;negation of different term;negation of different term;niet
+SP1782_114_128;zonder nieuwe aanwijS/4169 zingen [sic] voor ENT;negation of different term;negation of different term;zonder
+SP1789_22_32;Niet-specifieke ENT gezien;missing pseudo trigger;speculation;niet-specifieke
+SP1796_42_59;geen duidelijke verklaring voor verminderde ENT;negation of different term;negation of different term;geen
+SP1802_38_48;Niet-specifieke ENT gezien;missing pseudo trigger;speculation;niet-specifieke
+SP1808_98_106;geen bijzonderheden behoudens een ENT;missing termination trigger;scope;behoudens
+SP1808_155_165;geen bijzonderheden […] ENT;missing termination trigger;scope;behoudens
+SP1855_36_41;traumatische ENT re schildklierkwa nodus geheel verdwenen;wrong modality;wrong modality;verdwenen
+SP1911_696_715;voorlopig geadviseerd geen pijnstillers te nemen en voor de ENT […] verwezen naar de huisarts.;scope;scope;geen
+SP1913_202_220;geen afwijkingen van betekenis toonde behoudens minimale ENT ;missing termination trigger;scope;behoudens
+SP1914_275_282;geen defense Evaluatie: ENT;wrong modality;wrong modality;geen
+SP1924_133_139;Bovengenoemde patient werd gecontroleerd op de polikliniek vanwege een milde ENT;speculation;speculation;gecontroleerd op
+SP1932_563_571;lukt niet -> ENT neemt verder toe;no negation of noun;negation of different term;niet
+SP1940_123_129;Patient was verder niet ziek, wel veel ENT aanwezig;missing termination trigger;scope;wel
+SP1940_1357_1365;geen effect op de ENT;negation of different term;negation of different term;geen
+SP1940_1496_1504;geen invloed op de ENT;negation of different term;negation of different term;geen
+SP1940_1697_1705;zonder effect op de ENT;negation of different term;negation of different term;zonder
+SP1940_1760_1768;geen effect op de ENT.;negation of different term;negation of different term;geen
+SP1944_41_51;Geen teken van ENT;annotation error - actually negated;annotation error;
+SP1969_965_980;geen leverenzymstoornissen,m ENT;list;scope;geen
+SP1969_1261_1267;geen sprake was een duidelijke focus van de ENT;negation of different term;negation of different term;geen
+SP1969_1758_1773;koorts zonder duidelijke focus met een verhoogde BSE, DD ENT;negation of different term;negation of different term;zonder
+SP1989_357_366;niet hooggradige ENT;no negation of noun;negation of different term;niet
+SP2014_348_365;Overigens bestaan er geen ENT;annotation error - actually negated;annotation error;
+SP2039_48_61;Onbekend: Graag Uw visie op ENT;speculation;speculation;onbekend
+SP2052_111_118;geen insufficiente crosses en grote perforantes aan Wel waren er vulvaire ENT;missing termination trigger;scope;Wel
+SP2053_1081_1093;[…] wijzen wij u erop dat Methotrexaat niet mag worden gecombineerd met […] in verband met het risico van ENT;negation of different term;negation of different term;niet
+SP2078_52_63;niet optimaal gereguleerde DM met ernstige ENT;missing pseudo trigger;speculation;niet optimaal
+SP2095_202_217;geen verdere analyse gedaan voorhaareerdere ENT;negation of different term;negation of different term;geen
+SP2109_129_138;Geen oogheelkundige verklaring voor de ENT;negation of different term;negation of different term;geen
+SP2111_470_482;niet-vorderende ontsluiting en ENT;missing pseudo trigger;scope;niet-vorderende

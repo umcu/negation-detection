@@ -18,7 +18,7 @@ from seqeval.metrics import classification_report
 from seqeval.metrics import f1_score, precision_score, recall_score
 from tqdm import tqdm
 
-import apex
+#import apex
 
 class TextDatasetFromFiles(Dataset):
     """

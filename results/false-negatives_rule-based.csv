@@ -1,0 +1,192 @@
+entity_id;pattern;category_rule_based;category;trigger
+DL1156_161_172;ENT zijn negatief;missing variation;uncommon negation;negatief
+DL1163_0_8;ENT treedt niet op;missing trigger;uncommon negation;treden niet op
+DL1167_76_82;ENT kan niet worden herinnerd;negation of different term;negation of different term;
+DL1201_0_8;ENT treedt niet op;missing trigger;uncommon negation;treden niet op
+DL1204_26_34;is er nooit een ENT;missing variation;uncommon negation;nooit
+DL1229_16_22;ENT is er niet;missing direction;other;niet
+DL1242_307_327;hetgeen pleit tegen een ENT;missing trigger;uncommon negation;pleiten tegen
+DL1250_22_35;ENT is negatief;missing variation;uncommon negation;negatief
+DL1287_88_94;ENT is hieraan niet voorafgegaan;missing trigger;uncommon negation;niet voorafgegaan
+DL1325_207_223;noch sprake van ENT;missing trigger;uncommon negation;noch
+DL1381_98_113;geen ENT;trigger overlaps with entity;other;geen teken van
+DL1381_784_799;geen ENT;trigger overlaps with entity;other;geen teken van
+DL1462_4_10;ENT is […] niet voorafgegaan;missing trigger;uncommon negation;niet voorafgegaan
+DL1615_76_84;ENT zou niet zijn opgetreden;missing trigger;uncommon negation;treden niet op
+DL1618_47_53;ENT is […] niet aan voorafgegaan;missing trigger;uncommon negation;niet voorafgegaan
+DL1619_4_10;ENT is […] niet aan voorafgegaan;missing trigger;uncommon negation;niet voorafgegaan
+DL1620_4_10;ENT is […] niet vooraf gegaan;missing trigger;uncommon negation;niet voorafgegaan
+DL1647_71_77;ENT is […] niet aan vooraf gegaan;missing trigger;uncommon negation;niet voorafgegaan
+DL1732_219_233;ENT uitgesloten;missing variation;uncommon negation;uitsluiten
+DL1755_102_108;ENT is niet voorafgegaan;missing trigger;uncommon negation;niet voorafgegaan
+DL1802_76_90;testen voor ENT zijn negatief;negation of different term;negation of different term;
+DL1828_4_10;ENT niet;missing direction;other;niet
+DL1868_1412_1419;Om een ENT uit te sluiten, […] waarbij geen duidelijke afwijkingen konden worden aangetoond;missing direction;other;geen
+DL1888_22_35;ENT is negatief;missing variation;uncommon negation;negatief
+DL1914_149_165;verdwenen de klachten van ENT;missing direction;other;Verdwenen
+DL1952_103_116;ENT is negatief;missing variation;uncommon negation;negatief
+DL2022_4_10;ENT is […] niet voorafgegaan;missing trigger;uncommon negation;niet voorafgegaan
+DL2035_461_475;geen neiging vertoont tot een ENT;missing trigger;uncommon negation;geen neiging
+DL2103_124_131;nooit een ENT gehad;complex trigger;other;
+DL2107_195_203;ENT treedt niet op;missing trigger;uncommon negation;treden niet op
+GP1136_0_7;ENT gb;missing trigger;uncommon negation;gb
+GP1160_115_121;ENT-;missing trigger;minus;-
+GP1191_121_127;ENT is over;wrong modality;wrong modality;
+GP1225_23_29;ENT-;missing trigger;minus;-
+GP1315_61_67;ENT-;missing trigger;minus;-
+GP1329_0_6;ENT-;missing trigger;minus;-
+GP1361_94_101;ENT-;missing trigger;minus;-
+GP1395_68_74;ENT-;missing trigger;minus;-
+GP1416_107_113;ENT-;missing trigger;minus;-
+GP1417_103_111;ENT-;missing trigger;minus;-
+GP1437_41_49;ENT-;missing trigger;minus;-
+GP1437_52_59;ENT-;missing trigger;minus;-
+GP1471_269_276;ENT-;missing trigger;minus;-
+GP1471_285_292;ENT-;missing trigger;minus;-
+GP1502_64_70;ENT-;missing trigger;minus;-
+GP1523_18_32;nooit ENT geobjectiveerd;complex trigger;other;
+GP1541_58_67;Geen aanw. voor ENT;sentence splitting;punctuation;
+GP1542_45_51;ENT-;missing trigger;minus;-
+GP1558_64_70;"ENT;";annotation error - no negation present;annotation error;
+GP1601_67_74;ENT afwezig;missing variation;uncommon negation;
+GP1649_39_45;ENT-;missing trigger;minus;-
+GP1665_79_94;[Geen ENT];annotation error - negation part of entity;annotation error;
+GP1669_42_48;ENT-;missing trigger;uncommon negation;-
+GP1681_0_11;[geen ENT];annotation error - negation part of entity;annotation error;
+GP1740_38_44;ENT-;missing trigger;minus;-
+GP1818_21_27;"geen ENT;rinorrhoe";sentence splitting;punctuation;
+GP1973_0_6;ENT-;missing trigger;minus;-
+GP2010_237_253;nog nooit eerder te maken gehad met ENT;missing variation;uncommon negation;nooit
+GP2024_0_7;ENT-;missing trigger;minus;-
+GP2024_108_115;ENT-;missing trigger;minus;-
+GP2052_151_157;ENT-;missing trigger;minus;-
+GP2067_0_5;ENT niet;missing direction;other;niet
+GP2069_29_34;ENT niet;missing direction;other;niet
+GP2093_24_30;geen sputum/ENT;sentence splitting;punctuation;
+GP2112_12_18;ENT-;missing trigger;minus;-
+GP2132_0_6;ENT-;missing trigger;minus;-
+GP2168_0_8;ENT-;missing trigger;minus;-
+GP2170_0_7;ENT. […] niet duidelijk;missing direction;other;niet
+GP2224_7_16;ENT-;missing trigger;minus;-
+GP2224_18_24;ENT-;missing trigger;uncommon negation;
+GP2372_101_107;ENT-;missing trigger;uncommon negation;
+GP2402_45_51;ENT-;missing trigger;uncommon negation;
+GP2451_62_68;ENT-;missing trigger;uncommon negation;
+GP2480_53_59;nooit een klacht gehad die paste bij de ENT;missing variation;uncommon negation;nooit
+GP2567_126_137;[geen ENT];annotation error - negation part of entity;annotation error;
+GP2585_0_8;ENT:-;missing trigger;minus;-
+GP2595_16_23;ENT-;missing trigger;minus;-
+GP2595_49_56;ENT-;missing trigger;minus;-
+GP2636_9_18;ENT-;missing trigger;minus;-
+GP2636_91_101;ENT-;missing trigger;minus;-
+GP2639_25_32;Negatief ENT;missing variation;uncommon negation;negatief
+GP2658_52_58;"hoofd;geen ENT";sentence splitting;punctuation;
+GP2660_0_6;ENT-;missing trigger;minus;-
+GP2759_61_71;ENT-;missing trigger;uncommon negation;
+GP2768_52_58;ENT -;missing trigger;minus;-
+GP2769_340_347;ENT-;missing trigger;uncommon negation;
+GP2776_44_52;GEEN aanwijzing voor ENT\n;sentence splitting;punctuation;
+GP2796_56_63;aanwijzingen voor recent ENT;annotation error - no negation present;annotation error;
+GP2805_7_15;"ENT;-";missing trigger;minus;-
+GP2832_67_73;ENT-;missing trigger;minus;-
+GP2833_24_30;ENT-;missing trigger;minus;-
+GP2835_95_103;nooit ENT gehad;complex trigger;other;
+GP2842_0_6;ENT-;missing trigger;minus;-
+GP2842_8_13;ENT-;missing trigger;minus;-
+GP2854_29_35;ENT-;missing trigger;minus;-
+GP2876_0_7;ENT-;missing trigger;minus;-
+GP2967_0_6;ENT.;annotation error - no negation present;annotation error;
+GP2987_9_15;nooit ENT;missing variation;uncommon negation;nooit
+GP2994_0_6;ENT-;missing trigger;minus;-
+GP3051_29_40;ENT geen afw gevonden;missing direction;other;geen
+GP3054_119_125;ENT-;missing trigger;uncommon negation;
+GP3065_0_6;ENT -;missing trigger;minus;-
+GP3079_36_42;ENT-;missing trigger;minus;-
+GP3079_56_63;ENT-;missing trigger;minus;-
+GP3079_66_73;ENT-;missing trigger;minus;-
+RD1158_84_93;niet typisch voor ENT;speculation;speculation;
+RD1164_54_64;ENT maar voor zover te beoordelen zijn deze niet aanwezig;termination trigger;other;maar
+RD1214_0_5;ENT niet;missing direction;other;niet
+RD1224_79_84;ENT […] niet meer als zodanig gezien;missing direction;other;niet
+RD1277_53_64;ENT geresorbeerd;wrong modality;wrong modality;
+RD1340_59_70;ENT […] echter niet aanwezig;termination trigger;other;echter
+RD1422_109_116;nergens aanwijzing voor ENT;missing trigger;uncommon negation;nergens
+RD1500_47_56;Genezen ENT;wrong modality;wrong modality;
+RD1590_267_277;ENT lijken minder waarschijnlijjk;speculation;speculation;
+RD1629_180_194;eigenlijk te klein voor ENT;speculation;speculation;
+RD1951_101_106;Geen aanwijzingen voor #Name# ENT;sentence splitting;punctuation;
+RD1951_110_118;Geen aanwijzingen voor #Name# ENT;sentence splitting;punctuation;
+RD1951_365_372;ENT kunnen niet […] worden aangetoond;missing direction;other;niet
+RD1951_465_472;Differentiatie tussen … en ENT is ook niet mogelijk;speculation;speculation;
+RD1951_528_533;Geen […], #Name# ENT;sentence splitting;punctuation;
+RD1951_552_557;Geen […], #Name# […] of ENT;sentence splitting;punctuation;
+RD2006_356_365;ENT is niet aangetoond;missing direction;other;niet
+RD2245_197_206;zodat voor een ENT […] geen sprake lijkt;missing direction;other;geen
+RD2342_0_7;ENT -;missing trigger;minus;-
+RD2421_33_40;geen sprake van een #Name# ENT;sentence splitting;punctuation;
+SP1152_26_34;ENT bo-been re: gda;missing trigger;uncommon negation;gda
+SP1163_44_51;nulli ENT;missing trigger;uncommon negation;nulli
+SP1164_179_186;ENT: ;annotation error - entity is (in) heading;annotation error;
+SP1188_26_31;ENT;annotation error - entity is (in) heading;annotation error;
+SP1188_206_214;pleiten tegen de ENT;missing trigger;uncommon negation;pleiten tegen
+SP1198_13_24;ENT konniet [sic] aangetoond worden;spelling error;other;
+SP1200_110_115;ENT;annotation error - entity is (in) heading;annotation error;
+SP1207_63_71;onmogelijk om ENT te krijgen;missing trigger;uncommon negation;onmogelijk
+SP1222_49_54;ENT niet;missing direction;other;niet
+SP1239_17_26;ENT;annotation error - entity is (in) heading;annotation error;
+SP1239_37_48;ENT […] negatief;missing variation;uncommon negation;negatief
+SP1273_161_170;ENT neg;missing variation;uncommon negation;negatief
+SP1301_17_22;ENT;annotation error - entity is (in) heading;annotation error;
+SP1302_23_47;ENT is niet aan de orde;missing direction;other;niet
+SP1314_265_270;ENT;annotation error - entity is (in) heading;annotation error;
+SP1314_414_422;pleiten tegen de ENT;missing trigger;uncommon negation;pleiten tegen
+SP1317_10_18;ENT;annotation error - entity is (in) heading;annotation error;
+SP1350_515_526;ENT […]: negatief;missing variation;uncommon negation;negatief
+SP1354_95_100;ENT niet;missing direction;other;niet
+SP1358_45_64;Betreft Neu [O] Geen aanwijzingen ENT;sentence splitting;punctuation;
+SP1364_13_24;vrdacht [sic] voor ENT gevonden;speculation;speculation;
+SP1375_11_19;ENT;annotation error - entity is (in) heading;annotation error;
+SP1403_471_476;ENT;annotation error - entity is (in) heading;annotation error;
+SP1403_660_668;pleiten tegen de ENT;missing trigger;uncommon negation;pleiten tegen
+SP1410_34_39;ENT niet;missing direction;other;niet
+SP1413_339_346;ENT-;missing trigger;minus;-
+SP1428_48_57;besloten te stoppen met de ENT;wrong modality ;wrong modality;
+SP1429_554_563;ENT:-;missing trigger;minus;-
+SP1429_566_571;ENT:-;missing trigger;minus;-
+SP1429_943_950;ENT-;missing trigger;minus;-
+SP1429_952_958;ENT-;missing trigger;minus;-
+SP1429_960_966;ENT-;missing trigger;minus;-
+SP1460_106_114;ENT;annotation error - entity is (in) heading;annotation error;
+SP1460_271_279;ENT;annotation error - entity is (in) heading;annotation error;
+SP1462_210_220;ENT […]: negatief;missing variation;uncommon negation;negatief
+SP1483_46_55;Stoppen - ENT;wrong modality;wrong modality;
+SP1486_95_104;ENT (kinkhoest) IgG as 7 (negatief);missing variation;uncommon negation;negatief
+SP1486_106_115;B.pertussis (ENT) IgG as 7 (negatief);missing variation;uncommon negation;negatief
+SP1486_147_156;ENT (kinkhoest) IgG as 3 (negatief);missing variation;uncommon negation;negatief
+SP1486_158_167;B.pertussis (ENT) IgG as 3 (negatief);missing variation;uncommon negation;negatief
+SP1519_387_407;niemand is bekend met ENT;missing variation;uncommon negation;bekend
+SP1522_199_210;Onbelaste voorgeschiedenis voor ENT;wrong modality;wrong modality;
+SP1523_240_251;ENT: geen;missing direction;other;geen
+SP1548_0_5;ENT.;annotation error - no negation present;annotation error;
+SP1627_469_475;ENT: geen;missing direction;other;geen
+SP1651_13_18;ENT;annotation error - entity is (in) heading;annotation error;
+SP1651_193_201;pleiten tegen de ENT;missing trigger;uncommon negation;pleiten tegen
+SP1654_412_423;ENT: Negatief;missing variation;uncommon negation;negatief
+SP1697_140_148;ENT neg;missing variation;uncommon negation;negatief
+SP1784_114_122;Zonder anwyzin gen [sic] voor […] ENT;missing variation;uncommon negation;aanwijzingen
+SP1809_85_93;ENT: geen;missing direction;other;geen
+SP1834_0_9;ENT niet waarschijnlijk;speculation;speculation;
+SP1856_155_164;ENT negatief;missing variation;uncommon negation;negatief
+SP1857_92_101;Geen aanwijzing voor recent traum. ENT;sentence splitting;punctuation;
+SP1880_721_732;In de familie anmanese [sic] was geen sprake van ENT;sentence splitting;punctuation;
+SP1893_686_702;ENT: nee;missing trigger;uncommon negation;nee
+SP1893_720_727;ENT: nee;missing trigger;uncommon negation;nee
+SP1893_761_777;ENT: nee;missing trigger;uncommon negation;nee
+SP1893_804_817;ENT: nee;missing trigger;uncommon negation;nee
+SP1894_8_13;ENT:;annotation error - entity is (in) heading;annotation error;
+SP1901_41_52;ENT […] negatief;missing variation;uncommon negation;negatief
+SP1914_340_353;Onvoldoende aanwijzingen nu voor ENT;speculation;speculation;
+SP1914_429_442;Onvoldoende aanwijzingen nu voor ENT;speculation;speculation;
+SP1962_8_16;ENT -;missing trigger;minus;-
+SP1989_456_461;ENT vrij;missing variation;uncommon negation;vrij
+SP2074_801_809;ENT: geen;missing direction;other;geen
