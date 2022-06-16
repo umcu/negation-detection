@@ -1,29 +1,23 @@
 entity_id,error_type,pattern
-DL1242_307_327,uncommon_negation,"Anamnestisch zijn er geen aanwijzingen voor een compartimentsyndroom, zeker niet omdat er ook een zwelling van het onderbeen is.
+DL1156_161_172,uncommon_negation,"Er is geen trauma ontstaan.
+Er is een arthrogram en een arthroscopie gemaakt, welke aantoonde dat er een ligament-letsel zou zijn.
+De Watsontest (scapho-lunaire [ENT]) en de Finkelsteintest zijn negatief.
+Als de uitslag bekend is zal patiente wederom op mijn spreekuur komen, voor het bespreken van de uitslag.
+"
+DL1167_76_82,ambiguous,"Dit probleem bestaat sedert 3 jaar en is spontaan begonnen, een voorafgaand [ENT] kan niet worden herinnerd.
+Geen tendovaginitis.
+Conclusie en beleid: Voetklachten rechts, in de vorm van zwelling en stijfheid, vooral in de zomer.
+"
+DL1242_307_327,speculation,"Anamnestisch zijn er geen aanwijzingen voor een compartimentsyndroom, zeker niet omdat er ook een zwelling van het onderbeen is.
 Geen atrofie van de bovenbeensmusculatuur.
 Geen aanwijzingen voor shin splints.
 In rust na inspanning was de druk binnen 1 minuut weer normaal, hetgeen pleit tegen een chronisch [ENT].
 Conclusie: Geen aanwijzingen voor compartimentsyndroom.
 "
-DL1250_22_35,ambiguous,"Familie-anamnese voor [ENT] is negatief.
-Bevalling geschiedde in stuitligging.
-Nu blijkt bij controle toch een heupdysplasie rechts te zijn.
-Revisie van de rontgenfoto's uit #City# toont op 02-10-1995 goed gecentreerde heupen en op 15-11-1995 een scheef liggend bekken, met een milde heupdysplasie rechts.
-Advies: Ik heb de heupdysplasie behandeld met een #City#-abductie spalk.
-"
 DL1472_317_323,speculation,"Anamnese: #Name# was ons bekend met een heupdysplasie in het verre verleden.
 Zij heeft af en toe wat rugpijn tussen de schouderbladen en vooral bij lichamelijke aktiviteit.
 De rug is recht, toont geen scoliose, maar heeft wel wat ronding in de thoracale wervelkolom.
 Rontgenonderzoek: Geen afwijkingen passend bij de [ENT] van #Name#.
-"
-DL1587_58_68,speculation,"Patient heeft geen duidelijke klachten van tranenvloed of [ENT].
-scleral show met oedeem van onder- en bovenoogleden.
-Er is geen duidelijk ectropion aanwezig.
-"
-DL1615_76_84,speculation,"Op 26-11-1995 liep patient tijdens het voetballen een knieletsel rechts op.
-[ENT] zou niet zijn opgetreden, maar gedurende enkele weken was de knie niet goed te strekken.
-Bij onderzoek toont de rechter knie een geringe hydrops en is er een geringe strekbeperking.
-De MRI toont een midsubstance voorste kruisbandruptuur en een ruptuur in de ahcterhoorn van de mediale meniscus.
 "
 DL1639_110_118,uncommon_negation,"De verdenking bestaat op een scoliose, door de schoolarts geconstateerd.
 De familie-anamnese is negatief voor [ENT], neuromusculair verder geen bijzonderheden.
@@ -31,19 +25,10 @@ Er is een zeer discrete scoliose convex naar links thoracolumbaal.
 X-thoracolumbale wervelkolom d.d. 17.01.1996: geen scoliose van betekenis.
 Conclusie: Geen scoliose van betekenis.
 "
-DL1642_192_201,speculation,"Anamnese: #Name# is via het consultatiebureau en huisarts ingestuurd onder verdenking van een klompvoet.
-Er zijn meer dan 3 huidplooien zichtbaar t.h.v. de achillespees, wat niet past bij een [ENT].
-Bij inspectie is er tevens een geringe, soepele, metatarsus adductus en een metatarsus primus varus.
-Conclusie: Soepele metatarsus adductus in combinatie met metatarsus primus varus.
-Geen aanwijzingen voor een klompvoet.
-"
 DL1802_76_90,speculation,"De ellebogen vertonen geen opvallende zwelling.
 De provocatietesten voor de [ENT] zijn negatief.
 Naast de linker radiuskop mogelijk een klein corpus liberum.
 Diagnose: Arthrose ellebogen bdz.
-"
-DL1861_85_90,uncommon_negation,"Diagnose: snelgroeiend ulcererend tumor rechter oor.
-De resectieranden zijn vrij van [ENT].
 "
 DL1868_1412_1419,scope,"Zoals bij u bekend heeft patiente een status na arthrodese van MCP I links, tenolyse van de extensor pollicis longus over het IP-gewricht en een Eaton Littler stabilisatie plastiek m.b.v. een deel van de flexor carpi radialis i.v.m. een luxatie van het CMC I-gewricht.
 Patiente had hierna een goed resultaat verkregen, echter in de ochtend van 8 januari, tijdens het wegzetten van de stofzuigerslang, voelde zij een plotselinge knap aan de dorsale zijde over het metacarpale I, met vanaf dat moment een pijnlijke zwelling t.p.v. de basis van het metacarpale I en een onvermogen tot abductie van de linker duim.
@@ -59,84 +44,97 @@ Ook bij doorlichting kon er geen duidelijke luxatie worden opgewekt.
 Conclusie: er is bij patiente sprake van een carpaal tunnel syndroom links, mogelijk reactief.
 Een duidelijke diagnose wat er nu precies aan de hand is met de linker duim hebben we nog niet.
 "
-DL1914_149_165,uncommon_negation,"Patiente is bekend met een peritendinitis met tendinosis van de linker achillespees.
+DL1868_1615_1622,ambiguous,"Zoals bij u bekend heeft patiente een status na arthrodese van MCP I links, tenolyse van de extensor pollicis longus over het IP-gewricht en een Eaton Littler stabilisatie plastiek m.b.v. een deel van de flexor carpi radialis i.v.m. een luxatie van het CMC I-gewricht.
+Patiente had hierna een goed resultaat verkregen, echter in de ochtend van 8 januari, tijdens het wegzetten van de stofzuigerslang, voelde zij een plotselinge knap aan de dorsale zijde over het metacarpale I, met vanaf dat moment een pijnlijke zwelling t.p.v. de basis van het metacarpale I en een onvermogen tot abductie van de linker duim.
+Er is een rode huidverkleuring over het dorsum van metacarpale I en over het CMC-gewricht.
+In de differentiaal diagnose staat een ruptuur van de abductus pollicis longus of een fractuur of fissuur van het metacarpale I of een arthritis van het CMC-gewricht.
+Wel werd er vocht aangetoond in het CMC I-gewricht, zeer suspect voor het beeld van een arthritis.
+Patiente werd hierop behandeld met een alcoholverband, elevatie van de linkerarm, Naprosine 3xdaags 250 mg. en laboratoriumonderzoek werd verricht.
+Postoperatief werd gestart met oefentherapie onder begeleiding van de revalidatie/handtherapie.
+Echter een luxatie of subluxatie van het CMC-gewricht is niet te palperen.
+Verder blijkt de Tinell positief op de nervus medianus in de pols, zeer suspect dus voor een carpaal tunnel syndroom.
+Om een luxatie of subluxatie van het CMC-gewricht uit te sluiten, werd echografisch onderzoek verricht, waarbij geen duidelijke afwijkingen konden worden aangetoond.
+Ook bij doorlichting kon er geen duidelijke [ENT] worden opgewekt.
+Conclusie: er is bij patiente sprake van een carpaal tunnel syndroom links, mogelijk reactief.
+Een duidelijke diagnose wat er nu precies aan de hand is met de linker duim hebben we nog niet.
+"
+DL1914_149_165,speculation,"Patiente is bekend met een peritendinitis met tendinosis van de linker achillespees.
 Hoewel zij pijnklachten bleef houden, verdwenen de klachten van [ENT] en beperkte beweeglijkheid.
 Ook klinisch was de situatie sterk verbeterd: er werd geen zwelling meer gezien en er werden geen noduli meer gepalpeerd.
 "
-GP1160_115_121,minus,"Heeft bronchitis.
-moeilijk om hem in de gaten te houden sinds hij op de voorschool zit, bij rennen hoesten en vom, [ENT]-, eigenlijk elke winter deze klachten, vader astma, binnen wordt niet gerookt NZ, pulm: piepje, KNO gda FLUTICASON AEROSOL  50UG/DO 2 maal per dag 2 inhalatie c2w, daarnaast zn ventolin
+DL2035_461_475,ambiguous,"#Name# is drie maanden oud, is tevens bekend met tongafwijkingen en heupdysplasie waarvoor zij een beugel en gips heeft gehad, nu echter niets meer draagt.
+De linker voet vertoont een bifide hallux met syndactylie en clinodactylie met een diepe eerste interdigitaalplooi die neigt naar een gespleten voet.
+De rechter voet vertoont een bifide hallux, die minder gescheiden is dan aan de linker zijde, geen clinodactylie vertoont en geen neiging vertoont tot een [ENT] idee.
+Conclusie: polydactylie handen en voeten passend bij een orofaciodigitaal syndroom type II.
+"
+GP1136_0_7,annotation_error,"[ENT].
+Nog steeds benauwd, hoort zichzelf piepen en wordt er wakker van.
+Dyspareunie vooral door beschaidiging/onteking van de vulva.
 "
 GP1191_121_127,uncommon_negation,"nog even aanzien ors gaan halen bij geen verbetering maandag terugbellen Diarree breierig Net als zusje ook diarree maar [ENT] is over.
 "
 GP1225_23_29,minus,"gaat beter ,hoest nog ,[ENT]- , longen lichte  bronchitis c zn 1 week roken staken
 "
+GP1231_71_81,annotation_error,"gaat prima, komt voor RR RR:130/90 cor ga, cor=pols=60 ra geen last vd [ENT]
+"
+GP1286_122_128,other,"Eerst druk, van binnen, nu toch ook een zwelling, van buiten.
+Aambei?
+Bij inspectie anus geen afwijkingen, geen uiwendige [ENT], geen skintags c.q.
+"
 GP1315_61_67,minus,"3 dgn hoesten verkouden, iets piepen, al gestart met pufjes, [ENT]-, oor/keel: gb, speelt wel intrekkingen-, weghoestbare rhonchi, geen crepitaties, iets piepen af en toe, keel grote niet rode tonsillen,  re TV iets rood4dd salb, 2dd pulm, bij koorts/zieker: retour
 "
 GP1361_94_101,minus,"sinds 1 wk laag lumbale rugklachten, uitstraling-, fixatie lumabale WK, fixatie SI gewr re mt [ENT]-, stekende pijn fixatie lumbale WK, fixatie SI gewr re
 "
-GP1395_68_74,minus,"Ontraden ivm gewening, verslaving Pijn als een band rond de middel.
-[ENT]-, N-, V-.
+GP1417_103_111,minus,"komt met sinds 3 weken bestaande keelpijn waarvoor paracetamol bij 38.5 graden koorts.
+iets rode keel, [ENT]- beslag- klierenvirale keelontsteking expectatief.
 "
-GP1437_41_49,minus,"nachtpijn+, slot-, giving way-, li knie: [ENT]-, hydrops-, rood-, warm-, flex eindgevoel verend, pijnlijk, niet beperkt, ext.
+GP1489_43_48,speculation,"oorontsteking.vriend na 1,5 jaar weg.witte [ENT] niet geweest
 "
-GP1471_269_276,minus,"br:vorige week 2 dgn koorts gehad, vanmorgen 38.
-loopoor nu 1 maand, hoesten sinds 5 dgn, drinkt goed tot vanmorgen toen 1 maal fles geweigerd, eet goed.
-li oor een loopoor, pus in gehoorgang, oorlel licht schilferend, keel spoortje rode normale tonsillen, longen vag, [ENT]- crep-.
-dyspnoe- ziek- helder en alert.
-gezien lange duur loopoor koorts en rode keel nu een kuur, oor vet houden, als geen verbetering binnen 48 uur retour, eerder als zieker.
-"
-GP1489_43_48,ambiguous,"oorontsteking.vriend na 1,5 jaar weg.witte [ENT] niet geweest
-"
-GP1542_45_51,minus,"Nog steeds wat groen sputum opgeven.Benauwd-.[ENT]-.Eten/drinken ok.
-Beleid:cozaar naar 100 mg.Onder dig 3 nagel een wat dik randje.O/lijkt een oude blaar te zijn.
+GP1506_44_52,ambiguous,"Houdt hoofdpijn;rechstzijdig.Niet echt meer [ENT] ACETYLSALICYLZUUR TABLET  80MG 1 dd 1 RRzit:160/90 Atenolol weer naar 50 mg/dd
 "
 GP1558_64_70,annotation_error,"#Name# heeft al 5 dagen waterdunne diarree, ook buikpijn erbij.
 [ENT];ook iemand op werk met diarhee;zure oprispingen;1 tab immodium gegeven vanochtend, nog geen baat kweek faeces;ors, loperamide;c 1 dag
 "
-GP1601_67_74,uncommon_negation,"BVO geen klachten smear:#Name# Spec:ga RISC: Cervixscreening=> HPV [ENT] HR-HPV afwezig (Intermediair celbeeld: Neigt tot atrofie, Meestal is dit al in een verder gevordert statum gezien de leeftijd)
+GP1601_67_74,annotation_error,"BVO geen klachten smear:#Name# Spec:ga RISC: Cervixscreening=> HPV [ENT] HR-HPV afwezig (Intermediair celbeeld: Neigt tot atrofie, Meestal is dit al in een verder gevordert statum gezien de leeftijd)
 "
-GP1740_38_44,minus,"2-3 wkn uitslag op re arm en mn romp.
-[ENT]-.
-vakantie kamp in luxemburg/ werk kamp in Lille geweest in mei-vakantie mn romp, mindere mate re arm diffuus verspreide roodheid, licht verheven, ruw, licht schilferend lopend via splijtlijnen uitleg, wrs virus, self limiting in 6-10 wkn.
+GP1649_39_45,minus,"Al geruime tijd last 1e straal li-voet.[ENT]:-
 "
-GP1781_120_126,minus,"niet meer wel nog verhoging Geen alarmsignalen, lijkt minder te worden, exp buikpijn, wel minder als afgelopen dinsdag, [ENT]-, kan springen Had niet gezien en gehoord dat hij al geweest was: Nog Nl peristaltiek, soepele buik, aanzienlijk overgewicht, misselijkheid-, wel minder eetlust, geen diarree, koorts
+GP1973_0_6,minus,"[ENT] -.
+Beginnende otitis re?
 "
-GP2010_237_253,annotation_error,"2 weken geleden door partner heel hard op hoofd geduwt, sinds dien pijn rond linkeroogkas, hoofdpijn, nekpijn en tintelingen in linker arm, fysio heeft advies gegeven foto's te maken van nek en hoofd?
-nog nooit eerder te maken gehad met [ENT].
+GP2024_0_7,minus,"[ENT]- drukpijn linker flank,costa 10-11,geen asdrukpijn Uitleg,duurt lang !!Adekwate pijnstilling nemen.
+Dyspnoe-,pijn viel gisteren wel mee,neemt nu toe.
 "
 GP2024_108_115,minus,"Dyspnoe- drukpijn linker flank,costa 10-11,geen asdrukpijn Uitleg,duurt lang !!Adekwate pijnstilling nemen.
 [ENT]-,pijn viel gisteren wel mee,neemt nu toe.
 "
-GP2052_151_157,minus,"Onder oksel knobbeltje, ook een donker plekje klein talgbultje onder li oksel, geen palp klieren Exp Al 3 maanden hoesten, mn met praten hoestprikkel, [ENT]-, niet echt ziek, sputum-.
+GP2168_0_8,minus,"[ENT]: - Reageert eigenlijk alleen opfuradantine.
 "
-GP2224_7_16,minus,"Snot-, [ENT]-.Piepen-.Dyspnoe-.Ongerust duidelijk ontstoken keel, longen gb.
+GP2170_0_7,annotation_error,"[ENT].
+Sed: niet duidelijk -> uricult Griep gehad, veel gehoest.
+Merkte urineverlies tijdens hoesten.
+Hiervoor bij hoesten/niezen etc geen klachten.
 "
-GP2372_101_107,minus,"Zwangerschapstest.- Int [V] #Name#  colitis ulcerosa of Crohn misselijk en pijn onderbuik, def:hard, [ENT]- dd M.
-Crohn aften in keel
+GP2451_62_68,minus,"Sinds 5 dgn buikkrampen, N+, niet lekker, licht in het hoofd.
+[ENT]-.
+buikkrampen, diarre en verstopping.
 "
-GP2480_53_59,annotation_error,"NB Mw. heeft nooit een klacht gehad die paste bij de [ENT].
+GP2480_53_59,speculation,"NB Mw. heeft nooit een klacht gehad die paste bij de [ENT].
 "
-GP2567_126_137,ambiguous,"moe hangerig soms misselijk en hoofdpijn KNO gb; longen en hart gb Lever en milt np PEF 210 maar niet goed geblazen ; klieren [ENT] exp
-"
-GP2595_16_23,minus,"neusverkouden-, [ENT]-, spugen sinds vannacht, diarree-.
-"
-GP2595_49_56,minus,"neusverkouden-, hoesten-, spugen sinds vannacht, [ENT]-.
+GP2585_0_8,minus,"[ENT]:-  Functies: pijnlijk prox.
+tendinitis/licht bandletsel.
 "
 GP2636_9_18,minus,"oren gb, [ENT]-, RR 140/80 sedert 2 weken licht gevoel in het hoofd, geen oorklachten, dubbelzien-
 "
-GP2636_91_101,minus,"oren gb, nystagmus-, RR 140/80 sedert 2 weken licht gevoel in het hoofd, geen oorklachten, [ENT]-
-"
-GP2639_25_32,uncommon_negation,"uricult negatief uricult [ENT], tel #LongNumber#
-"
-GP2693_45_54,speculation,"VT:gda  zou vleesboom hebben,geen duidelijke [ENT] palpabel
+GP2639_25_32,other,"uricult negatief uricult [ENT], tel #LongNumber#
 "
 GP2759_61_71,minus,"IMIPRAMINI HCL 25MG DRAGEE 1 vesp doorgaan voelt zich beter, [ENT]-, vrolijker; co 1mnd
 "
-GP2769_340_347,minus,"liggen niet duizelig.
-Nog steeds gevoel dat longen niet Pols:72,/min ra RRzit:200*/95* romberg:draaisensatie, goede volgbew ogen,kiepproef:Is al geruime tijd duizelig, denkt zelf tgv selokeen, oren:bdz cerumen, trommelvlies:ga cor:S1,S2,souffles:-, pulm:rao enige rhonchi.
-laatste tijd toename duizeligheid, al 2 keer met fiets schoon zijn,[ENT]-.
+GP2768_52_58,minus,"Komt binnenkort voor scoliose onderzoek.
+Misselijk, [ENT] -,geen diarree, zuurbranden-.
+Dieet en adviezen Komt binnenkort voor scoliose onderzoek.
 "
-GP2776_44_52,scope,"GEEN aanwijzing voor actieve of recente EBV [ENT]
+GP2776_44_52,other,"GEEN aanwijzing voor actieve of recente EBV [ENT]
 "
 GP2796_56_63,annotation_error,"CK door adipositas en statine?
 aanwijzingen voor recent [ENT].
@@ -144,46 +142,52 @@ aanwijzingen voor recent [ENT].
 GP2805_7_15,minus,"Drop;- [ENT];- zout; let op.
 C/2a3wkn kreat/gfr bellen voor uitslag.24-uurs
 "
-GP2832_67_73,minus,"psychische klachten/ depressie in het verleden: neemt Citalopram-.
-[ENT]-.
-Exp.8 dagen geleden misselijk/ bij krijgen ontlasting zeer onwelriekend/ overgeven.
-Tevens hoofdpijn boven re wenkbrauw.
-Opnieuw hoofdpijn, waarbij na overgeven opnieuw opluchting.
-"
-GP2833_24_30,minus,"voelt zich niet lekker, [ENT]-, moe> vraagt of ze vanmiddag wel inj.HPV moet krijgen of liever uitstellenBS: indien koorts dan vrij hard advies even af te zien van vacc., nu wat dubieus, bij twijfel liever even uitstellen.
-"
 GP2854_29_35,minus,"OMA links MK; loopoor links, [ENT]-, wel jengelig, oorpijn gehad, lijkt nu mee te vallen AS bruinige pus in gehoorgang, TV bdz niet a vue
+"
+GP2967_0_6,annotation_error,"[ENT].
+meer maagzuur.
 "
 GP3020_71_77,speculation,"Alzheimer, ziek, pijn liezen, plassen gaat moeilijk, incontinent, wit, [ENT] niet bekend, agressief,Volgens echtgenote en patient gaat het niet lekker.
 Bil:roodheid irritatie, nu nog geen wond.
 "
-GP3051_29_40,other,"Boc; bij bevolkingsonderzoek [ENT] zijn geen afw gevonden
+GP3051_29_40,ambiguous,"Boc; bij bevolkingsonderzoek [ENT] zijn geen afw gevonden
 "
-GP3079_36_42,minus,"Bij bewegen/hoesten neemt pijn toe.
-[ENT]-, ziekzijn-, hoesten-, dyspnoe-.
+GP3065_0_6,minus,"[ENT] -, ontlasting goed.
 "
-GP3079_56_63,minus,"Bij bewegen/hoesten neemt pijn toe.
-Koorts-, ziekzijn-, [ENT]-, dyspnoe-.
+RD1158_84_93,speculation,"heup:     Boven het linker acetabulum kleine sclerotische laesie, niet typisch voor [ENT], mogelijk boteilandje.
+bekkenkam zonder verdenking op ossale metastasen.
 "
-RD1164_54_64,scope,"Dit beeld beinvloedt wel enigszins de beoordeling van [ENT] maar voor zover te beoordelen zijn deze niet aanwezig.
+RD1164_54_64,speculation,"Dit beeld beinvloedt wel enigszins de beoordeling van [ENT] maar voor zover te beoordelen zijn deze niet aanwezig.
 "
 RD1224_79_84,uncommon_negation,"inwendige prolaps.
 Het aspect gezien op de foto's van 31-03-1995 met een soort [ENT] anterior van het rectum, wordt nu niet meer alszodanig gezien.
 "
-RD1396_87_98,scope,"malaise.
-~@@~ THORAX    2R 385002 In vergelijking met de opnamen van 21-02-1997 is het [ENT] aan de linker en rechter zijde thans geheel verdwenen.
-CONCLUSIE: In vergelijking met de opnamen van 21-02-1997 is het pleuravocht thans verdwenen.
+RD1277_211_222,other,"STATUSNUMMER : 963997   Vraagstelling : KNO tumor.
+- Pleuravocht rechts geresorbeerd; longvelden goed ontplooid (hoe behandeld?). - Geen duidelijk focale pleurale verbredingen.
+Geen aanwijzingen voor (centrale) [ENT].
+- In longsetting nu toch evident nodulaire afwijkingen; de voorheen beschreven klein subpleurale verdichting links lateraal diep in de costophrenische hoek voorheen sp 1105 thans sp -189 uitgegroeid tot een duidelijke nodus, tot 9 mm rond en een 2e nodulus voorheen niet zichtbaar thans meer ventraal in de laterale costophrenische hoek links sp -196 5 mm rond en toch geduid als longmetastasen.
 "
-RD1396_218_229,uncommon_negation,"malaise.
-~@@~ THORAX    2R 385002 In vergelijking met de opnamen van 21-02-1997 is het pleuravocht aan de linker en rechter zijde thans geheel verdwenen.
-CONCLUSIE: In vergelijking met de opnamen van 21-02-1997 is het [ENT] thans verdwenen.
+RD1277_53_64,speculation,"STATUSNUMMER : 963997   Vraagstelling : KNO tumor.
+- [ENT] rechts geresorbeerd; longvelden goed ontplooid (hoe behandeld?). - Geen duidelijk focale pleurale verbredingen.
+Geen aanwijzingen voor (centrale) longembolie.
+- In longsetting nu toch evident nodulaire afwijkingen; de voorheen beschreven klein subpleurale verdichting links lateraal diep in de costophrenische hoek voorheen sp 1105 thans sp -189 uitgegroeid tot een duidelijke nodus, tot 9 mm rond en een 2e nodulus voorheen niet zichtbaar thans meer ventraal in de laterale costophrenische hoek links sp -196 5 mm rond en toch geduid als longmetastasen.
 "
-RD1500_47_56,,"Status na lobair pneumonie.
+RD1324_124_130,other,"KLINISCHE INFORMATIE Status na fractuur rechter humeruskop en luxatie.
+VRAAGSTELLING: Luxatie.
+Geen post-traumatisch ossaal [ENT].
+Rechts beeld van subcapitale humerusfractuur.
+"
+RD1500_47_56,uncommon_negation,"Status na lobair pneumonie.
 Conclusie: Genezen [ENT].
+"
+RD1541_264_269,speculation,"Bekend met dunne darmfistel en blaasfistel.
+Nu koorts en pijn rechter flank.
+Ter plaatse van de fisel en mediaan in de onderbuik wordt in de nabijheid van deze fistel een dunne darmlis gezien.
+Echter in de buurt van de fistel geen bolvormige structuur passend bij [ENT].
 "
 RD1553_16_23,other,"CONCLUSIE: GEen [ENT] of plaquevorming.
 "
-RD1590_267_277,speculation,"Vreemd gevoel rechter lichaamshelft.
+RD1590_267_277,annotation_error,"Vreemd gevoel rechter lichaamshelft.
 Intracerebraal worden geen afwijkingen gezien, geen aanwijzingen voor metastasen, Wel wordt een aantal subcutane laesies gezien in het vetweefsel zowel rechts hoog parieto-occipitaal, links parieto-occipitaal en links occipitaal.
 [ENT] lijken minder waarschijnlijk.
 "
@@ -192,35 +196,17 @@ Longmetastasen bekend.
 085002 Thorax: Zekere [ENT] worden niet gezien.
 Het CT-onderzoek waarop de longmetastasen echter zouden zijn aangetoond, is een gevoeliger methode.
 "
-RD1592_207_219,other,"Sinds geruime tijd veel buikpijn en dysfagie.
-Lymfadenitis mesenterica?
-Nergens wandverdikking van de tractus digestivus, slechts hier en daar een klein mesenteriaal lymfkliertje doch niet het beeld van een [ENT] mesenterialis.
-"
-RD1606_37_48,other,"Het toentertijd bilateraal aanwezige [ENT] is nu verdwenen.
-"
-RD1608_79_88,ambiguous,"STATUSNUMMER : 0597669   Vraagstelling : tumor linker tonsil, geopereerd.
+RD1608_79_88,annotation_error,"STATUSNUMMER : 0597669   Vraagstelling : tumor linker tonsil, geopereerd.
 Voor [ENT] verdachte veranderingen worden niet gezien m.n.
-"
-RD1619_111_122,speculation,"Nog hooguit minimaal afronding van de rechts laterale sinus, verder geen aanwijzing meer voor pleuravocht.
-Het [ENT] rechts lijkt geheel verdwenen.
-Geen ileus.
-Geen tekenen van ileus.
 "
 RD1629_180_194,speculation,"KLINISCHE INFORMATIE Ureterletsel in '95 links bij gynaecologische operatie.
 B.BUIK    387070 Depots van kleine partikels in de galblaas; eigenlijk te klein voor de echte diagnose [ENT].
-"
-RD1673_11_24,uncommon_negation,"Niet apert [ENT].
 "
 RD1762_64_77,other,"Pijn trekkend naar rechter arm, koorts.
 Wat bol maar zeker niet [ENT] met verbreding naar links.
 Er bestaat een arcuair rechts convexe scoliose thoracaal welke ten opzichte van het eerder onderzoek van 22-06-1987 progressief is.
 "
-RD1839_204_216,,"KLINISCHE INFORMATIE: Hypertensie, hypercholesterolaemie.
-Gewichtsverlies.
-Vreemd aspect van costa 5, 6 en 7 links lateroventraal mogelijk op basis van een oud trauma.
-Het beeld past niet primair bij een [ENT].
-"
-RD1888_19_24,uncommon_negation,"Geen voor recidief [ENT] verdachte laesies t.p.v. het operatie litteken.
+RD1888_19_24,ambiguous,"Geen voor recidief [ENT] verdachte laesies t.p.v. het operatie litteken.
 "
 RD1951_365_372,speculation,"VRAAGSTELLING Meniscusdegeneratie of scheur?
 ~@@~ ECHO KNIE L. 389470L Geen aanwijzingen voor #Name# cyste of ganglion.
@@ -230,7 +216,7 @@ M.n. de centrale rupturen en een Bucket handle [ENT] kunnen niet met echografie 
 Differentiatie tussen meniscus degeneratie en ruptuur is ook niet mogelijk.
 CONCLUSIE: Geen ganglion, #Name# cyste of parameningeale cyste.
 "
-RD1951_465_472,annotation_error,"VRAAGSTELLING Meniscusdegeneratie of scheur?
+RD1951_465_472,speculation,"VRAAGSTELLING Meniscusdegeneratie of scheur?
 ~@@~ ECHO KNIE L. 389470L Geen aanwijzingen voor #Name# cyste of ganglion.
 Geen parameningeale cyste aanwijsbaar.
 Geen evidente aanwijzingen voor meniscusruptuur in de periferie, echter is echografie van de knie onvoldoende betrouwbaar om meniscus rupturen uit te sluiten.
@@ -238,23 +224,24 @@ M.n. de centrale rupturen en een Bucket handle ruptuur kunnen niet met echografi
 Differentiatie tussen meniscus degeneratie en [ENT] is ook niet mogelijk.
 CONCLUSIE: Geen ganglion, #Name# cyste of parameningeale cyste.
 "
-RD1951_528_533,scope,"VRAAGSTELLING Meniscusdegeneratie of scheur?
-~@@~ ECHO KNIE L. 389470L Geen aanwijzingen voor #Name# cyste of ganglion.
-Geen parameningeale cyste aanwijsbaar.
-Geen evidente aanwijzingen voor meniscusruptuur in de periferie, echter is echografie van de knie onvoldoende betrouwbaar om meniscus rupturen uit te sluiten.
-M.n. de centrale rupturen en een Bucket handle ruptuur kunnen niet met echografie worden aangetoond.
-Differentiatie tussen meniscus degeneratie en ruptuur is ook niet mogelijk.
-CONCLUSIE: Geen ganglion, #Name# [ENT] of parameningeale cyste.
+RD2134_280_294,speculation,"Ascites.
+Weinig echogenieke patient met forse hoeveelheid ascites.
+In de ascites zijn reflexies zichtbaar.
+Er is een wat uitgespannen galblaas, gezien de ascites is over een wanddikte en andere cholecystitiskenmerken geen uitspraak te doen.
+Veel darmlissen drijven in de ascites, [ENT] of appendicitis echografisch niet vast te stellen.
 "
-RD2041_162_167,uncommon_negation,"KLINISCHE INFORMATIE M.Crohn.
-VRAAGSTELLING Controle ileus?
-1R 387001 In vergelijk met opnamen van 15-01-1997 is er een ongewijzigd beeld van een afwezigheid van [ENT].
-CONCLUSIE Geen tekenen van ileus.
+RD2134_298_310,speculation,"Ascites.
+Weinig echogenieke patient met forse hoeveelheid ascites.
+In de ascites zijn reflexies zichtbaar.
+Er is een wat uitgespannen galblaas, gezien de ascites is over een wanddikte en andere cholecystitiskenmerken geen uitspraak te doen.
+Veel darmlissen drijven in de ascites, diverticulitis of [ENT] echografisch niet vast te stellen.
 "
-RD2245_197_206,speculation,"Beeld kan passen bij chronische subluxatie; arthritis kan niet worden uitgesloten.
-De botstructuur van het acromion is ietwat onregelmatig, doch meer sclerotisch dan lytisch zodat voor een actieve [ENT] op dit moment geen sprake lijkt.
+RD2259_108_116,ambiguous,"Hoog thoracaal is een corpus vertebrale wat wolkerig verdicht doch dit rechtvaardigt nog niet zondermeer de [ENT] botmetastasen van een mammaca.
 "
-RD2259_108_116,speculation,"Hoog thoracaal is een corpus vertebrale wat wolkerig verdicht doch dit rechtvaardigt nog niet zondermeer de [ENT] botmetastasen van een mammaca.
+RD2342_0_7,minus,"[ENT] -, geen sputum.
+VRAAGSTELLING : Infiltraten of tuberculose?
+Geen actieve tuberculose.
+Veel gas in maag en darm.
 "
 RD2560_200_233,scope,"KLINISCHE INFORMATIE: Pijn in de bovenbuik en misselijkheid.
 VRAAGSTELLING: Cholelithiasis?
@@ -264,27 +251,28 @@ Enkele herkenbare lymfklieren langs truncus coeliacus en dorsaal van de maag met
 Normale lever, geen ascites.
 Normale nieren met links centraal een cyste van 3,4 cm zonder betekenis.
 "
-SP1152_26_34,other,"Der [O] C/ Na excisie mal [ENT] bo-been re: gda.
+SP1152_26_34,annotation_error,"Der [O] C/ Na excisie mal [ENT] bo-been re: gda.
+"
+SP1163_44_51,annotation_error,"bekend, bijna 67-jarige alleenstaande nulli [ENT] wegens: 1. een overigens symptoomloze zwelling thv de mons pubis 2. jeukende rode labia.
+Scherp begrensde rode labia minora zonder epitheeldefecten of ulcus, waarvoor ik haar in eerste instantie Dactacortcreme heb meegegeven.(PM
 "
 SP1164_179_186,annotation_error,"cellen aangetroffen O 3 : Er wordt een bacteriele infectie gezien P 1 : Geen afwijkende plaveiselepitheelcellen A 1 : Geen andere afwijkingen C 1 : Geen afwijkingen van endocerv.
 [ENT]: Kwaliteit: : Onsteking: : Plaveiselc.: : Andere afw.: : Cylinderc.: : Conclusie: Pap 1, geen afwijkende epitheelcellen.
 "
-SP1188_26_31,annotation_error,"Laboratorium IMMUNOLOGIE: [ENT] SEROLOGIE Reumafactor IgM 1 (negatief) <9 IU/ml Reumafactor IgA 1 (negatief) <9 U/ml#Name# 13 (negatief) <25 Autorisatie- Serologische uitkomsten pleiten vooralsnog tegen de diagnose RA.
-"
-SP1198_13_24,uncommon_negation,"Een recidief [ENT] onder antistolling konniet aangetoond worden.
+SP1198_13_24,speculation,"Een recidief [ENT] onder antistolling konniet aangetoond worden.
 Echter wat ik niet geheel kan uitsluiten is eenpulmonale hypertensie, zodat patient wordt doorgestuurd naar hetEMC voor verder onderzoek.Daarnaast heeft patient veel gewrichtsklachten als gevolg vanarthrose bij overgewicht.
 "
-SP1207_63_71,uncommon_negation,"Conclusie: Myalgene rugpijn.
+SP1207_63_71,wrong_modality,"Conclusie: Myalgene rugpijn.
 Het is in mijn ogen onmogelijk om [ENT] te krijgen van de ribwervelovergang, evenals het mogelijk is om dit te reponeren van buitenaf.
 "
-SP1239_17_26,uncommon_negation,"Betreft: Lab [O] [ENT] SEROLOGIE Hepatitis B surface ag (HBsAg) 0,3 (negatief) HIV 1 en 2 as 0,1 (negatief)- Geen aanwijzingen voor een infectie met vermeld(e) micro-organisme(n).
+SP1239_17_26,scope,"Betreft: Lab [O] [ENT] SEROLOGIE Hepatitis B surface ag (HBsAg) 0,3 (negatief) HIV 1 en 2 as 0,1 (negatief)- Geen aanwijzingen voor een infectie met vermeld(e) micro-organisme(n).
 "
-SP1239_37_48,uncommon_negation,"Betreft: Lab [O] HEPATITIS SEROLOGIE [ENT] surface ag (HBsAg) 0,3 (negatief) HIV 1 en 2 as 0,1 (negatief)- Geen aanwijzingen voor een infectie met vermeld(e) micro-organisme(n).
+SP1239_37_48,scope,"Betreft: Lab [O] HEPATITIS SEROLOGIE [ENT] surface ag (HBsAg) 0,3 (negatief) HIV 1 en 2 as 0,1 (negatief)- Geen aanwijzingen voor een infectie met vermeld(e) micro-organisme(n).
 "
-SP1273_161_170,minus,"PED Sinds 3 jr is #Name# regelmatig misselijk en braakt hij frequent, gerelateerd aan stress en spanningen; Volledig bloedbeeld en bezinking: g.a.; HP negatief.
+SP1273_161_170,scope,"PED Sinds 3 jr is #Name# regelmatig misselijk en braakt hij frequent, gerelateerd aan stress en spanningen; Volledig bloedbeeld en bezinking: g.a.; HP negatief.
 [ENT] neg.
 "
-SP1300_1740_1755,punctuation,"Referentienr: Functie: Datum/tijd : 02 - 07 - 2003 / : (dd-mm-jjjj / uu:mm) 137 102 Respons :----------------------------------------------------------------------------------------------------------------------------------------------------------Afzender identificatiecode : 0143 naam : Ziekenhuis #City# straat : Postbus huisnr: #LongNumber# postcode : #Postcode# plaats: #City# Contact persoon : HA22 #Name# Telefoon : #TelephoneNumber#TE-----------------------------------------------------------------------------Ontvanger identificatiecode : #LongNumber# naam : M.H. #Name# straat : #Street# huisnr: #HouseNumber# postcode : #Postcode# plaats: #City# Patientgegevens BTH PCL LOC 100 PAT PAT patientnr : #PatientId# XXXXXXXXXXXXXXXXXXXXXXXX naam : #Name# achternaam echtgenoot: #Name#)an/(V)vrouw : V 2 (G)ehuwd/(O)ngehuwd: straat : XXXXXXXXXXXXX huisnr: #HouseNumber# postcode : #PostalCode# plaats: #City#-----------------------------------------------------------------------------Vrije tekst ONTSLAGBERICHT CARDIOLOGIE Specialist : #Name# Opnamedatum: 18-06-2003, Ontslagdatum: 27-06-2003 Ontslag of overplaatsing naar: Huis Reden van opname: Palpataties Voorgeschiedenis: TIA, Hypertensie Anamnese: Patiente had last van hartkloppingen, bonzend hart wel regelmatig.
+SP1300_1740_1755,other,"Referentienr: Functie: Datum/tijd : 02 - 07 - 2003 / : (dd-mm-jjjj / uu:mm) 137 102 Respons :----------------------------------------------------------------------------------------------------------------------------------------------------------Afzender identificatiecode : 0143 naam : Ziekenhuis #City# straat : Postbus huisnr: #LongNumber# postcode : #Postcode# plaats: #City# Contact persoon : HA22 #Name# Telefoon : #TelephoneNumber#TE-----------------------------------------------------------------------------Ontvanger identificatiecode : #LongNumber# naam : M.H. #Name# straat : #Street# huisnr: #HouseNumber# postcode : #Postcode# plaats: #City# Patientgegevens BTH PCL LOC 100 PAT PAT patientnr : #PatientId# XXXXXXXXXXXXXXXXXXXXXXXX naam : #Name# achternaam echtgenoot: #Name#)an/(V)vrouw : V 2 (G)ehuwd/(O)ngehuwd: straat : XXXXXXXXXXXXX huisnr: #HouseNumber# postcode : #PostalCode# plaats: #City#-----------------------------------------------------------------------------Vrije tekst ONTSLAGBERICHT CARDIOLOGIE Specialist : #Name# Opnamedatum: 18-06-2003, Ontslagdatum: 27-06-2003 Ontslag of overplaatsing naar: Huis Reden van opname: Palpataties Voorgeschiedenis: TIA, Hypertensie Anamnese: Patiente had last van hartkloppingen, bonzend hart wel regelmatig.
 Zij heeft verder al 5 weken last van aanvalsgewijze tintelingen in haar linker gezichtshelft en linker arm en duizeligheid.
 Er is geen sprake van angineuze klachten, ook niet van dyspnoe klachten.
 De overige tractus anamnese is niet aanvullend Risicofaktoren: Hypertensie, hypercholesterolaemie Medicatie bij opname: Hydrochloorthiazide 1dd 25, ascal 1dd 100, cozaar 1dd 50 Lichamelijk onderzoek: Bloeddruk: 240/104 Hart: Normale cortonen geen soufles Longen: VAG [ENT]: niet aanwezig ECG: Sinusritme 91/min, linker as deviatie, vlak ST segment in AVL en I.
@@ -292,11 +280,11 @@ Bespreking: Patiente werd opgenomen met hypertensie, aanvals gewijze tintelingen
 Alhoewel onwaarschijnlijk werd nog urine onderzoek ingezet om een feochromocytoom uit te sluiten.
 Medicatie bij ontslag: Cozaar 2dd 50, zocor 1dd 40, ascal 1dd 100, hydrochloorthiazide 1dd 25, selokeen 1dd 50 Conclusie: Hypertensie, aanvalsgewijze tintelingen eci Met vriendelijke groet#Name#, arts-assistente cardiologie Mede uit naam van #Name#
 "
-SP1301_17_22,annotation_error,"Betreft: Lab [O] [ENT] serologie.
+SP1301_17_22,uncommon_negation,"Betreft: Lab [O] [ENT] serologie.
 "
-SP1317_10_18,uncommon_negation,"Hospital# [ENT] SEROLOGIE Materiaal serumpaar 2e serum Cytomegalovirus IgM as 0.4 (negatief) <1.1 ratio Cytomegalovirus IgG as 0.0 (negatief) <1.1 ratio Toxoplasma IgM as 0.18 (negatief) <0.83 ratio Toxoplasma IgG as 0.2 (negatief) <1.6 IU/ml Autorisatie- Geen aanwijzingen voor een recente infectie met vermeld(e) micro-organisme(n).
+SP1317_10_18,scope,"Hospital# [ENT] SEROLOGIE Materiaal serumpaar 2e serum Cytomegalovirus IgM as 0.4 (negatief) <1.1 ratio Cytomegalovirus IgG as 0.0 (negatief) <1.1 ratio Toxoplasma IgM as 0.18 (negatief) <0.83 ratio Toxoplasma IgG as 0.2 (negatief) <1.6 IU/ml Autorisatie- Geen aanwijzingen voor een recente infectie met vermeld(e) micro-organisme(n).
 "
-SP1345_430_438,uncommon_negation,"Voor de eerste maal in januari 2008 in verband met buikpijn.
+SP1345_430_438,ambiguous,"Voor de eerste maal in januari 2008 in verband met buikpijn.
 Anamnese Nu al tijden wisselend buikpijn, eigenlijk al maanden, zo niet jaren.
 Soms is er ook sprake van diarree, af en toe is er sprake van enorme hopen en soms zijn er poepvegen in de onderbroek.
 Bij rectaal toucher harde feces in de ampul.
@@ -304,38 +292,46 @@ Wisselend buikpijn, bij anamnese en lichamelijk onderzoek passend bij obstipatie
 #Name# klaagt in ieder geval niet meer over [ENT] maar laat wel natte winden.
 Daarop is de dosering Forlax opgehoogd naar 2 dd 2 zakjes, waarna de ontlasting zachter werd, de encopresis afnam (dagen niet) maar de consistentie van de ontlasting nog wisselend van aard bleef (soms hard).
 "
-SP1350_515_526,punctuation,"XXXXXXXXXX, adres Nw #Street#-a, #Postcode# #City# Geachte collega, Uw bovengenoemde patient bezocht de polikliniek dermatologie in verband met psoriasis.
-Anamnese Zoals u weet is patient al langer bekend met psoriasis waarvoor in het verleden lokale therapie (onvoldoende effect) en UVB therapie(onvoldoende effect).
-Ik was voornemens Methotrexaat te starten maar bij de thoraxfoto werd een tumor gezien.
-Hij is bekend met diabetes mellitus en als medicatie wordt Metformine, Atacand, Diamicron en Ascal gebruikt.
-[ENT] en C serologie: negatief.
-Conclusie Psoriasis vulgaris.
-Daarnaast bestaat er een kleine kans op een Methotrexaat pneumonitis.
+SP1349_1288_1295,other,"Dr.#Name#, gynaecoloog#Name# Samenvatting verloop graviditeit, partus en kraambed Naam patient: #Name#q Patientnummer: #PatientId# XXXXXXXXXXXXXXXXXXXXXXXXX Alg.med.Bijzond.: geen Bloedgroep patient: O positief Kind: #Name#: #LongNumber#/11 Einde graviditeit: 21-08-2006 Anamnese: Speciele gegevens  : 31 jr.; G:5, P: 1, Sp.ab: 3, APLA: 0, EUG: 0, Mola:0 Fetal loss:, Progenituur: Anamnese   : habituele abortus Allergieen   : geen Rookgewoonte  : 1-10 sig./dag
+A terme datum  : 30-08-2006 Vorige partus  : 13-06-2003 Alcohol   : geen Drug-gebruik  : geen Huidige graviditeit: Wijze van conceptie : spontaan Gebruikte middelen : geen Medische indicatie : sectio caesarea (in anamnese), habituele abortus (in anamnese)1e controle beh.gyn.
+vliesscheur Indicatie   : wanverhouding Bijstimulatie baring : geen Hulp bij baring  : geen Pijnbestrijding  : lokale anaesthesie (spinaal), sectio Ligging bij geboorte : aav Complicatie baring : geen Bijzonderheden baring : geen Geboortedatum  : 21-08-2006 Geboortetijdstip  : 11.13 Termijn   : 38w 5d Duur gebr.vliezen  : 10u 43m Nageboortetijdperk in #Hospital# #City# Oxytocine   : geen Placenta   : placenta verwijderd bij sectio caesarea Complicat.nageboorte : geen Perineumruptuur  : geen Episiotomie   : geen Labiumruptuur  : geen Vaginawand [ENT] : geen Cervix ruptuur  : nee Vaten navelstreng  : 3 Placentagewicht  : 550 gram Vulv.haematoom  : nee Kind Naam    : #Name#d Geslacht   : meisje Pediatrisch betrokken : consult paediatrie zonder opname Kind overleden  : nee Bijzonderheden  : geen Congenitale afwijk.
 "
-SP1364_13_24,speculation,"vrdacht voor [ENT] gevonden.
+SP1364_13_24,annotation_error,"vrdacht voor [ENT] gevonden.
 "
-SP1375_11_19,uncommon_negation,"Hospital#, [ENT] SEROLOGIE HIV as 0.2 (negatief) <0.9 ratio
+SP1375_11_19,scope,"Hospital#, [ENT] SEROLOGIE HIV as 0.2 (negatief) <0.9 ratio
 "
-SP1398_144_152,uncommon_negation,"IMMUNOLOGIE: (AUTO-) ANTISTOFFEN Parietaalcel (maag) as negatief Autorisatie- Afwezigheid van antistoffen tegen parietale cellen pleit tegen de [ENT] autoimmuun-gastritis en pernicieuze anemie.
+SP1398_164_173,speculation,"IMMUNOLOGIE: (AUTO-) ANTISTOFFEN Parietaalcel (maag) as negatief Autorisatie- Afwezigheid van antistoffen tegen parietale cellen pleit tegen de diagnose autoimmuun-[ENT] en pernicieuze anemie.
 "
-SP1398_177_195,uncommon_negation,"IMMUNOLOGIE: (AUTO-) ANTISTOFFEN Parietaalcel (maag) as negatief Autorisatie- Afwezigheid van antistoffen tegen parietale cellen pleit tegen de diagnose autoimmuun-gastritis en [ENT].
+SP1398_177_195,speculation,"IMMUNOLOGIE: (AUTO-) ANTISTOFFEN Parietaalcel (maag) as negatief Autorisatie- Afwezigheid van antistoffen tegen parietale cellen pleit tegen de diagnose autoimmuun-gastritis en [ENT].
 "
-SP1428_48_57,other,"LOG #Name#: Hr heeft besloten te stoppen met de [ENT]
+SP1428_48_57,uncommon_negation,"LOG #Name#: Hr heeft besloten te stoppen met de [ENT]
 "
-SP1429_554_563,other,"CHRA Huisartsendienst Re,-----------------------------------------------------------------Datum: 28-mei-2010 18:51 Oproepnummer: #LongNumber#-----------------------------------------------------------------Tel.: #TelephoneNumber# Polisnr: #LongNumber# Afkomst oproep: Partner Tel.: Urgentie: U2 Spoed Soort bezoek: Visite-----------------------------------------------------------------Klacht/hulpvraag: Klachten: Man heeft sinds vanmiddag 13.00 wat last van pijn in de hartstreek , POB uitstralend naar linker schouder en arm, . tintelingen in de hand, [ENT];- bleek;- klam;+, kortademig;- benauwd;+, Vg; prostaatca, MED; Salofalk, losec,maagbeschwermer, zo'n 10 jaaqr gelden ook klachten, is toen met roken gestopt.
+SP1429_554_563,minus,"CHRA Huisartsendienst Re,-----------------------------------------------------------------Datum: 28-mei-2010 18:51 Oproepnummer: #LongNumber#-----------------------------------------------------------------Tel.: #TelephoneNumber# Polisnr: #LongNumber# Afkomst oproep: Partner Tel.: Urgentie: U2 Spoed Soort bezoek: Visite-----------------------------------------------------------------Klacht/hulpvraag: Klachten: Man heeft sinds vanmiddag 13.00 wat last van pijn in de hartstreek , POB uitstralend naar linker schouder en arm, . tintelingen in de hand, [ENT];- bleek;- klam;+, kortademig;- benauwd;+, Vg; prostaatca, MED; Salofalk, losec,maagbeschwermer, zo'n 10 jaaqr gelden ook klachten, is toen met roken gestopt.
+Graag met spoed visite-----------------------------------------------------------------Subjectief: vanorgen methond gelopen daarna bij bukken pijn lischouder en li thoraxhelft bij bewegen en bij liggen op de li schouder, dyspnoe- nausea- zweten-, niet erger bij insp wel bij diep doorzuchten Objectief: niet ziek, zweten-, dyspnoe- RR 190/90 p 92 ra.a. sao2 98% , pulm: vag bdz, cor s1s2s- geen vierde toon geen effect op nitro, nek mobiel, drukpijn li hemithorax opwekbaar en herkenbaar Evaluatie: spierpijn Plan: heeft al 4 pcm op contraindicatie nsaid nu tramadol toegevoegd bij veranderingklachten opnieuw contact-----------------------------------------------------------------Uitgeschreven recept:-----------------------------------------------------------------Nazorg: Overig:-----------------------------------------------------------------Advies: ABOUMA Fiattering: Tel.
+"
+SP1429_566_571,minus,"CHRA Huisartsendienst Re,-----------------------------------------------------------------Datum: 28-mei-2010 18:51 Oproepnummer: #LongNumber#-----------------------------------------------------------------Tel.: #TelephoneNumber# Polisnr: #LongNumber# Afkomst oproep: Partner Tel.: Urgentie: U2 Spoed Soort bezoek: Visite-----------------------------------------------------------------Klacht/hulpvraag: Klachten: Man heeft sinds vanmiddag 13.00 wat last van pijn in de hartstreek , POB uitstralend naar linker schouder en arm, . tintelingen in de hand, misselijk;- [ENT];- klam;+, kortademig;- benauwd;+, Vg; prostaatca, MED; Salofalk, losec,maagbeschwermer, zo'n 10 jaaqr gelden ook klachten, is toen met roken gestopt.
 Graag met spoed visite-----------------------------------------------------------------Subjectief: vanorgen methond gelopen daarna bij bukken pijn lischouder en li thoraxhelft bij bewegen en bij liggen op de li schouder, dyspnoe- nausea- zweten-, niet erger bij insp wel bij diep doorzuchten Objectief: niet ziek, zweten-, dyspnoe- RR 190/90 p 92 ra.a. sao2 98% , pulm: vag bdz, cor s1s2s- geen vierde toon geen effect op nitro, nek mobiel, drukpijn li hemithorax opwekbaar en herkenbaar Evaluatie: spierpijn Plan: heeft al 4 pcm op contraindicatie nsaid nu tramadol toegevoegd bij veranderingklachten opnieuw contact-----------------------------------------------------------------Uitgeschreven recept:-----------------------------------------------------------------Nazorg: Overig:-----------------------------------------------------------------Advies: ABOUMA Fiattering: Tel.
 "
 SP1429_943_950,minus,"CHRA Huisartsendienst Re,-----------------------------------------------------------------Datum: 28-mei-2010 18:51 Oproepnummer: #LongNumber#-----------------------------------------------------------------Tel.: #TelephoneNumber# Polisnr: #LongNumber# Afkomst oproep: Partner Tel.: Urgentie: U2 Spoed Soort bezoek: Visite-----------------------------------------------------------------Klacht/hulpvraag: Klachten: Man heeft sinds vanmiddag 13.00 wat last van pijn in de hartstreek , POB uitstralend naar linker schouder en arm, . tintelingen in de hand, misselijk;- bleek;- klam;+, kortademig;- benauwd;+, Vg; prostaatca, MED; Salofalk, losec,maagbeschwermer, zo'n 10 jaaqr gelden ook klachten, is toen met roken gestopt.
 Graag met spoed visite-----------------------------------------------------------------Subjectief: vanorgen methond gelopen daarna bij bukken pijn lischouder en li thoraxhelft bij bewegen en bij liggen op de li schouder, [ENT]- nausea- zweten-, niet erger bij insp wel bij diep doorzuchten Objectief: niet ziek, zweten-, dyspnoe- RR 190/90 p 92 ra.a. sao2 98% , pulm: vag bdz, cor s1s2s- geen vierde toon geen effect op nitro, nek mobiel, drukpijn li hemithorax opwekbaar en herkenbaar Evaluatie: spierpijn Plan: heeft al 4 pcm op contraindicatie nsaid nu tramadol toegevoegd bij veranderingklachten opnieuw contact-----------------------------------------------------------------Uitgeschreven recept:-----------------------------------------------------------------Nazorg: Overig:-----------------------------------------------------------------Advies: ABOUMA Fiattering: Tel.
 "
-SP1462_210_220,punctuation,"MEDVRI Laboratorium:#Hospital#,Faeceskweek: Labnr.: #LongNumber#Entamoeba histolytica DNA PCR : negatief Cryptosporidium parvum PCR : negatief Dientamoeba fragilis PCR : negatief Giardia lamblia PCR : negatief [ENT] PCR : negatief Campylobacter PCR : negatief Shigella/EIEC PCR : negatief STEC PCR : negatiefmacroscopisch aspect diarree
+SP1429_952_958,minus,"CHRA Huisartsendienst Re,-----------------------------------------------------------------Datum: 28-mei-2010 18:51 Oproepnummer: #LongNumber#-----------------------------------------------------------------Tel.: #TelephoneNumber# Polisnr: #LongNumber# Afkomst oproep: Partner Tel.: Urgentie: U2 Spoed Soort bezoek: Visite-----------------------------------------------------------------Klacht/hulpvraag: Klachten: Man heeft sinds vanmiddag 13.00 wat last van pijn in de hartstreek , POB uitstralend naar linker schouder en arm, . tintelingen in de hand, misselijk;- bleek;- klam;+, kortademig;- benauwd;+, Vg; prostaatca, MED; Salofalk, losec,maagbeschwermer, zo'n 10 jaaqr gelden ook klachten, is toen met roken gestopt.
+Graag met spoed visite-----------------------------------------------------------------Subjectief: vanorgen methond gelopen daarna bij bukken pijn lischouder en li thoraxhelft bij bewegen en bij liggen op de li schouder, dyspnoe- [ENT]- zweten-, niet erger bij insp wel bij diep doorzuchten Objectief: niet ziek, zweten-, dyspnoe- RR 190/90 p 92 ra.a. sao2 98% , pulm: vag bdz, cor s1s2s- geen vierde toon geen effect op nitro, nek mobiel, drukpijn li hemithorax opwekbaar en herkenbaar Evaluatie: spierpijn Plan: heeft al 4 pcm op contraindicatie nsaid nu tramadol toegevoegd bij veranderingklachten opnieuw contact-----------------------------------------------------------------Uitgeschreven recept:-----------------------------------------------------------------Nazorg: Overig:-----------------------------------------------------------------Advies: ABOUMA Fiattering: Tel.
 "
-SP1483_46_55,other,"Enige zwelling.
+SP1483_46_55,wrong_modality,"Enige zwelling.
 Laryngitis Dysfonie Stoppen - [ENT].
 "
-SP1486_95_104,other,"serologie Klinische gegevens hoest > 4 weken INFECTIE SEROLOGIE Materiaal serumpaar 1e serum B.[ENT] (kinkhoest) IgG as 7 (negatief) <9 U/ml B.pertussis (kinkhoest) IgA as 3 (negatief) <9 U/ml Autorisatie- Geen aanwijzingen voor een recente infectie met Bordetella ( kinkhoest ).
-"
 SP1486_147_156,uncommon_negation,"serologie Klinische gegevens hoest > 4 weken INFECTIE SEROLOGIE Materiaal serumpaar 1e serum B.pertussis (kinkhoest) IgG as 7 (negatief) <9 U/ml B.[ENT] (kinkhoest) IgA as 3 (negatief) <9 U/ml Autorisatie- Geen aanwijzingen voor een recente infectie met Bordetella ( kinkhoest ).
+"
+SP1486_95_104,uncommon_negation,"serologie Klinische gegevens hoest > 4 weken INFECTIE SEROLOGIE Materiaal serumpaar 1e serum B.[ENT] (kinkhoest) IgG as 7 (negatief) <9 U/ml B.pertussis (kinkhoest) IgA as 3 (negatief) <9 U/ml Autorisatie- Geen aanwijzingen voor een recente infectie met Bordetella ( kinkhoest ).
+"
+SP1517_617_625,other,"Verwiizer en reden verwijzing: U verwees pati�nte voor diagnostiek en behandeling in verband met depressieve klachten en vermagering.
+behoefte te hebben aan praktische ondersteuning in haar moederrol en eventueel di�tiste voor voedingsadvies t.b.v. gewichtstoename; meer dan aan gespreksen/of medicamenteuze behandeling.
+DSM IV classificatie (voorlopig) As I  dysthyme stoornis, code 300.4
+As II  geen diagnose, code V71.09 As III lichamelijk klachten e.c.i.
+Ze heeft een al lang bestaande licht sombere stemming, sinds de geboorte van haar tweede kind en een duidelijk ondergewicht .
+Overigens o.i. geen sprake van: [ENT], een duidelijk depressieve - dan wel angststoornis hooguit dysthymie.
+En eventueel verwijzing naar een di�tiste voor voedingsadvies t.b.v. gewichtstoename .
 "
 SP1517_663_676,scope,"Verwiizer en reden verwijzing: U verwees pati�nte voor diagnostiek en behandeling in verband met depressieve klachten en vermagering.
 behoefte te hebben aan praktische ondersteuning in haar moederrol en eventueel di�tiste voor voedingsadvies t.b.v. gewichtstoename; meer dan aan gespreksen/of medicamenteuze behandeling.
@@ -352,60 +348,39 @@ Onbelaste voorgeschiedenis voor [ENT], zij rookt niet.
 Bespreking: bij patiente blijkt sprake te zijn van een boezemflutter, waarschijnlijk op basis van haar pulmonale hypertensie.
 Bij controle bleek er wederom sprake te zijn van een sinusritme.
 "
-SP1523_240_251,,"Reden van verwijzing: familiaire belasting voor coloncarcinoom.
-Voorgeschiedenis: Migraine.1974 - operatie vagina.
-Lichen sclerosis.
-Anamnese: Een broer van patiente zou op 61-jarige leeftijd een gemetastaseerd coloncarcinoom hebben gehad.
-[ENT]: geen.
-familiaire belasting voor coloncarcinoom.
-Conclusie: Familiaire belasting voor coloncarcinoom.
+SP1548_0_5,annotation_error,"[ENT].
 "
-SP1627_469_475,punctuation,"Datum anamnese: 01-09-2010 Anamnese: 13082010 pijnloos ulcus glans penis 3 wk, heeft wisselende sexuale contacten iha veilig1308201018082010 tel: opnieuw chlamydia: als plekje blijft> retour30082010 tel:plekje penis neemt toe, nu ook zoiets in linker oksel en witte plekjes op de tong?>>c01092010
+SP1627_469_475,other,"Datum anamnese: 01-09-2010 Anamnese: 13082010 pijnloos ulcus glans penis 3 wk, heeft wisselende sexuale contacten iha veilig1308201018082010 tel: opnieuw chlamydia: als plekje blijft> retour30082010 tel:plekje penis neemt toe, nu ook zoiets in linker oksel en witte plekjes op de tong?>>c01092010
 geindureerde afwijking glans en li oksel, daaarnaast witte afwijking op de tong, 3 lasesies scherp begrensd, niet verheven, pijnloos VG: melanoom; controle bij XXXX #Name# [ENT]: nee Duur van de klachten: > 1 maand Symptomen: Pijn : nee Branderig : nee Jeuk : nee Localisatie: 1 oksel 2. tong 3.
 Medicatie: 18082010 AZITROMYCINE TABLET OMHULD 500MG (2-WATER) 21D2T Werkdiagnose: 01092010 dd lymphogranuloma venereum?
 Vraagstelling: half augustus pijnloos ulcus glans penis; chlamydia PCR posiief, Lues, HIV serologie negatief.
 zie glanzende rand, suspekt voor basaalcelcarcinoom.
 "
-SP1649_711_719,scope,"-------------------------------------------------------------------Datum: 26-aug-2007 19:04 Oproepnummer: #LongNumber# Soort contact: Consult Urgentie: U4 Routine--------------------------------------------------------------------Klacht/hulpvraag: Klachten: Zie voorgaande oproep; arm zwelt op, vingers worden dikker, krijgt koorts, nu boven de 38........
-Opmerkingen: Oproepen die zijn ontvangen en afgehandeld in de afgelopen 72 uur:Advies !#LongNumber# op 24-aug-07 19:44:26--------------------------------------------------------------------Bevindingen Subjectief sinds 2 dgn ppijnlijke re arm, sinds gisteren dikker en aanhoudende koorts, sinds ongeveer een week Objectief verder niet ziek, niet verkouden/[ENT]/hoesten; mictie gb; re arm wel dikker dan li; wat kattenkrabben, geen roodheid; Evaluatie: onduidlijke klachten, geen focus voor de koorts; kattenkrabziekte???(toxoplasmose?CMV???????)
-Evaluatie onduidlijke klachten, geen focus voor de koorts; kattenkrabziekte???(toxoplasmose?CMV???????)
-"
-SP1651_13_18,uncommon_negation,"IMMUNOLOGIE: [ENT] SEROLOGIE Reumafactor IgM 1 (negatief) <9 IU/ml Reumafactor IgA 3 (negatief) <9 U/ml CCP as 0 (negatief) <25 Autorisatie- Serologische uitkomsten pleiten vooralsnog tegen de diagnose RA.
-"
-SP1654_412_423,uncommon_negation,"Anamnese: Een 30-jarige vrouw, gravida 4, para 1, abortus 2, bij wie de datum laatste menstruatie 24-12-2009 is.
+SP1654_412_423,other,"Anamnese: Een 30-jarige vrouw, gravida 4, para 1, abortus 2, bij wie de datum laatste menstruatie 24-12-2009 is.
 Speciele Anamnese: aanvankelijk dacht pate dat een miskraam zou krijgen er blijkt een intacte zwangerschap , eenling aanwezig a terme 30-09-10 st na subtotaalruptuur vorige partus G4P1, 2x sp abortus, vit D def Gynaecologisch onderzoek: Uterus cf ad Rr 110/70 Gew 60 kg L 170 Laboratoriumonderzoek: [ENT]: Negatief.
 Rubella: Positief.
 Bij een amenorroe duur van 7W1D.
 "
-SP1676_408_421,other,"Reden van controle: hypercholesterolemie.
+SP1676_408_421,uncommon_negation,"Reden van controle: hypercholesterolemie.
 Voorgeschiedenis: Bekend met hypertensie, diabetes mellitus type 2 en hypercholesterolemie.2007 polymyalgia rheumatica beeld en subacromiaal beeld rechts.
 In de galblaas enkele kleine poliepjes waarschijnlijk kleine cholesterolpoliepjes maar geen mobiele structuren, geen voor steen verdachte afwijkingen ook geen hydrops, geen galblaaswandverdikking.
 Homogene niet-[ENT].
 DNA-diagnostiek naar familiaire hypercholesterolemie is nog niet bekend.
 Voor de controle van haar diabetes mellitus zal patiente zich tot u wenden.
 "
+SP1697_140_148,other,"Dit laatse is geen optie gezien zeer gemakkelijk zonnebrand.
+Geen syncope.
+Risicoprofiel: Roken nauwelijks, Bloeddruk neg, Cholesterol neg, [ENT] neg.
+Hij komt in aanmerking voor een ablatieve behandeling van AF. Bij deze patient met long lasting persisterend AF is een uitgebreide ablatie nodig met longvene isolatie, septumlijnen en bijkomende lijnen in de linker boezem (PVAC-MASC-MAAC).
+"
 SP1774_3_10,other,"De [ENT] was in ieder geval volledig verdwenen.
 Deze was negatief voor de groei van Salmonella.
 "
-SP1774_86_96,uncommon_negation,"De diarree was in ieder geval volledig verdwenen.
-Deze was negatief voor de groei van [ENT].
-"
 SP1784_114_122,other,"Betreft: Neu [O]#Name#:Vermoeidheidsklachten zonder aanwyzin gen voor een myopathie of een #Name# Eaton Myastheen [ENT] by aanvullend onderzoek.
 "
-SP1786_131_136,speculation,"Internist, Diagnosen behandelend specialist bij ontslag: Buikpijn en rectaal bloedverlies.
-Coloscopie: IBD beeld, niet evident een [ENT] of Colitis Ulcerosa, biopten genomen.
-Differentiaal diagnostisch kan nog gedacht worden aan ischemie van de darmen.
-De patiente is op de hoogte van de diagnose.
-Tijdelijk Ascal gestopt ivm rectaal bloedverlies.
-dieet: vloeibaar dieet langzaam uitgebreid naar normaal dieet.#City#, 2 november 2009 Geachte collega, Bovengenoemde patiente werd d.d. 03-11-2009 ontslagen van de afdeling Maag Darm Leverziekten van de #Hospital#.
-Diagnosen behandelend specialist bij ontslag: Buikpijn en rectaal bloedverlies.
-Coloscopie: IBD beeld, niet evident een Crohn of Colitis Ulcerosa, biopten genomen.
-Differentiaal diagnostisch kan nog gedacht worden aan ischemie van de darmen.
-De patiente is op de hoogte van de diagnose.
-Tijdelijk Ascal gestopt ivm rectaal bloedverlies.
-Met collegiale hoogachting,#Name#, arts-assistent(e) Maag Darm Leverziekten#Name# MDL arts Deze brief heeft geen ondertekening i.v.m.
+SP1857_92_101,punctuation,"Ron [O] X re hand; gewricht toont wat weke delenzwelling; Geen aanwijzing voor recent traum.[ENT]
 "
-SP1893_686_702,punctuation,"Reden van bezoek: Analyse auto-immuunziekte bij COP.
+SP1893_686_702,uncommon_negation,"Reden van bezoek: Analyse auto-immuunziekte bij COP.
 Voorgeschiedenis:(2004) Erysipelasbeeld rechter enkel wv floxapen., -; (-) voet- en knie-operaties jaren geleden, -; (Sinds jan 2008) langzaam progressieve kortademigheid waarvoor opname in het #Hospital# in mei 2008 met aansluitend overplaatsing naar het #Hospital#,-; (26-05-2008) Op VATS rechts pro diagnosi met biopt rechter bovenkwab en rechter onderkwab waarin histologisch het beeld past bij organiserende pneumonie en deels bij een meer actief ontstekingsproces, 24: Geen aanwijzingen voor oorzakelijk myco-organismen.
 Anamnese: Patiente heeft sinds juni 2008 de diagnose COP gekregen.
 Voor de longaandoening was zij gezond.
@@ -413,7 +388,15 @@ Voor de longaandoening was zij gezond.
 Oogontsteking: nee Huid/nagel afwijkingen:nee Huidige medicatie: Zuurstof 1,5 liter/minuut, bij inspanning 3-4 liter.
 #Name#,Internist - Reumatoloog Edifact bericht verstuurd vanuit secretariaat Interne/MDL/Reumatologie Met vriendelijke groet,#Name#, secretaresse Interne/MDL/Reumatologie#Hospital#, locatie #City# Artsen bereikbaar via: Poli hematologie/oncologie: #TelephoneNumber# Poli interne/nierziekten: #TelephoneNumber# Poli reumatologie: #TelephoneNumber# Poli MDL: #TelephoneNumber#
 "
-SP1893_761_777,punctuation,"Reden van bezoek: Analyse auto-immuunziekte bij COP.
+SP1893_720_727,uncommon_negation,"Reden van bezoek: Analyse auto-immuunziekte bij COP.
+Voorgeschiedenis:(2004) Erysipelasbeeld rechter enkel wv floxapen., -; (-) voet- en knie-operaties jaren geleden, -; (Sinds jan 2008) langzaam progressieve kortademigheid waarvoor opname in het #Hospital# in mei 2008 met aansluitend overplaatsing naar het #Hospital#,-; (26-05-2008) Op VATS rechts pro diagnosi met biopt rechter bovenkwab en rechter onderkwab waarin histologisch het beeld past bij organiserende pneumonie en deels bij een meer actief ontstekingsproces, 24: Geen aanwijzingen voor oorzakelijk myco-organismen.
+Anamnese: Patiente heeft sinds juni 2008 de diagnose COP gekregen.
+Voor de longaandoening was zij gezond.
+Ochtendstijfheid: nee Nachtelijke [ENT]: nee Sicca: niet Raynaud: nee UV overgevoeligheid: nee, Wel zonne-allergie.
+Oogontsteking: nee Huid/nagel afwijkingen:nee Huidige medicatie: Zuurstof 1,5 liter/minuut, bij inspanning 3-4 liter.
+#Name#,Internist - Reumatoloog Edifact bericht verstuurd vanuit secretariaat Interne/MDL/Reumatologie Met vriendelijke groet,#Name#, secretaresse Interne/MDL/Reumatologie#Hospital#, locatie #City# Artsen bereikbaar via: Poli hematologie/oncologie: #TelephoneNumber# Poli interne/nierziekten: #TelephoneNumber# Poli reumatologie: #TelephoneNumber# Poli MDL: #TelephoneNumber#
+"
+SP1893_761_777,uncommon_negation,"Reden van bezoek: Analyse auto-immuunziekte bij COP.
 Voorgeschiedenis:(2004) Erysipelasbeeld rechter enkel wv floxapen., -; (-) voet- en knie-operaties jaren geleden, -; (Sinds jan 2008) langzaam progressieve kortademigheid waarvoor opname in het #Hospital# in mei 2008 met aansluitend overplaatsing naar het #Hospital#,-; (26-05-2008) Op VATS rechts pro diagnosi met biopt rechter bovenkwab en rechter onderkwab waarin histologisch het beeld past bij organiserende pneumonie en deels bij een meer actief ontstekingsproces, 24: Geen aanwijzingen voor oorzakelijk myco-organismen.
 Anamnese: Patiente heeft sinds juni 2008 de diagnose COP gekregen.
 Voor de longaandoening was zij gezond.
@@ -421,23 +404,19 @@ Ochtendstijfheid: nee Nachtelijke rugpijn: nee Sicca: niet Raynaud: nee UV [ENT]
 Oogontsteking: nee Huid/nagel afwijkingen:nee Huidige medicatie: Zuurstof 1,5 liter/minuut, bij inspanning 3-4 liter.
 #Name#,Internist - Reumatoloog Edifact bericht verstuurd vanuit secretariaat Interne/MDL/Reumatologie Met vriendelijke groet,#Name#, secretaresse Interne/MDL/Reumatologie#Hospital#, locatie #City# Artsen bereikbaar via: Poli hematologie/oncologie: #TelephoneNumber# Poli interne/nierziekten: #TelephoneNumber# Poli reumatologie: #TelephoneNumber# Poli MDL: #TelephoneNumber#
 "
-SP1894_8_13,uncommon_negation,"Lab [O] [ENT]: IgM 2(negatief) IgA 1(negatief)
+SP1893_804_817,uncommon_negation,"Reden van bezoek: Analyse auto-immuunziekte bij COP.
+Voorgeschiedenis:(2004) Erysipelasbeeld rechter enkel wv floxapen., -; (-) voet- en knie-operaties jaren geleden, -; (Sinds jan 2008) langzaam progressieve kortademigheid waarvoor opname in het #Hospital# in mei 2008 met aansluitend overplaatsing naar het #Hospital#,-; (26-05-2008) Op VATS rechts pro diagnosi met biopt rechter bovenkwab en rechter onderkwab waarin histologisch het beeld past bij organiserende pneumonie en deels bij een meer actief ontstekingsproces, 24: Geen aanwijzingen voor oorzakelijk myco-organismen.
+Anamnese: Patiente heeft sinds juni 2008 de diagnose COP gekregen.
+Voor de longaandoening was zij gezond.
+Ochtendstijfheid: nee Nachtelijke rugpijn: nee Sicca: niet Raynaud: nee UV overgevoeligheid: nee, Wel zonne-allergie.
+[ENT]: nee Huid/nagel afwijkingen:nee Huidige medicatie: Zuurstof 1,5 liter/minuut, bij inspanning 3-4 liter.
+#Name#,Internist - Reumatoloog Edifact bericht verstuurd vanuit secretariaat Interne/MDL/Reumatologie Met vriendelijke groet,#Name#, secretaresse Interne/MDL/Reumatologie#Hospital#, locatie #City# Artsen bereikbaar via: Poli hematologie/oncologie: #TelephoneNumber# Poli interne/nierziekten: #TelephoneNumber# Poli reumatologie: #TelephoneNumber# Poli MDL: #TelephoneNumber#
 "
-SP1914_340_353,uncommon_negation,"Heeft sinds vandaag opnieuw pijn in de onderrug,trekt naar de buik en benen.
-Zweten:+ Heeft afgelopen maand(sept) 3 kr een UWI gehad, waarvan 1 kr een nierbekkenontst.
-voor stemmingswisselingen.
-Geen allergie voor een ab-kuur.
-gb diffuus drukpijnlijk geen defense Evaluatie: rugpijn ssstralend over de buik.Onvoldoende aanwijzingen nu voor [ENT] Evaluatie rugpijn ssstralend over de buik.Onvoldoende aanwijzingen nu voor pyelonefritis Plan Gezien zweten en pijn onderrug: door naar HA hap.
-"
-SP1914_429_442,uncommon_negation,"Heeft sinds vandaag opnieuw pijn in de onderrug,trekt naar de buik en benen.
-Zweten:+ Heeft afgelopen maand(sept) 3 kr een UWI gehad, waarvan 1 kr een nierbekkenontst.
-voor stemmingswisselingen.
-Geen allergie voor een ab-kuur.
-gb diffuus drukpijnlijk geen defense Evaluatie: rugpijn ssstralend over de buik.Onvoldoende aanwijzingen nu voor pyelonefritis Evaluatie rugpijn ssstralend over de buik.Onvoldoende aanwijzingen nu voor [ENT] Plan Gezien zweten en pijn onderrug: door naar HA hap.
+SP1901_41_52,uncommon_negation,"Int [O] #Name#: Leverfunctiestoornissen, [ENT] en C negatief evenals CMV.
 "
 SP1962_8_16,minus,"Re voet [ENT] -, haematoom -, asdrukpijn 5e str, drukpijn tub.metatarsale
 "
-SP1989_456_461,other,"Opnamereden: Vileus adenoom coecum en colon ascendens Chirurgische voorgeschiedenis:1996 CABG Conclusie OK:10-02-2011: lap hemicolectomie rechts13-02-2011: re-OK ivm ischemisch stukje omentum en vrij bloed(800cc).
+SP1989_456_461,uncommon_negation,"Opnamereden: Vileus adenoom coecum en colon ascendens Chirurgische voorgeschiedenis:1996 CABG Conclusie OK:10-02-2011: lap hemicolectomie rechts13-02-2011: re-OK ivm ischemisch stukje omentum en vrij bloed(800cc).
 Conclusie opname: Hemicolectomie rechts, gecompliceerd door bloeding wv relaparotomie.
 PA uitslag: 2 tubulovilleuze adenomen: niet hooggradige dysplasie.
 In 1 adenoom slechts focaal hooggradige dysplasie.
