@@ -1,15 +1,19 @@
-# negation-detection
-Code for negation detection paper (on [overleaf](https://www.overleaf.com/project/6065e48860e8c2d84507d19e))
+# Negation detection
+Code for negation detection in Dutch clinical texts. 
+
+TODO: Add URL to paper.
 
 ## Folder structure
 ```
 negation-detection
-└───bilstm             : biLSTM code 
+└───bilstm             : biLSTM method code 
 └───data               : input data (not git tracked)
 └───models             : model output files (not git tracked)
-└───results            : result files (used for comparing between different methods)
-└───robbert            : robbert code
-└───rule-based_context : rule based code
-└───sandbox            : test notebooks
-└───utils              : code for general (pre-)processing
+└───results            : result files
+└───robbert            : RobBERT method code
+└───rule-based_context : Rule-based method code
+└───utils              : Code for general (pre-)processing
 ```
+
+- Notebooks to reproduce results for assessed methods are in their respective folders.
+- Notebooks for general evaluation, error analysis and error comparisons are in the root directory.
