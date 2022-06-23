@@ -2,9 +2,9 @@
 
 All files in this repository, except this README.md, are ignored by Git.
 
-This folder can contain local data files required for this repository, such as:
+In local installations, this folder should contain source and processed data files used in the notebooks of this repository, such as:
 
 ### biLSTM-MetaCAT
-- emc-dcc_ann.json containing the labeled Data
+- emc-dcc_ann.json containing the labeled data, transformed from Dutch Clinical Corpus source format to MedCAT's JSON format.
 - cdb.dat & vocab.dat from and for MedCAT
-- data.txt from MedCAT containing dutch medical wikipedia
+- data.txt, processed corpus from MedCAT
