@@ -20,6 +20,7 @@ negation-detection
 
 If you find any of the code published in this repository useful please cite as:
 
+```
 @software{bram_van_es_2022_6980076,
   author       = {Bram van Es and
                   Leon C. Reteig and
@@ -38,6 +39,7 @@ If you find any of the code published in this repository useful please cite as:
   doi          = {10.5281/zenodo.6980076},
   url          = {https://doi.org/10.5281/zenodo.6980076}
 }
+```
 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6980076.svg)](https://doi.org/10.5281/zenodo.6980076)
