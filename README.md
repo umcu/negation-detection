@@ -1,7 +1,7 @@
 # Negation detection
 Code for negation detection in Dutch clinical texts. 
 
-TODO: Add URL to paper.
+Publication: https://doi.org/10.48550/arxiv.2209.00470
 
 ## Folder structure
 ```
