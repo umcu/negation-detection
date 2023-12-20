@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-def evaluate_per_example(annotation_file, meta_cat, result_column_name):
+def evaluate_per_example(annotation_file, meta_cat, result_column_name, label='Negation'):
     """Evaluates metacat on annotation file per example, and include example ID.
     
     This code predicts the negation for every example in an annotation file (MedCAT Trainer JSON format).
@@ -63,7 +63,13 @@ def evaluate_per_example(annotation_file, meta_cat, result_column_name):
         # Retrieve predictions
         for ent in doc.ents:
             entity_id = ent._.id
-            annotation = ent._.meta_anns['Negation']['value']
+            if label=='Negation':
+                annotation = ent._.meta_anns['Negation']['value']
+            elif label=='Temporality':
+                annotation = ent._.meta_anns['Temporality']['value']
+            elif label=='Experiencer':
+                annotation = ent._.meta_anns['Experiencer']['value']
+            
             predictions.append([entity_id, annotation])
 
     return pd.DataFrame(predictions, columns=['entity_id', result_column_name])
