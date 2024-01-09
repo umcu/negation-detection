@@ -12,7 +12,9 @@ import re
 import json
 import pandas as pd
 from pathlib import Path
+from tqdm import tqdm
 
+# get_dataset_from_json
 
 def label_category(label):
     if label == "Negated":
@@ -35,6 +37,7 @@ def label_category(label):
 
 def get_dataset(textfiles, labelfiles, nrs):
     dataset = []
+    errors = []
     re_unicode = re.compile(r"[^\x00-\x7F]+")
     for text, labels, nr in zip(textfiles, labelfiles, nrs):
         text = re_unicode.sub("x", text)
@@ -174,10 +177,10 @@ def get_dataset(textfiles, labelfiles, nrs):
 
                 # mismatch in labels
                 else:
-                    print(f"Mismatch Error in {nr}, for line:{text[:i]}")
+                    errors.append(f"Mismatch Error in {nr}, \n for line:{text[:i]}")
                     # print(text, labels, nr)
                     # print(word)
-                    print(negation)
+                    #print(negation)
                     break
 
                 # add special characters separately
@@ -227,7 +230,7 @@ def get_dataset(textfiles, labelfiles, nrs):
             # print(f"{nr} has {len(data)} data points")
             dataset.append(data)
 
-    return dataset
+    return dataset, errors
 
 
 def get_tsv(dataset):
@@ -329,6 +332,47 @@ def get_dataframe(dataset):
 
     return pd.DataFrame(data_tsv), ids
 
+def get_tuples_from_medcat_json(path):
+    docs = json.load(open(path))
+    texts, labels, ids = [], [], []
+    
+    class_map = {'negated': 'Negated', 
+                 'not negated': 'NotNegated', 
+                 'patient': 'Patient', 
+                 'other': 'Other',
+                 'recent': 'Recent', 
+                 'historical': 'Historical', 
+                 'hypothetical': 'Hypothetical'}
+    
+    for doc in tqdm(docs['projects'][0]['documents']):
+        ids.append(doc['name'])
+        texts.append(doc['text'])
+        _label= ""
+        k=1
+        for ann in doc['annotations']:
+            # negation, temporality, experiencer
+            try:                
+                _label += f"T{k}\t"+class_map[ann['meta_anns']['Negation']['value']]+" "
+                _label += str(ann['start'])+" "+str(ann['end'])+"\t"+ann['value']+"\n"
+                k+=1
+            except KeyError:
+                pass
+            try:                
+                _label += f"T{k}\t"+class_map[ann['meta_anns']['Temporality']['value']]+" "
+                _label += str(ann['start'])+" "+str(ann['end'])+"\t"+ann['value']+"\n"
+                k+=1
+            except KeyError:
+                pass
+            
+            try:                
+                _label += f"T{k}\t"+class_map[ann['meta_anns']['Experiencer']['value']]+" "
+                _label += str(ann['start'])+" "+str(ann['end'])+"\t"+ann['value']+"\n"
+                k+=1
+            except:
+                pass
+        labels.append(_label)       
+    
+    return texts, labels, ids
 
 def main():
     parser = argparse.ArgumentParser(description="Preprocess data")
