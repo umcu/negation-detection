@@ -295,30 +295,36 @@ def get_dataframe(dataset):
             line_dict["Id"] = line[0]
             line_dict["Word"] = line[1]
             for i in range(2, 8):
+                #TODO: 
                 if (line[i] == 0) and (i < 6):
-                    line_dict["BIO"] = "O"
-                    line_dict["Negation"] = "O"
-                    line_dict["Experiencer"] = "O"
-                    line_dict["Temporality"] = "O"
+                    if i == 2:
+                        line_dict["BIO"] = "O"
+                    elif i == 3:
+                        line_dict["Negation"] = "O"
+                    elif i == 4:
+                        line_dict["Experiencer"] = "O"
+                    elif i == 5:
+                        line_dict["Temporality"] = "O"
+                    
                     line_dict["Begin"] = "O"
                     line_dict["End"] = "O"
                 elif (line[i] == 1) and (i < 6):
                     if i == 2:
                         line_dict["BIO"] = "B"
-                    if i == 3:
+                    elif i == 3:
                         line_dict["Negation"] = "Negated"
-                    if i == 4:
+                    elif i == 4:
                         line_dict["Experiencer"] = "Patient"
-                    if i == 5:
+                    elif i == 5:
                         line_dict["Temporality"] = "Recent"
                 elif (line[i] == 2) and (i < 6):
                     if i == 2:
                         line_dict["BIO"] = "I"
-                    if i == 3:
+                    elif i == 3:
                         line_dict["Negation"] = "NotNegated"
-                    if i == 4:
+                    elif i == 4:
                         line_dict["Experiencer"] = "Other"
-                    if i == 5:
+                    elif i == 5:
                         line_dict["Temporality"] = "Historical"
                 elif (line[i] == 3) and (i == 5):
                     line_dict["Temporality"] = "Hypothetical"
@@ -342,7 +348,7 @@ def get_tuples_from_medcat_json(path):
                  'other': 'Other',
                  'recent': 'Recent', 
                  'historical': 'Historical', 
-                 'hypothetical': 'Hypothetical'}
+                 'hypothetisch': 'Hypothetical'}
     
     for doc in tqdm(docs['projects'][0]['documents']):
         ids.append(doc['name'])
@@ -368,7 +374,7 @@ def get_tuples_from_medcat_json(path):
                 _label += f"T{k}\t"+class_map[ann['meta_anns']['Experiencer']['value']]+" "
                 _label += str(ann['start'])+" "+str(ann['end'])+"\t"+ann['value']+"\n"
                 k+=1
-            except:
+            except KeyError:
                 pass
         labels.append(_label)       
     
