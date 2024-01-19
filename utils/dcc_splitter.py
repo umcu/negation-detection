@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-from sklearn.model_selection import KFold
+from sklearn.model_selection import KFold, GroupShuffleSplit
 from pathlib import Path
 import argparse
 import json
@@ -15,12 +15,15 @@ DEFAULT_RANDOM_STATE = 1524513
 
 
 class DCCSplitter:
-    def __init__(self, dcc_dir, output_dir, skip_file, n_splits, random_state, write_to_file=False):
+    def __init__(self, dcc_dir, output_dir, skip_file, n_splits, random_state, 
+                 doc_ids=None, group_ids=None, write_to_file=False):
         self.dcc_dir = dcc_dir
         self.output_dir = output_dir
         self.skip_file = skip_file
         self.n_splits = n_splits
         self.random_state = random_state
+        self.doc_ids = doc_ids
+        self.group_ids = group_ids
         self.write_to_file = write_to_file
 
         self.dcc_dir = DEFAULT_DCC_DIR if self.dcc_dir is None else self.dcc_dir
@@ -30,8 +33,18 @@ class DCCSplitter:
         self.random_state = DEFAULT_RANDOM_STATE if self.random_state is None else self.random_state
 
     def split(self):
-        dcc_names = self.get_dcc_names(self.dcc_dir, self.skip_file)
-        split_list = self.shuffle_split_files(dcc_names, self.n_splits, self.random_state)
+        if self.doc_ids is None:
+            dcc_names = self.get_dcc_names(self.dcc_dir, self.skip_file)
+        else:
+            dcc_names = self.doc_ids
+        
+        if self.group_ids is None:
+            _group_ids = dcc_names
+        else:
+            _group_ids = self.group_ids
+            
+        split_list = self.shuffle_split_files(dcc_names, self.n_splits, 
+                                              self.random_state, group_ids=_group_ids)
         if self.write_to_file:
             self.write_splits(split_list, self.output_dir)
         return split_list
@@ -56,14 +69,16 @@ class DCCSplitter:
     def shuffle_split_files(self, 
                             dcc_names: list,
                             n_splits: int = DEFAULT_N_SPLITS,
-                            random_state: int = DEFAULT_RANDOM_STATE):
+                            random_state: int = DEFAULT_RANDOM_STATE,
+                            group_ids: list = None):
 
         # Shuffle & split files in train and test
-        dcc_names = np.array(dcc_names)
-        kf = KFold(n_splits=n_splits, shuffle=True, random_state=random_state)
+        dcc_names = np.array(dcc_names)        
+        # GroupKFold to ensure that all files of a patient are in the same split
+        kf = GroupShuffleSplit (n_splits=n_splits, random_state=random_state)
         split_id = 0
         split_list = []
-        for train, test in kf.split(dcc_names):
+        for train, test in kf.split(dcc_names, groups=group_ids):
             split_list.append({'split_id': split_id,
                             'train': dcc_names[train].tolist(),
                             'test': dcc_names[test].tolist()})
