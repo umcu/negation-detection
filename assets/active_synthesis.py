@@ -55,6 +55,22 @@ Experiencer_annotation_correction = [
 	 "end": 18,
 	 "value": "other"
  },
+ {
+	 "name": "DL1758",
+	 "doc_id": 2464,
+	 "sub_id": 2467,
+	 "start": 255,
+	 "end": 269,
+	 "value": "other"
+ },
+ {
+	 "name": "SP1747",
+	 "doc_id": 16557,
+	 "sub_id": 16571,
+	 "start": 985,
+	 "end": 993,
+	 "value": None
+ },
 ]
 
 Consider_for_removal = [
@@ -91,15 +107,13 @@ Experiencer_false_others_ASL1 = ['DL1449_109_122',
 								 'GP2993_116_142',								
 								 'SP1546_133_141',
 								 'DL1455_140_156',
-								 'DL2039_130_136',
+								 'DL2039_130_136',								 
+								 'GP1541_58_67',         
+								 'GP1671_77_85',         
+								 'DL1139_182_188',         
+								 'SP1484_100_111',         
+								 'SP1747_392_400']
 								 
-								 'GP1541_58_67',
-								 'GP1671_77_85',
-								 'DL1139_182_188',
-								 'DL1758_255_269',
-								 'SP1484_100_111',
-								 'SP1747_392_400',
-								 'SP1747_985_993']
 
 Experiencer_false_patients_ASL1 = ['DL1293_232_240',
 								 'GP1198_0_5',
