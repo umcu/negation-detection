@@ -71,6 +71,23 @@ Experiencer_annotation_correction = [
 	 "end": 993,
 	 "value": None
  },
+  {
+	 "name": "DL1196|synth|Experiencer|3",
+	 "doc_id": 13,
+	 "sub_id": 1,
+	 "start": 220,
+	 "end": 226,
+	 "value": "patient"
+ },
+  {
+	 "name": "DL1196|synth|Experiencer|4",
+	 "doc_id": 14,
+	 "sub_id": 1,
+	 "start": 177,
+	 "end": 191,
+	 "value": "patient"
+ },
+  
 ]
 
 Consider_for_removal = [
@@ -119,13 +136,12 @@ Experiencer_false_patients_ASL1 = ['DL1293_232_240',
 								 'GP1198_0_5',
 								 'GP1606_33_40',
 								 'GP3087_13_24',
-								 'RD1159_41_51',
-								 'DL1196|synth|Experiencer|3_220_226',
-								 'DL1196|synth|Experiencer|4_177_191',
-								 'GP1198|synth|Experiencer|0_0_17',
-								 'GP1198|synth|Experiencer|6_0_20',
-								 'GP1198|synth|Experiencer|8_0_17',
+								 'RD1159_41_51',         
+								 'GP1198|synth|Experiencer|0_0_17',         
+								 'GP1198|synth|Experiencer|6_0_20',         
+								 'GP1198|synth|Experiencer|8_0_17',         
 								 'GP1606|synth|Experiencer|4_40_50',
+         
 								 'GP1606|synth|Experiencer|6_31_47',
 								 'GP1606|synth|Experiencer|8_31_43',
 								 'GP1661|synth|Experiencer|9_150_159',
