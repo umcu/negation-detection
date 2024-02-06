@@ -87,7 +87,25 @@ Experiencer_annotation_correction = [
 	 "end": 191,
 	 "value": "patient"
  },
-  
+'GP1661|synth|Experiencer|9_150_159',"patient"
+'GP2447|synth|Experiencer|4_20_30',"patient"
+'GP2447|synth|Experiencer|5_21_32',"patient"
+'GP2447|synth|Experiencer|6_21_43',"patient"
+'GP2447|synth|Experiencer|7_20_31',"patient"
+'GP2447|synth|Experiencer|8_24_34',"patient"
+'GP2447|synth|Experiencer|9_32_43',"patient"
+'DL1475|synth|Experiencer|4_51_76',"patient"
+'DL1475|synth|Experiencer|6_44_69',"patient"
+'DL1475|synth|Experiencer|9_55_84',"patient"
+'DL1888|synth|Experiencer|8_346_363',"patient"
+'GP1825|synth|Experiencer|3_143_150',"patient"
+'GP1825|synth|Experiencer|4_99_109',"patient"
+'GP1825|synth|Experiencer|7_126_134',"patient"
+'GP2029|synth|Experiencer|0_202_212',"patient"
+'GP2029|synth|Experiencer|3_127_138',"patient"
+
+'SP1998_897_908', None
+
 ]
 
 Consider_for_removal = [
@@ -140,33 +158,17 @@ Experiencer_false_patients_ASL1 = ['DL1293_232_240',
 								 'GP1198|synth|Experiencer|0_0_17',         
 								 'GP1198|synth|Experiencer|6_0_20',         
 								 'GP1198|synth|Experiencer|8_0_17',         
-								 'GP1606|synth|Experiencer|4_40_50',
-         
-								 'GP1606|synth|Experiencer|6_31_47',
-								 'GP1606|synth|Experiencer|8_31_43',
-								 'GP1661|synth|Experiencer|9_150_159',
-								 'GP2447|synth|Experiencer|4_20_30',
-								 'GP2447|synth|Experiencer|5_21_32',
-								 'GP2447|synth|Experiencer|6_21_43',
-								 'GP2447|synth|Experiencer|7_20_31',
-								 'GP2447|synth|Experiencer|8_24_34',
-								 'GP2447|synth|Experiencer|9_32_43',
-								 'GP3087|synth|Experiencer|0_18_23',
+								 'GP1606|synth|Experiencer|4_40_50',         
+								 'GP1606|synth|Experiencer|6_31_47',         
+								 'GP1606|synth|Experiencer|8_31_43',	
+								 'GP3087|synth|Experiencer|0_18_23',         
 								 'GP3087|synth|Experiencer|8_18_23',
 								 'DL1475_147_156',
-								 'GP2413_34_47',
-								 'SP1639_104_118',
-								 'SP1998_897_908',
-								 'DL1475|synth|Experiencer|1_203_222',
-								 'DL1475|synth|Experiencer|4_51_76',
-								 'DL1475|synth|Experiencer|6_44_69',
-								 'DL1475|synth|Experiencer|9_55_84',
-								 'DL1888|synth|Experiencer|8_346_363',
-								 'GP1825|synth|Experiencer|3_143_150',
-								 'GP1825|synth|Experiencer|4_99_109',
-								 'GP1825|synth|Experiencer|7_126_134',
-								 'GP2029|synth|Experiencer|0_202_212',
-								 'GP2029|synth|Experiencer|3_127_138',
+								 'GP2413_34_47',         
+								 'SP1639_104_118',         
+								 'DL1475|synth|Experiencer|1_203_222',		 
+								 								
+								 
 								 'GP2413|synth|Experiencer|0_43_67',
 								 'GP2413|synth|Experiencer|2_49_64',
 								 'GP2413|synth|Experiencer|3_56_72',
