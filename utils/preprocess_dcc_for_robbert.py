@@ -348,7 +348,7 @@ def get_tuples_from_medcat_json(path):
                  'other': 'Other',
                  'recent': 'Recent', 
                  'historical': 'Historical', 
-                 'hypothetisch': 'Hypothetical'}
+                 'hypothetical': 'Hypothetical'}
     
     for doc in tqdm(docs['projects'][0]['documents']):
         ids.append(doc['name'])
