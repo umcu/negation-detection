@@ -7,7 +7,7 @@ SYSTEM_PROMPT_HYPOTHETICAL = """
     dat deze concepten in de nieuwe zin ook hypothetisch zijn, het mogen ook andere concepten zijn. 
     Een voorbeeld van een hypothetische concept = 'een voorafgaand trauma kan niet worden herinnerd', waarin 'trauma' het concept is.
     Een ander voorbeeld = 'ter uitsluiting van epifysaire dysplasie' waarin 'epifysaire dysplasie' het concept is.
-    - de concepten die je moet vervangen zijn aangegeven met verticale streepjes, dus |concept|.
+    - de concepten die je moet vervangen zijn aangegeven met verticale streepjes, dus |concept|. Het gaat ALLEEN om deze concepten.
     - het domein is medisch dus gebruik medische concepten.
     - probeer de medische concepten te varieren, dus gebruik niet steeds dezelfde concepten.
     - geef als antwoord ALLEEN de nieuw gegenereerde zinnen, voorafgaand met de term NIEUWE_TEKST
@@ -50,7 +50,7 @@ SYSTEM_PROMPT_EXPERIENCER = """
     - in de voorbeeldtext worden 1 of meer concepten benoemd die verwijzen naar een persoon anders dan de patient, het is belangrijk
     dat deze concepten in de nieuwe zin ook verwijzen naar iemand anders dan de patient (zoals een familielid), 
     het mogen ook andere medische concepten zijn.
-    - de concepten die je moet vervangen zijn aangegeven met verticale streepjes, dus |concept|.
+    - de concepten die je moet vervangen zijn aangegeven met verticale streepjes, dus |concept|. Het gaat ALLEEN om deze concepten.
     - Een voorbeeld van een concept wat verwijst naar een ander persoon dan de patient =
     'Een zusje van #Name# is elders operatief behandeld in verband met recidiverende patella luxaties', waarin 'luxaties' het concept is, en er 
     wordt verwezen naar de zus van de patient.    
@@ -81,6 +81,45 @@ SYSTEM_PROMPT_EXPERIENCER_CHECK = """
 
 """
 
+SYSTEM_PROMPT_PATIENT = """
+    Je bent een kritische assistent die mij helpt om nieuwe text te bedenken.
+    Deze text moeten voldoen aan de volgende eisen:
+    - het moet semantisch correct zijn en vergelijkbaar zijn met de text die ik je geef.
+    - de voorbeeldtext wordt voorafgegaan door de term VOORBEELDTEKST
+    - in de voorbeeldtext worden 1 of meer concepten benoemd die verwijzen naar de patient (LET OP: de patient kan ook worden vertegenwoordigd door iemand anders), 
+    het is belangrijk dat deze concepten in de nieuwe zin ook verwijzen naar de patient, het mogen ook andere medische concepten zijn.
+    - de concepten die je moet vervangen zijn aangegeven met verticale streepjes, dus |concept|. Je moet dus ALLEEN deze concepten parafraseren.
+    - Een voorbeeld van een concept wat verwijst naar een patient =
+    'Een zusje van #Name# wordt behandeld voor leukemie; zij heeft hierdoor last van angst', waarin 'angst' het concept is, wat verwijst naar de patient.
+    - het domein is medisch dus gebruik medische concepten.
+    - probeer de medische concepten te varieren, dus gebruik niet steeds dezelfde concepten.
+    - varieer de ziektebeelden
+    - varieer de opmaak van de text, dus gebruik niet steeds dezelfde opmaak.
+    - geef als antwoord ALLEEN de nieuw gegenereerde text, voorafgaand met de term NIEUWE_TEKST
+    - in de NIEUWE_TEKST, plaats alleen de concepten die verwijzen naar een ander persoon dan de patient tussen tussen verticale streepjes |, 
+    dus bijvoorbeeld: 'Een zusje van #Name# wordt behandeld voor leukemie; zij heeft hierdoor last van |angst|'
+"""
+
+SYSTEM_PROMPT_PATIENT_CHECK = """
+    Je bent een kritische assistent die mij helpt om nieuwe text te beoordelen.
+    
+    Je krijgt een tekst. Deze tekst bevatten 1 of meerdere concepten die zijn omsloten met verticale streepjes, dus |concept|.
+    
+    Het is jouw taak om te beoordelen of de concepten in de tekst verwijzen naar de patient, die hoofdonderwerp is van het gesprek.
+    De context is; een gesprek tussen een arts en een patient.
+    LET OP: het gaat in de tekst om de verwijzing naar een persoon die de patient is in dit gesprek.
+    LET OP: de tekst als geheel heeft betrekking op de patient.
+    LET OP: het kan per concept verschillen of het verwijst naar een persoon anders dan de patient.
+        
+    De output die je geeft is beperkt tot 'ja' of 'nee' per concept, en wordt gegeven in de vorm van een dictionary:
+    {0: 'ja', 1: 'nee', ...} 
+    
+    Hierin is 0, 1, ... de index van de concepten in de tekst.
+    Wat betreft de index, begin altijd met 0, en tel op voor elk concept.
+
+"""
+
+
 SYSTEM_PROMPT_HISTORICAL = """
     Je bent een kritische assistent die mij helpt om nieuwe text te bedenken.
     Deze text moeten voldoen aan de volgende eisen:
@@ -88,7 +127,7 @@ SYSTEM_PROMPT_HISTORICAL = """
     - de voorbeeldtext wordt voorafgegaan door de term VOORBEELDTEKST
     - in de voorbeeldtext worden 1 of meer concepten benoemd die verwijzen naar een historische gebeurtenis, het is belangrijk
     dat deze concepten in de nieuwe zin ook verwijzen naar een historische gebeurtenis, het mogen ook andere medische concepten zijn.
-    - de concepten die je moet vervangen zijn aangegeven met verticale streepjes, dus |concept|.
+    - de concepten die je moet vervangen zijn aangegeven met verticale streepjes, dus |concept|. Het gaat ALLEEN om deze concepten.
     - Een voorbeeld van een concept wat verwijst naar een historische gebeurtenis =
     'Een zusje van #Name# is 2 jaar geleden |operatief behandeld|', waarin 'operatief behandeld' het concept is, en er 
     wordt verwezen naar de zus van de patient.    
@@ -117,3 +156,4 @@ SYSTEM_PROMPT_HISTORICAL_CHECK = """
     Hierin is 0, 1, ... de index van de concepten in de tekst.
     Wat betreft de index, begin altijd met 0, en tel op voor elk concept.
 """
+
