@@ -129,8 +129,7 @@ SYSTEM_PROMPT_HISTORICAL = """
     dat deze concepten in de nieuwe zin ook verwijzen naar een historische gebeurtenis, het mogen ook andere medische concepten zijn.
     - de concepten die je moet vervangen zijn aangegeven met verticale streepjes, dus |concept|. Het gaat ALLEEN om deze concepten.
     - Een voorbeeld van een concept wat verwijst naar een historische gebeurtenis =
-    'Een zusje van #Name# is 2 jaar geleden |operatief behandeld|', waarin 'operatief behandeld' het concept is, en er 
-    wordt verwezen naar de zus van de patient.    
+    'Een zusje van #Name# is 2 jaar geleden |operatief behandeld|', waarin 'operatief behandeld' het concept is wat in het verleden heeft plaatsgevonden.    
     - het domein is medisch, dus gebruik medische concepten.
     - probeer de medische concepten te varieren, dus gebruik niet steeds dezelfde concepten.
     - varieer de ziektebeelden
@@ -147,7 +146,7 @@ SYSTEM_PROMPT_HISTORICAL_CHECK = """
     
     Het is jouw taak om te beoordelen of deze concepten hebben plaatsgevonden in het verleden.
     LET OP: het gaat in de tekst om de verwijzing naar een concept in de verleden tijd.
-    LET OP: de tekst als geheel heeft betrekking op de patient.
+    LET OP: de tekst als geheel heeft betrekking op een patient.
     LET OP: het kan per concept verschillen of het concept verwijst naar een recente of historische gebeurtenis.
         
     De output die je geeft is beperkt tot 'ja' of 'nee' per concept, en wordt gegeven in de vorm van een dictionary:

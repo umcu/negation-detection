@@ -503,6 +503,7 @@ def train_model(
     device,
     args,
     max_grad_norm=1.0,
+    warmup_steps=10,
     amp=False,
 ):
     dl = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True)
@@ -536,7 +537,7 @@ def train_model(
     t_total = len(dl) // args.gradient_accumulation_steps * args.num_epochs
     optimizer = AdamW(optimizer_grouped_parameters, lr=args.lr, eps=1e-8)
     scheduler = get_linear_schedule_with_warmup(
-        optimizer, num_warmup_steps=0, num_training_steps=t_total
+        optimizer, num_warmup_steps=warmup_steps, num_training_steps=t_total
     )
 
     if amp:
