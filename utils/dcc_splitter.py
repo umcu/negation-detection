@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-from sklearn.model_selection import KFold, GroupShuffleSplit
+from sklearn.model_selection import KFold, GroupShuffleSplit, StratifiedGroupKFold
 from pathlib import Path
 import argparse
 import json
@@ -15,22 +15,28 @@ DEFAULT_RANDOM_STATE = 1524513
 
 
 class DCCSplitter:
+    # TODO: add stratified splitter
     def __init__(self, dcc_dir, output_dir, skip_file, n_splits, random_state, 
-                 doc_ids=None, group_ids=None, write_to_file=False):
+                 labels=None, doc_ids=None, group_ids=None, write_to_file=False, stratified=False):
         self.dcc_dir = dcc_dir
         self.output_dir = output_dir
         self.skip_file = skip_file
         self.n_splits = n_splits
         self.random_state = random_state
+        self.labels = labels
         self.doc_ids = doc_ids
         self.group_ids = group_ids
         self.write_to_file = write_to_file
+        self.stratified = stratified
 
         self.dcc_dir = DEFAULT_DCC_DIR if self.dcc_dir is None else self.dcc_dir
         self.output_dir = DEFAULT_OUTPUT_DIR if self.output_dir is None else self.output_dir
         self.skip_file = DEFAULT_SKIP_FILE if self.skip_file is None else self.skip_file
         self.n_splits = DEFAULT_N_SPLITS if self.n_splits is None else self.n_splits
         self.random_state = DEFAULT_RANDOM_STATE if self.random_state is None else self.random_state
+        
+        if stratified:
+            assert labels is not None, "Labels must be provided for stratified split"
 
     def split(self):
         if self.doc_ids is None:
@@ -75,10 +81,16 @@ class DCCSplitter:
         # Shuffle & split files in train and test
         dcc_names = np.array(dcc_names)        
         # GroupKFold to ensure that all files of a patient are in the same split
-        kf = GroupShuffleSplit (n_splits=n_splits, random_state=random_state)
+        if self.stratified==False:
+            kf = GroupShuffleSplit (n_splits=n_splits, random_state=random_state)
+            opt = {}
+        else:
+            kf = StratifiedGroupKFold (n_splits=n_splits, random_state=random_state, shuffle=True)
+            opt = {'y': self.labels}
+            
         split_id = 0
         split_list = []
-        for train, test in kf.split(dcc_names, groups=group_ids):
+        for train, test in kf.split(X=dcc_names, groups=group_ids, **opt):
             split_list.append({'split_id': split_id,
                             'train': dcc_names[train].tolist(),
                             'test': dcc_names[test].tolist()})

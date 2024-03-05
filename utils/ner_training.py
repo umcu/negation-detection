@@ -54,20 +54,20 @@ class TextDatasetFromFiles(Dataset):
 
                             if args.bio:
                                 if line[1] != "O":
-                                    if args.task == "negation":
+                                    if args.task == "Negation":
                                         tag = line[1] + "-" + line[2]
-                                    elif args.task == "experiencer":
+                                    elif args.task == "Experiencer":
                                         tag = line[1] + "-" + line[3]
-                                    elif args.task == "temporality":
+                                    elif args.task == "Temporality":
                                         tag = line[1] + "-" + line[4]
                                 else:
                                     tag = "O"
                             else:
-                                if args.task == "negation":
+                                if args.task == "Negation":
                                     tag = line[2]
-                                elif args.task == "experiencer":
+                                elif args.task == "Experiencer":
                                     tag = line[3]
-                                elif args.task == "temporality":
+                                elif args.task == "Temporality":
                                     tag = line[4]
 
                             sentence.append(line[0])
@@ -128,15 +128,15 @@ class TextDatasetFromDataFrame(Dataset):
         for id in df.Id.unique():
             lines = df[df.Id == id].values
             sentence = [row[1] for row in lines]
-            if args.task == "negation":
+            if args.task == "Negation":
                 labels = [
                     row[2] + "-" + row[3] if row[2] != "O" else "O" for row in lines
                 ]
-            elif args.task == "experiencer":
+            elif args.task == "Experiencer":
                 labels = [
                     row[2] + "-" + row[4] if row[2] != "O" else "O" for row in lines
                 ]
-            elif args.task == "temporality":
+            elif args.task == "Temporality":
                 labels = [
                     row[2] + "-" + row[5] if row[2] != "O" else "O" for row in lines
                 ]
@@ -460,7 +460,7 @@ def eval_model(model, eval_dataset, tag2id, device, tokenizer, args, return_pred
                 boot_true.append(out_label_list[pred_idx[j]])
                 boot_pred.append(preds_list[pred_idx[j]])
             output = classification_report(boot_true, boot_pred, output_dict=True)
-            if args.task == "negation":
+            if args.task == "Negation":
                 precisions.append(output["Negated"]["precision"])
                 recalls.append(output["Negated"]["recall"])
                 f1s.append(output["Negated"]["f1-score"])
@@ -650,7 +650,7 @@ def main():
     parser.add_argument("--bootsize", type=int, default=200)
     args = parser.parse_args()
 
-    if args.task not in ["negation", "temporality", "experiencer"]:
+    if args.task not in ["Negation", "Temporality", "Experiencer"]:
         raise ValueError("Unknown task '%s'" % args.task)
 
     if args.model_type not in [

@@ -1,3 +1,31 @@
+def remove_flagged_annotations(annotations: dict=None, flagged: dict=None):
+	"""
+	Remove annotations that are flagged for removal.
+
+	Args:
+	- annotations (list): List of annotations.
+	- flagged (list): List of annotations that are flagged for removal.
+
+	Returns:
+	- annotations (list): List of annotations with flagged annotations removed.
+	"""
+	Output = annotations.copy()	
+	
+	for flag_name, bnds in flagged.items():
+		start, end = bnds[0], bnds[1]
+		for i, doc in enumerate(Output):
+			if doc['name'] == flag_name:
+				_annotations = doc['annotations']
+				for j, ann in enumerate(_annotations):
+					if ann['start'] == start and ann['end'] == end:
+						_annotations.pop(j)
+				if len(_annotations) == 0:
+					Output.pop(i)
+				else:
+					doc['annotations'] = _annotations
+	return Output
+
+
 Annotation_correction_original = [
 { 
 	  "doc_id": "SP1676",
@@ -332,11 +360,11 @@ Annotation_correction_synthetic = [
  }
 ]
 
-Consider_for_removal = [
+Flagged_for_removal = [
 {
 	"name": "SP1881", 
 	"reason": "privacy"
-}
+},
 ]
 
 # These are correctly labeled as "patient" in the ASL1 dataset, but are labeled as "other" in inference.
@@ -397,3 +425,9 @@ Experiencer_other_ASL1 = ['DL1293_232_240',
 							'GP2855_9_15',         
 							'GP3074_129_137',         
 							'SP1747_683_691']
+
+
+Temporality_historical_ASL1 = [
+							'DL1119_338_351',
+
+]
